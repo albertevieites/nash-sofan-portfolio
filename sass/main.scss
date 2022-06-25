@@ -1,0 +1,17 @@
+@use 'base/base';
+@use 'abstracts/fonts';
+@use 'abstracts/colors';
+
+* {
+  background-color: black;
+}
+
+body {
+  font-size: fonts.$font-size;
+  color: colors.$red;
+}
+
+h1 {
+  color: white;
+  font-size: 5rem;
+}
