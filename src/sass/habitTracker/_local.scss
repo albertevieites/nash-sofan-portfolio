@@ -1,0 +1,12 @@
+/* import base-layer local components  */
+@import "../base-layer/local.scss";
+/* local font */
+@import "local/font-almoni.scss";
+/* local components*/
+@import "local/elements.scss";
+@import "local/components.scss";
+
+/*local components*/
+@import "local/partials.scss";
+/* add global partial */
+@import "../_partials/last-connection";
