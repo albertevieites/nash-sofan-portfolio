@@ -1,7 +1,7 @@
 # nashPortfolio
 
 ### Structure
-...
+```
 .
 ├── README.md
 ├── index.html
@@ -28,4 +28,4 @@
     ├── layouts
     ├── main.scss
     └── utilities
-...
+```
