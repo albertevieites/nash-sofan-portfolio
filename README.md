@@ -3,9 +3,6 @@
 ### Structure
 ```
 .
-├── README.md
-├── package-lock.json
-├── package.json
 ├── public
 │   ├── css
 │   │   ├── base-layer
