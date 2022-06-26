@@ -1,4 +1,4 @@
-# nashPortfolio
+# Nash Sofan's Portfolio
 
 ### Structure
 ```
