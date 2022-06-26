@@ -29,11 +29,13 @@
     └── sass
         ├── _partials
         ├── base-layer
-        │   ├── _base.scss
         │   ├── _config.scss
+        │   ├── _local.scss
         │   ├── base-layer.scss
         │   ├── config
         │   └── local
+        │       └── abstracts
+        │           └── _resets.scss
         ├── habitTracker
         │   ├── _config.scss
         │   ├── _local.scss
