@@ -4,28 +4,90 @@
 ```
 .
 ├── README.md
-├── index.html
-├── projects
+├── package-lock.json
+├── package.json
 ├── public
 │   ├── css
-│   │   ├── main.css
-│   │   ├── main.css.map
-│   │   ├── main.min.css
-│   │   └── main.min.css.map
-│   └── images
-└── sass
-    ├── abstracts
-    │   ├── _breakpoints.scss
-    │   ├── _colors.scss
-    │   ├── _fonts.scss
-    │   └── _mixins.scss
-    ├── base
-    │   ├── _base.scss
-    │   ├── _font-face.scss
-    │   ├── _reset.scss
-    │   └── _typography.scss
-    ├── components
-    ├── layouts
-    ├── main.scss
-    └── utilities
+│   │   ├── base-layer
+│   │   │   └── base-layer.css
+│   │   ├── habitTracker
+│   │   │   └── habitTracker.css
+│   │   ├── magnettu
+│   │   │   └── magnettu.css
+│   │   ├── minventory
+│   │   │   └── minventory.css
+│   │   ├── portfolio
+│   │   │   └── portfolio.css
+│   │   └── style.css
+│   └── index.html
+└── src
+    ├── assets
+    │   ├── images
+    │   └── styles
+    ├── index.html
+    ├── projects
+    │   ├── habitTracker
+    │   ├── magnettu
+    │   └── minventory
+    └── sass
+        ├── _partials
+        ├── base-layer
+        │   ├── _base.scss
+        │   ├── _config.scss
+        │   ├── base-layer.scss
+        │   ├── config
+        │   └── local
+        ├── habitTracker
+        │   ├── _config.scss
+        │   ├── _local.scss
+        │   ├── config
+        │   │   ├── _breakpoints.scss
+        │   │   ├── _colors.scss
+        │   │   └── _common.scss
+        │   ├── habitTracker.scss
+        │   └── local
+        │       ├── fonts
+        │       ├── mixins
+        │       ├── partials
+        │       └── resets
+        ├── magnettu
+        │   ├── _config.scss
+        │   ├── _local.scss
+        │   ├── config
+        │   │   ├── _breakpoints.scss
+        │   │   ├── _colors.scss
+        │   │   └── _common.scss
+        │   ├── local
+        │   │   ├── fonts
+        │   │   ├── mixins
+        │   │   ├── partials
+        │   │   └── resets
+        │   └── magnettu.scss
+        ├── minventory
+        │   ├── _config.scss
+        │   ├── _local.scss
+        │   ├── config
+        │   │   ├── _breakpoints.scss
+        │   │   ├── _colors.scss
+        │   │   └── _common.scss
+        │   ├── local
+        │   │   ├── fonts
+        │   │   ├── mixins
+        │   │   ├── partials
+        │   │   └── resets
+        │   └── minventory.scss
+        ├── portfolio
+        │   ├── _config.scss
+        │   ├── _local.scss
+        │   ├── config
+        │   │   ├── _breakpoints.scss
+        │   │   ├── _colors.scss
+        │   │   └── _common.scss
+        │   ├── local
+        │   │   ├── fonts
+        │   │   ├── mixins
+        │   │   ├── partials
+        │   │   └── resets
+        │   └── portfolio.scss
+        └── style.scss
 ```
