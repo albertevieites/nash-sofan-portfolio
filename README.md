@@ -3,20 +3,6 @@
 ### Structure
 ```
 .
-├── public
-│   ├── css
-│   │   ├── base-layer
-│   │   │   └── base-layer.css
-│   │   ├── habitTracker
-│   │   │   └── habitTracker.css
-│   │   ├── magnettu
-│   │   │   └── magnettu.css
-│   │   ├── minventory
-│   │   │   └── minventory.css
-│   │   ├── portfolio
-│   │   │   └── portfolio.css
-│   │   └── style.css
-│   └── index.html
 └── src
     ├── assets
     │   ├── images
