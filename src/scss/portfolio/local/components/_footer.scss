@@ -1,0 +1,17 @@
+@import '../abstracts/colors';
+@import '../abstracts/variables';
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+
+  padding: 2.5rem;
+  margin-top: 2rem;
+
+  border-top: 0.05rem solid $c-footer;
+
+  i {
+    color: $c-light-dark;
+  } 
+}

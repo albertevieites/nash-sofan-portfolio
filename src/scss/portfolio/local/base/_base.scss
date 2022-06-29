@@ -24,6 +24,7 @@ body {
   article {
     display: flex;
     flex-direction: column;
+
     p {
       font-size: $font-s-extraBase;
       font-weight: $font-w-minusNormal;
@@ -54,6 +55,60 @@ body {
       font-weight: $font-w-Normal;
 
       text-align: center;
+    }
+  }
+}
+
+.projectsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+
+  width: 100%;
+
+  .card {
+    .card__img {
+      display: flex;
+      position: relative;
+
+      width: 100%;
+
+      padding-top: 100%;
+
+      overflow: hidden;
+
+      border-radius: 0.6rem;
+      background-color: hsl(0, 0%, 93%);
+
+      img {
+        position: absolute;
+
+        width: 100%;
+        height: 100%;
+
+        top: 0;
+        left: 0;
+        vertical-align: middle;
+
+        object-fit: cover;
+
+        transition: .2s ease;
+      }
+    }
+
+    .card__content {
+      h2 {
+        font-size: $font-s-h2;
+
+        color: $c-light-dark;
+      }
+
+      p {
+        font-size: $font-s-extraBase;
+        font-weight: $font-w-minusNormal;
+
+        margin-top: -.9rem;
+      }
     }
   }
 }
