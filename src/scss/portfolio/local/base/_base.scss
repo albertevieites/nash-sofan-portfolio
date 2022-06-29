@@ -1,0 +1,59 @@
+@import '../abstracts/variables';
+
+body {
+  margin: 0 10%;
+}
+
+.introductionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 5rem auto;
+  width: 46vw;
+
+  h1 {
+    font-size: $font-s-h1;
+    font-weight: $font-w-plusSemiBold;
+
+    color: hsla(212, 13%, 23%, 1);
+
+    margin: -0.2em;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    p {
+      font-size: $font-s-extraBase;
+      font-weight: $font-w-minusNormal;
+
+      text-align: center;
+
+      margin: 1rem;
+    }
+
+    .description {
+      margin: -0.4rem;
+    }
+  }
+
+  .designerText {
+    p {
+      span {
+        display: inline-block;
+        font-weight: $font-w-semiBold;
+
+        background-image: linear-gradient(60deg, hsla(0, 100%, 50%, 1), hsla(209, 100%, 50%, 1));
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+
+      font-size: $font-s-large;
+      font-weight: $font-w-Normal;
+
+      text-align: center;
+    }
+  }
+}
