@@ -78,37 +78,81 @@ body {
       overflow: hidden;
 
       border-radius: 0.6rem;
-      background-color: hsl(0, 0%, 93%);
+
 
       img {
+        display: flex;
         position: absolute;
 
-        width: 100%;
-        height: 100%;
-
-        top: 0;
-        left: 0;
-        vertical-align: middle;
-
-        object-fit: cover;
-
-        transition: .2s ease;
+        transform: translate(-50%, -50%);
       }
     }
+  }
 
-    .card__content {
-      h2 {
-        font-size: $font-s-h2;
+  .card__content {
+    h2 {
+      font-size: $font-s-h2;
 
-        color: $c-light-dark;
-      }
-
-      p {
-        font-size: $font-s-extraBase;
-        font-weight: $font-w-minusNormal;
-
-        margin-top: -.9rem;
-      }
+      color: $c-light-dark;
     }
+
+    p {
+      font-size: $font-s-extraBase;
+      font-weight: $font-w-minusNormal;
+
+      margin-top: -.9rem;
+    }
+  }
+}
+
+.magnettu-card {
+  img {
+    width: 90%;
+
+    top: 50%;
+    left: 50%;
+  }
+
+  .card__img {
+    background-image: linear-gradient(120deg, hsla(340, 65%, 62%, 0.78), hsla(23, 86%, 78%, 0.76));
+  }
+}
+
+.minventory-card {
+  img {
+    width: 90%;
+
+    top: 50%;
+    left: 55%;
+  }
+
+  .card__img {
+    background-image: linear-gradient(220deg, hsla(228, 55%, 25%, 0.74), hsla(342, 88%, 83%, 0.63));
+  }
+}
+
+.habitTracking-card {
+  img {
+      width: 85%;
+  
+      top: 50%;
+      left: 50%;
+    }
+
+  .card__img {
+    background-image: linear-gradient(220deg, hsla(159, 68%, 35%, 0.44) 70%, hsla(142, 89%, 78%, 0.62));
+  }
+}
+
+.frio-card {
+  img {
+    width: 65%;
+
+    top: 50%;
+    left: 50%;
+  }
+
+  .card__img {
+    background-image: linear-gradient(320deg, hsla(0, 0%, 7%, 0.18) 70%, hsla(0, 0%, 97%, 0.72));
   }
 }

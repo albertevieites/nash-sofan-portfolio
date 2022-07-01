@@ -377,26 +377,56 @@ body {
   padding-top: 100%;
   overflow: hidden;
   border-radius: 0.6rem;
-  background-color: hsl(0deg, 0%, 93%);
 }
 .projectsContainer .card .card__img img {
+  display: flex;
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  vertical-align: middle;
-  object-fit: cover;
-  transition: 0.2s ease;
+  transform: translate(-50%, -50%);
 }
-.projectsContainer .card .card__content h2 {
+.projectsContainer .card__content h2 {
   font-size: 1.5rem;
   color: hsl(212deg, 13%, 23%);
 }
-.projectsContainer .card .card__content p {
+.projectsContainer .card__content p {
   font-size: 1.1rem;
   font-weight: 300;
   margin-top: -0.9rem;
+}
+
+.magnettu-card img {
+  width: 90%;
+  top: 50%;
+  left: 50%;
+}
+.magnettu-card .card__img {
+  background-image: linear-gradient(120deg, hsla(340deg, 65%, 62%, 0.78), hsla(23deg, 86%, 78%, 0.76));
+}
+
+.minventory-card img {
+  width: 90%;
+  top: 50%;
+  left: 55%;
+}
+.minventory-card .card__img {
+  background-image: linear-gradient(220deg, hsla(228deg, 55%, 25%, 0.74), hsla(342deg, 88%, 83%, 0.63));
+}
+
+.habitTracking-card img {
+  width: 85%;
+  top: 50%;
+  left: 50%;
+}
+.habitTracking-card .card__img {
+  background-image: linear-gradient(220deg, hsla(159deg, 68%, 35%, 0.44) 70%, hsla(142deg, 89%, 78%, 0.62));
+}
+
+.frio-card img {
+  width: 65%;
+  top: 50%;
+  left: 50%;
+}
+.frio-card .card__img {
+  background-image: linear-gradient(320deg, hsla(0deg, 0%, 7%, 0.18) 70%, hsla(0deg, 0%, 97%, 0.72));
 }
 
 html {
