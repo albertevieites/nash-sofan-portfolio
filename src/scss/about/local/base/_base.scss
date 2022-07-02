@@ -1,0 +1,35 @@
+.content-section {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+
+
+  width: 100%;
+  background-color: aquamarine;
+
+  img {
+    max-width: 45%;
+    border: 1px solid black;
+  }
+  .self-intro {
+    width: 40%;
+    border: 1px solid red;
+  }
+}
+
+.short-content-section {
+  width: 100%;
+  background-color: coral;
+}
+
+.carrousel-section { 
+  min-height: 20em;
+  width: 100%;
+  background-color: magenta;
+}
+
+.talk-section {
+  text-align: center;
+  width: 100%;
+  background-color:blue;
+}
