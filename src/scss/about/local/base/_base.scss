@@ -1,19 +1,24 @@
+@import '../../../portfolio/local/abstracts/variables';
+
 .content-section {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 3em;
 
-
   width: 100%;
-  background-color: aquamarine;
 
   img {
     max-width: 45%;
     border: 1px solid black;
   }
+
   .self-intro {
     width: 40%;
     border: 1px solid red;
+
+    h2 {
+      font-size: $f-s8-40;
+    }
   }
 }
 
@@ -22,7 +27,7 @@
   background-color: coral;
 }
 
-.carrousel-section { 
+.carrousel-section {
   min-height: 20em;
   width: 100%;
   background-color: magenta;
@@ -31,5 +36,5 @@
 .talk-section {
   text-align: center;
   width: 100%;
-  background-color:blue;
+  background-color: blue;
 }

@@ -1,79 +1,19 @@
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 1.7rem 0;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 20 |       font-size: $f-s8-40;
+ *    |                  ^^^^^^^^
+ *    '
+ *   src/scss/about/local/base/_base.scss 20:18  @import
+ *   src/scss/about/_local.scss 3:9              @import
+ *   src/scss/about/about.scss 1:9               root stylesheet */
 
-.home {
-  display: flex;
-  align-items: center;
-}
-.home a {
-  text-decoration: none;
-  color: hsl(0deg, 0%, 0%);
-}
-
-nav {
-  display: flex;
-  font-size: 1rem;
-}
-nav ul {
-  display: inline-flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-nav li {
-  display: flex;
-}
-nav a {
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
-  padding: 0.5rem 1rem;
-  color: inherit;
-  text-decoration: none;
-}
-nav a:hover {
-  color: hsl(197deg, 100%, 50%);
-}
-nav a:active {
-  color: hsl(212deg, 13%, 23%);
-  font-weight: 700;
-}
-nav .link-nav {
-  display: flex;
-  color: hsl(212deg, 13%, 23%);
-}
-
-.content-section {
-  display: flex;
-  justify-content: center;
-  gap: 3em;
-  width: 100%;
-  background-color: aquamarine;
-}
-.content-section img {
-  max-width: 45%;
-  border: 1px solid black;
-}
-.content-section .self-intro {
-  width: 40%;
-  border: 1px solid red;
-}
-
-.short-content-section {
-  width: 100%;
-  background-color: coral;
-}
-
-.carrousel-section {
-  min-height: 20em;
-  width: 100%;
-  background-color: magenta;
-}
-
-.talk-section {
-  text-align: center;
-  width: 100%;
-  background-color: blue;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 20 \2502        font-size: $f-s8-40;\a    \2502                   ^^^^^^^^\a    \2575 \a   src/scss/about/local/base/_base.scss 20:18  @import\a   src/scss/about/_local.scss 3:9              @import\a   src/scss/about/about.scss 1:9               root stylesheet";
 }

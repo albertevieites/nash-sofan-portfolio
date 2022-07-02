@@ -14,14 +14,14 @@ header {
 
   a {
     text-decoration: none;
-    color: $c-dark;
+    color: $clr-dark;
   }
 }
 
 nav {
   display: flex;
 
-  font-size: $font-s-base;
+  font-size: $f-s-400;
 
   ul {
     display: inline-flex;
@@ -46,18 +46,18 @@ nav {
     text-decoration: none;
 
     &:hover {
-      color: $c-hover; 
+      color: $clr-hover;
     }
 
     &:active {
-      color: $c-light-dark;
-      font-weight: $font-w-plusSemiBold;
+      color: $clr-light-dark;
+      font-weight: $f-w-700;
     }
   }
 
   .link-nav {
     display: flex;
 
-    color: $c-light-dark;
+    color: $clr-light-dark;
   }
 }
