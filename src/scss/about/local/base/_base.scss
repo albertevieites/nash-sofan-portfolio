@@ -7,34 +7,89 @@
 
   width: 100%;
 
+  padding-top: 6em;
+  padding-bottom: 6em;
+
   img {
+    min-height: 35em;
     max-width: 45%;
-    border: 1px solid black;
+
+    padding-top: 1em;
+    padding-bottom: 4em;
+  }
+}
+
+.self-intro {
+  padding-right: 5rem;
+  padding-left: 5rem;
+
+  h2 {
+    font-size: $f-s-600;
+    font-weight: $f-w-700;
   }
 
-  .self-intro {
-    width: 40%;
-    border: 1px solid red;
+  p {
+    font-size: $f-s-480;
+    font-weight: $f-w-300;
 
-    h2 {
-      font-size: $f-s8-40;
-    }
+    padding-bottom: 1em;
+    line-height: 1.4em;
+  }
+
+  span {
+    font-weight: $f-w-700;
   }
 }
 
 .short-content-section {
-  width: 100%;
-  background-color: coral;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin: 0 10em;
+  padding-bottom: 10rem;
+
+  h2 {
+    font-size: $f-s-600;
+    font-weight: $f-w-600;
+  }
+
+  p {
+    font-size: $f-s-480;
+    font-weight: $f-w-300;
+
+    padding-bottom: 1em;
+    line-height: 1.4em;
+  }
+
+  span {
+    font-weight: $f-w-700;
+  }
 }
 
 .carrousel-section {
-  min-height: 20em;
+  min-height: 30em;
   width: 100%;
+
+  margin-bottom: 6em;
+
   background-color: magenta;
 }
 
 .talk-section {
   text-align: center;
-  width: 100%;
-  background-color: blue;
+
+  margin: 0 auto;
+
+  p {
+    font-size: $f-s-440;
+    font-weight: $f-w-400;
+
+    line-height: 1em;
+  }
+
+  a {
+    font-size: $f-s-440;
+    color: $clr-hover;
+  }
 }
