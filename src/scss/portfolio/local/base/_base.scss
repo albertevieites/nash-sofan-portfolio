@@ -13,8 +13,8 @@ body {
   width: 46vw;
 
   h1 {
-    font-size: $font-s-h1;
-    font-weight: $font-w-plusSemiBold;
+    font-size: $f-s-840;
+    font-weight: $f-w-700;
 
     color: hsla(212, 13%, 23%, 1);
 
@@ -26,8 +26,8 @@ body {
     flex-direction: column;
 
     p {
-      font-size: $font-s-extraBase;
-      font-weight: $font-w-minusNormal;
+      font-size: $f-s-440;
+      font-weight: $f-w-300;
 
       text-align: center;
 
@@ -43,7 +43,7 @@ body {
     p {
       span {
         display: inline-block;
-        font-weight: $font-w-semiBold;
+        font-weight: $f-w-600;
 
         background-image: linear-gradient(60deg, hsla(0, 100%, 50%, 1), hsla(209, 100%, 50%, 1));
         background-clip: text;
@@ -51,8 +51,8 @@ body {
         color: transparent;
       }
 
-      font-size: $font-s-large;
-      font-weight: $font-w-Normal;
+      font-size: $f-s-500;
+      font-weight: $f-w-400;
 
       text-align: center;
     }
@@ -91,14 +91,14 @@ body {
 
   .card__content {
     h2 {
-      font-size: $font-s-h2;
+      font-size: $f-s-600;
 
-      color: $c-light-dark;
+      color: $clr-light-dark;
     }
 
     p {
-      font-size: $font-s-extraBase;
-      font-weight: $font-w-minusNormal;
+      font-size: $f-s-440;
+      font-weight: $f-w-300;
 
       margin-top: -.9rem;
     }
@@ -133,11 +133,11 @@ body {
 
 .habitTracking-card {
   img {
-      width: 85%;
-  
-      top: 50%;
-      left: 50%;
-    }
+    width: 85%;
+
+    top: 50%;
+    left: 50%;
+  }
 
   .card__img {
     background-image: linear-gradient(220deg, hsla(159, 68%, 35%, 0.44) 70%, hsla(142, 89%, 78%, 0.62));

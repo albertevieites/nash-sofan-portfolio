@@ -263,6 +263,13 @@ body {
   line-height: 1.3;
 }
 
+/* $f-s-840: 2.1rem;
+$f-s-800: 2rem;
+$f-s-700: 1.75rem;
+$f-s-600: 1.5rem;
+$f-s-500: 1.25rem;
+$f-s-440: 1.1rem;
+$f-s-400: 1rem; */
 header {
   display: flex;
   justify-content: space-between;
@@ -310,6 +317,13 @@ nav .link-nav {
   color: hsl(212deg, 13%, 23%);
 }
 
+/* $f-s-840: 2.1rem;
+$f-s-800: 2rem;
+$f-s-700: 1.75rem;
+$f-s-600: 1.5rem;
+$f-s-500: 1.25rem;
+$f-s-440: 1.1rem;
+$f-s-400: 1rem; */
 footer {
   display: flex;
   justify-content: center;
@@ -322,6 +336,13 @@ footer i {
   color: hsl(212deg, 13%, 23%);
 }
 
+/* $f-s-840: 2.1rem;
+$f-s-800: 2rem;
+$f-s-700: 1.75rem;
+$f-s-600: 1.5rem;
+$f-s-500: 1.25rem;
+$f-s-440: 1.1rem;
+$f-s-400: 1rem; */
 body {
   margin: 0 10%;
 }
@@ -435,6 +456,20 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
+/* $f-s-840: 2.1rem;
+$f-s-800: 2rem;
+$f-s-700: 1.75rem;
+$f-s-600: 1.5rem;
+$f-s-500: 1.25rem;
+$f-s-440: 1.1rem;
+$f-s-400: 1rem; */
+/* $f-s-840: 2.1rem;
+$f-s-800: 2rem;
+$f-s-700: 1.75rem;
+$f-s-600: 1.5rem;
+$f-s-500: 1.25rem;
+$f-s-440: 1.1rem;
+$f-s-400: 1rem; */
 header {
   display: flex;
   justify-content: space-between;
@@ -482,35 +517,84 @@ nav .link-nav {
   color: hsl(212deg, 13%, 23%);
 }
 
+/* $f-s-840: 2.1rem;
+$f-s-800: 2rem;
+$f-s-700: 1.75rem;
+$f-s-600: 1.5rem;
+$f-s-500: 1.25rem;
+$f-s-440: 1.1rem;
+$f-s-400: 1rem; */
 .content-section {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 3em;
   width: 100%;
-  background-color: aquamarine;
+  padding-top: 6em;
+  padding-bottom: 6em;
 }
 .content-section img {
+  min-height: 35em;
   max-width: 45%;
-  border: 1px solid black;
+  padding-top: 1em;
+  padding-bottom: 4em;
 }
-.content-section .self-intro {
-  width: 40%;
-  border: 1px solid red;
+
+.self-intro {
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+.self-intro h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.self-intro p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding-bottom: 1em;
+  line-height: 1.4em;
+}
+.self-intro span {
+  font-weight: 700;
 }
 
 .short-content-section {
-  width: 100%;
-  background-color: coral;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 10em;
+  padding-bottom: 10rem;
+}
+.short-content-section h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.short-content-section p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding-bottom: 1em;
+  line-height: 1.4em;
+}
+.short-content-section span {
+  font-weight: 700;
 }
 
 .carrousel-section {
-  min-height: 20em;
+  min-height: 30em;
   width: 100%;
+  margin-bottom: 6em;
   background-color: magenta;
 }
 
 .talk-section {
   text-align: center;
-  width: 100%;
-  background-color: blue;
+  margin: 0 auto;
+}
+.talk-section p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1em;
+}
+.talk-section a {
+  font-size: 1.1rem;
+  color: hsl(197deg, 100%, 50%);
 }
