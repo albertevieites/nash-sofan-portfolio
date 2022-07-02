@@ -10,7 +10,7 @@
     "copy:html": "copyfiles -u 1 ./src/*.html ./src/views/*.html public",
     "copy": "npm-run-all --parallel copy:*",
     "watch:assets": "onchange '/src/assets/**/*' -- npm run copy:assets",
-    "watch:html": "onchange 'src/*.html, src/views/*.html' -- npm run copy:html",
+    "watch:html": "onchange 'src/**/*.html' -- npm run copy:html",
     "watch:sass": "sass  --no-source-map --watch src/scss:public/css",
     "watch": "npm-run-all --parallel watch:*",
     "serve": "browser-sync start --server public --files public",
