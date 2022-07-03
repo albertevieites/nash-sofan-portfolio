@@ -1,0 +1,45 @@
+@import '../abstracts/colors';
+@import '../abstracts/variables';
+
+.hero {
+  display: flex;
+  
+  width: 100%;
+  background-color: aqua;
+}
+
+.overview__div {
+  display: flex;
+
+  width: 100%;
+  background-color: burlywood;
+
+  .overview__div--right {
+    width: 50vw;
+  }
+
+  .overview__div--left {
+    display: flex;
+    width: 50vw;
+  }
+}
+
+.first {
+  width: 100%;
+  background-color: lightcoral;
+
+  .first__div {
+    width: 75%;
+
+    margin: 0 auto;
+  }
+}
+
+.hypothesis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  width: 100%;
+  background-color: darkgreen;
+}

@@ -1,4 +1,10 @@
-@import './base-layer/base-layer.scss';
-@import './portfolio/portfolio.scss';
-@import './about/about.scss';
-@import './contact/contact.scss';
+// Reset
+@import './base-layer/base-layer';
+
+// Portfolio
+@import './portfolio/portfolio';
+@import './about/about';
+@import './contact/contact';
+
+// Projects
+@import './magnettu/magnettu';
