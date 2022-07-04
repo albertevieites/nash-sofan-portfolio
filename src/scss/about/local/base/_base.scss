@@ -3,12 +3,11 @@
 .content-section {
   display: flex;
   justify-content: space-between;
-  gap: 3em;
-
-  width: 100%;
+  gap: 7em;
 
   padding-top: 6em;
-  padding-bottom: 6em;
+  padding-bottom: 2em;
+  margin: 0 11em;
 
   img {
     min-height: 35em;
@@ -20,8 +19,7 @@
 }
 
 .self-intro {
-  padding-right: 5rem;
-  padding-left: 5rem;
+  padding-right: 2rem;
 
   h2 {
     font-size: $f-s-600;
@@ -46,8 +44,8 @@
   flex-direction: column;
   justify-content: center;
 
-  margin: 0 10em;
-  padding-bottom: 10rem;
+  margin: 0 21em;
+  padding-bottom: 5rem;
 
   h2 {
     font-size: $f-s-600;
