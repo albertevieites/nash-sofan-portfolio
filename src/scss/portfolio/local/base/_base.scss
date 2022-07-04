@@ -4,7 +4,7 @@ body {
   margin: 0 10%;
 }
 
-.introductionContainer {
+.introduction {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,12 +59,12 @@ body {
   }
 }
 
-.projectsContainer {
+.projects__div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
 
-  width: 100%;
+  margin: 0 11em;
 
   .card {
     .card__img {
