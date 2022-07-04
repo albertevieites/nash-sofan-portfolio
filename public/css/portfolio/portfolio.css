@@ -1,60 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-header {
+.header {
   display: flex;
-  justify-content: space-between;
-  padding: 1.7rem 0;
+  justify-content: center;
+}
+.header .header__container {
+  display: flex;
+  width: 75vw;
 }
 
-.home {
+.header__div {
   display: flex;
   align-items: center;
+  width: 10vw;
 }
-.home a {
+.header__div a {
   text-decoration: none;
   color: hsl(0deg, 0%, 0%);
 }
 
-nav {
-  display: flex;
+.header__nav {
   font-size: 1rem;
+  width: 100%;
 }
-nav ul {
-  display: inline-flex;
-  flex-wrap: wrap;
+.header__nav .link-nav {
+  display: flex;
+  color: hsl(212deg, 13%, 23%);
+}
+.header__nav ul {
+  display: flex;
+  justify-content: flex-end;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-nav li {
+.header__nav ul .resume a {
   display: flex;
 }
-nav a {
-  display: block;
+.header__nav ul .resume a img {
+  width: 1.7em;
+}
+.header__nav ul a {
+  display: flex;
+  align-items: center;
   padding: 0.5rem 1rem;
   color: inherit;
   text-decoration: none;
 }
-nav a:hover {
+.header__nav ul a:hover {
   color: hsl(197deg, 100%, 50%);
 }
-nav a:active {
+.header__nav ul a:active {
   color: hsl(212deg, 13%, 23%);
   font-weight: 700;
-}
-nav .link-nav {
-  display: flex;
-  color: hsl(212deg, 13%, 23%);
 }
 
 footer {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  padding: 2.5rem;
-  margin-top: 2rem;
+  padding: 2.5em;
+  margin: 1.5em 11em;
   border-top: 0.05rem solid hsla(0deg, 0%, 32%, 0.3);
 }
-footer i {
+footer .fa-brands {
   color: hsl(212deg, 13%, 23%);
 }
 
@@ -62,38 +70,38 @@ body {
   margin: 0 10%;
 }
 
-.introductionContainer {
+.introduction {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 5rem auto;
   width: 46vw;
 }
-.introductionContainer h1 {
+.introduction h1 {
   font-size: 2.1rem;
   font-weight: 700;
   color: hsl(212deg, 13%, 23%);
   margin: -0.2em;
 }
-.introductionContainer article {
+.introduction article {
   display: flex;
   flex-direction: column;
 }
-.introductionContainer article p {
+.introduction article p {
   font-size: 1.1rem;
   font-weight: 300;
   text-align: center;
   margin: 1rem;
 }
-.introductionContainer article .description {
+.introduction article .description {
   margin: -0.4rem;
 }
-.introductionContainer .designerText p {
+.introduction .designerText p {
   font-size: 1.25rem;
   font-weight: 400;
   text-align: center;
 }
-.introductionContainer .designerText p span {
+.introduction .designerText p span {
   display: inline-block;
   font-weight: 600;
   background-image: linear-gradient(60deg, hsl(0deg, 100%, 50%), hsl(209deg, 100%, 50%));
@@ -102,13 +110,13 @@ body {
   color: transparent;
 }
 
-.projectsContainer {
+.projects__div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
-  width: 100%;
+  margin: 0 11em;
 }
-.projectsContainer .card .card__img {
+.projects__div .card .card__img {
   display: flex;
   position: relative;
   width: 100%;
@@ -116,16 +124,16 @@ body {
   overflow: hidden;
   border-radius: 0.6rem;
 }
-.projectsContainer .card .card__img img {
+.projects__div .card .card__img img {
   display: flex;
   position: absolute;
   transform: translate(-50%, -50%);
 }
-.projectsContainer .card__content h2 {
+.projects__div .card__content h2 {
   font-size: 1.5rem;
   color: hsl(212deg, 13%, 23%);
 }
-.projectsContainer .card__content p {
+.projects__div .card__content p {
   font-size: 1.1rem;
   font-weight: 300;
   margin-top: -0.9rem;
