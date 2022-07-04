@@ -21,7 +21,7 @@ body {
     margin: -0.2em;
   }
 
-  article {
+  .introduction__article {
     display: flex;
     flex-direction: column;
 
@@ -31,15 +31,11 @@ body {
 
       text-align: center;
 
-      margin: 1rem;
-    }
-
-    .description {
-      margin: -0.4rem;
+      margin: 0.6rem;
     }
   }
 
-  .designerText {
+  .introduction__div {
     p {
       span {
         display: inline-block;
