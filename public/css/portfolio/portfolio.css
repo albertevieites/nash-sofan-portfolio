@@ -60,7 +60,7 @@ footer {
   align-items: center;
   gap: 2rem;
   padding: 2.5em;
-  margin: 1.5em 11em;
+  margin: 1.5em 2em;
   border-top: 0.05rem solid hsla(0deg, 0%, 32%, 0.3);
 }
 footer .fa-brands {
