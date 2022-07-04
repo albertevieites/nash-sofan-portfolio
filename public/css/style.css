@@ -502,10 +502,10 @@ html {
 .content-section {
   display: flex;
   justify-content: space-between;
-  gap: 3em;
-  width: 100%;
+  gap: 7em;
   padding-top: 6em;
-  padding-bottom: 6em;
+  padding-bottom: 2em;
+  margin: 0 11em;
 }
 .content-section img {
   min-height: 35em;
@@ -515,8 +515,7 @@ html {
 }
 
 .self-intro {
-  padding-right: 5rem;
-  padding-left: 5rem;
+  padding-right: 2rem;
 }
 .self-intro h2 {
   font-size: 1.5rem;
@@ -536,8 +535,8 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 10em;
-  padding-bottom: 10rem;
+  margin: 0 21em;
+  padding-bottom: 5rem;
 }
 .short-content-section h2 {
   font-size: 1.5rem;
