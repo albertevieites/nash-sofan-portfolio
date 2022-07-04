@@ -57,6 +57,7 @@
 footer {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 2rem;
   padding: 2.5em;
   margin: 1.5em 11em;
@@ -64,6 +65,9 @@ footer {
 }
 footer .fa-brands {
   color: hsl(212deg, 13%, 23%);
+}
+footer img {
+  width: 1.5em;
 }
 
 body {
@@ -83,25 +87,22 @@ body {
   color: hsl(212deg, 13%, 23%);
   margin: -0.2em;
 }
-.introduction article {
+.introduction .introduction__article {
   display: flex;
   flex-direction: column;
 }
-.introduction article p {
+.introduction .introduction__article p {
   font-size: 1.1rem;
   font-weight: 300;
   text-align: center;
-  margin: 1rem;
+  margin: 0.6rem;
 }
-.introduction article .description {
-  margin: -0.4rem;
-}
-.introduction .designerText p {
+.introduction .introduction__div p {
   font-size: 1.25rem;
   font-weight: 400;
   text-align: center;
 }
-.introduction .designerText p span {
+.introduction .introduction__div p span {
   display: inline-block;
   font-weight: 600;
   background-image: linear-gradient(60deg, hsl(0deg, 100%, 50%), hsl(209deg, 100%, 50%));
