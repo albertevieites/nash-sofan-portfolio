@@ -3,7 +3,7 @@
 
 .hero {
   display: flex;
-  
+
   width: 100%;
   background-color: aqua;
 }
@@ -39,7 +39,166 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
   width: 100%;
   background-color: darkgreen;
+}
+
+.audience {
+  width: 100%;
+  background-color: lightseagreen;
+
+  .audience__div {
+    border: 2px solid black;
+
+    margin: 0 auto;
+    width: 75vw;
+
+    &>div {
+      border: 2px solid red;
+      display: flex;
+
+      div {
+        border: 2px solid yellow;
+        width: 50vw;
+      }
+
+      img {
+        border: 2px solid blue;
+        width: 50vw;
+      }
+    }
+  }
+}
+
+.findings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .findings__div {
+    display: flex;
+    flex-direction: column;
+
+    width: 40vw;
+
+    div {
+      border: 2px solid black;
+      display: flex;
+      align-content: center;
+      gap: 2em;
+    }
+  }
+
+  width: 100%;
+  background-color: darkslateblue;
+}
+
+.nicolas {
+  .nicolas__div--medium {
+    display: flex;
+
+    width: 100%;
+    border: 2px solid brown;
+
+    img {
+      width: 50vw;
+    }
+
+    .medium__content {
+      width: 50vw;
+
+      .content--bottom {
+        display: flex;
+      }
+    }
+  }
+
+  width: 100%;
+  background-color: cadetblue;
+}
+
+.alexander {
+  .alexander__div--medium {
+    display: flex;
+
+    width: 100%;
+    border: 2px solid brown;
+
+    img {
+      width: 50vw;
+    }
+
+    .medium__content {
+      width: 50vw;
+
+      .content--bottom {
+        display: flex;
+      }
+    }
+  }
+
+  width: 100%;
+  background-color: yellowgreen;
+}
+
+.identity {
+  width: 100%;
+  background-color: crimson;
+
+  .identity--content {
+    display: flex;
+
+    .identity__div--left {
+      width: 35vw;
+    }
+
+    .identity__div--right {
+      width: 60vw;
+      border: 2px solid blueviolet;
+
+      .div__right--top {
+        display: flex;
+
+        .top__div--font {
+          width: 30vw;
+        }
+
+        .icons--wrapper {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          gap: 0px 0px;
+          grid-template-areas:
+            ". . ."
+            ". . ."
+            ". . .";
+
+        }
+      }
+    }
+  }
+}
+
+.midfi {
+  width: 100%;
+  background-color: blanchedalmond;
+  .midfi__div--wrapper {
+    display: flex;
+  }
+}
+
+.test {
+  width: 100%;
+  background-color: firebrick;
+}
+
+.next {
+  width: 100%;
+  background-color: gold;
+}
+
+.prototype {
+  width: 100%;
+  background-color: aqua;
 }

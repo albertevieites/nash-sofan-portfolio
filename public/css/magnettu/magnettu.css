@@ -35,6 +35,136 @@
   background-color: darkgreen;
 }
 
+.audience {
+  width: 100%;
+  background-color: lightseagreen;
+}
+.audience .audience__div {
+  border: 2px solid black;
+  margin: 0 auto;
+  width: 75vw;
+}
+.audience .audience__div > div {
+  border: 2px solid red;
+  display: flex;
+}
+.audience .audience__div > div div {
+  border: 2px solid yellow;
+  width: 50vw;
+}
+.audience .audience__div > div img {
+  border: 2px solid blue;
+  width: 50vw;
+}
+
+.findings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: darkslateblue;
+}
+.findings .findings__div {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+}
+.findings .findings__div div {
+  border: 2px solid black;
+  display: flex;
+  align-content: center;
+  gap: 2em;
+}
+
+.nicolas {
+  width: 100%;
+  background-color: cadetblue;
+}
+.nicolas .nicolas__div--medium {
+  display: flex;
+  width: 100%;
+  border: 2px solid brown;
+}
+.nicolas .nicolas__div--medium img {
+  width: 50vw;
+}
+.nicolas .nicolas__div--medium .medium__content {
+  width: 50vw;
+}
+.nicolas .nicolas__div--medium .medium__content .content--bottom {
+  display: flex;
+}
+
+.alexander {
+  width: 100%;
+  background-color: yellowgreen;
+}
+.alexander .alexander__div--medium {
+  display: flex;
+  width: 100%;
+  border: 2px solid brown;
+}
+.alexander .alexander__div--medium img {
+  width: 50vw;
+}
+.alexander .alexander__div--medium .medium__content {
+  width: 50vw;
+}
+.alexander .alexander__div--medium .medium__content .content--bottom {
+  display: flex;
+}
+
+.identity {
+  width: 100%;
+  background-color: crimson;
+}
+.identity .identity--content {
+  display: flex;
+}
+.identity .identity--content .identity__div--left {
+  width: 35vw;
+}
+.identity .identity--content .identity__div--right {
+  width: 60vw;
+  border: 2px solid blueviolet;
+}
+.identity .identity--content .identity__div--right .div__right--top {
+  display: flex;
+}
+.identity .identity--content .identity__div--right .div__right--top .top__div--font {
+  width: 30vw;
+}
+.identity .identity--content .identity__div--right .div__right--top .icons--wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: ". . ." ". . ." ". . .";
+}
+
+.midfi {
+  width: 100%;
+  background-color: blanchedalmond;
+}
+.midfi .midfi__div--wrapper {
+  display: flex;
+}
+
+.test {
+  width: 100%;
+  background-color: firebrick;
+}
+
+.next {
+  width: 100%;
+  background-color: gold;
+}
+
+.prototype {
+  width: 100%;
+  background-color: aqua;
+}
+
 html {
   font-family: "Raleway", sans-serif;
 }
