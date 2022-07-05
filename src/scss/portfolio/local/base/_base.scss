@@ -55,12 +55,14 @@ body {
   }
 }
 
+.projects {
+  margin: 0 2em;
+}
+
 .projects__div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
-
-  margin: 0 11em;
 
   .card {
     .card__img {
