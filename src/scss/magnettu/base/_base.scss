@@ -1,37 +1,160 @@
-@import '../abstracts/colors';
-@import '../abstracts/variables';
+@import "../abstracts/colors";
+@import "../abstracts/variables";
 
 .hero {
   display: flex;
+  justify-content: center;
 
-  width: 100%;
-  background-color: aqua;
-}
+  padding: 3em 0;
 
-.overview__div {
-  display: flex;
+  .hero__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-  width: 100%;
-  background-color: burlywood;
+    width: 35%;
 
-  .overview__div--right {
-    width: 50vw;
+    letter-spacing: 0.04em;
+
+    h1 {
+      font-size: $f-s-800;
+      color: $clr-primary-light;
+
+      margin: 0;
+    }
+
+    p {
+      font-size: $f-s-600;
+      margin: 0.2em;
+    }
+
+    span {
+      font-weight: $f-w-600;
+    }
   }
 
-  .overview__div--left {
+  img {
+    width: 40%;
+  }
+
+  width: 100%;
+}
+
+.overview {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+
+  padding: 2rem;
+
+  background-color: $clr-background-grey-light;
+
+  .overview__div {
     display: flex;
-    width: 50vw;
+    gap: 2em;
+
+    width: 80%;
+
+    padding: 0 2em;
+
+    h3 {
+      font-size: $f-s-380;
+
+      margin: 0.2em 0;
+    }
+
+    p {
+      font-size: $f-s-340;
+
+      margin: 0;
+
+      line-height: 1.6em;
+      letter-spacing: 0.04em;
+    }
+
+    .overview__div--left {
+      display: flex;
+      flex-direction: column;
+
+      width: 40vw;
+    }
+
+    .overview__div--right {
+      display: flex;
+      gap: 1em;
+
+      width: 40vw;
+    }
+
+    .overview__div--rightone {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+
+      width: 15vw;
+    }
+
+    .overview__div--righttwo {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+
+      width: 15vw;
+
+      .overview__div--righttwo--team {
+        ul {
+          padding-left: 0;
+        }
+
+        li {
+          font-size: $f-s-340;
+
+          list-style: none;
+        }
+      }
+    }
   }
 }
 
 .first {
-  width: 100%;
-  background-color: lightcoral;
+  margin: 3em auto;
+  width: 90%;
+
+  h2 {
+    font-size: $f-s-400;
+
+    color: $clr-primary-light;
+
+    margin-left: 5em;
+  }
 
   .first__div {
-    width: 75%;
+    display: flex;
+    flex-direction: column;
+
+    width: 70%;
 
     margin: 0 auto;
+
+    .div__title {
+      font-size: $f-s-380;
+      font-weight: $f-w-600;
+
+      margin-bottom: 0.5em;
+    }
+
+    .div__paragraph {
+      font-size: $f-s-380;
+
+      line-height: 1.6em;
+      letter-spacing: 0.04em;
+
+      margin-top: 0;
+      span {
+        font-weight: $f-w-700;
+      }
+    }
   }
 }
 
@@ -41,32 +164,92 @@
   align-items: center;
 
   width: 100%;
-  background-color: darkgreen;
+
+  padding: 3em 0;
+
+  background-color: $clr-primary-light;
+  color: $clr-background-white;
+
+  .hypothesis__paragraph {
+    font-weight: $f-w-500;
+
+    margin: 0 13em 2em;
+
+    line-height: 1.6em;
+    letter-spacing: 0.04em;
+  }
+
+  .hypothesis__button {
+    input {
+      font-size: $f-s-340;
+      font-weight: $f-w-600;
+      color: $clr-primary-light;
+
+      padding: 0.5em 1.3em;
+
+      border: none;
+      border-radius: 0.2em;
+    }
+  }
 }
 
 .audience {
-  width: 100%;
-  background-color: lightseagreen;
+  margin: 3em auto;
+  width: 90%;
+
+  h2 {
+    font-size: $f-s-500;
+
+    color: $clr-primary-light;
+
+    margin-left: 5em;
+  }
 
   .audience__div {
-    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+
+    width: 70%;
 
     margin: 0 auto;
-    width: 75vw;
 
-    &>div {
-      border: 2px solid red;
+    h3 {
+      font-size: $f-s-400;
+    }
+
+    p {
+      line-height: 1.6em;
+      letter-spacing: 0.04em;
+
+      span {
+        font-weight: $f-w-600;
+      }
+    }
+
+    a {
+      font-weight: $f-w-500;
+      color: $clr-primary-light;
+      text-decoration: underline;
+    }
+
+    & > div {
       display: flex;
 
       div {
-        border: 2px solid yellow;
-        width: 50vw;
+        width: 35vw;
       }
 
       img {
-        border: 2px solid blue;
-        width: 50vw;
+        width: 30vw;
+        max-height: 17em;
+
+        margin-top: 2em;
       }
+    }
+
+    .audience__div--bottom {
+      display: flex;
+      gap: 3em;
     }
   }
 }
@@ -76,22 +259,28 @@
   flex-direction: column;
   align-items: center;
 
+  padding: 2em;
+
   .findings__div {
     display: flex;
     flex-direction: column;
 
     width: 40vw;
 
-    div {
+    .div__blocks {
       border: 2px solid black;
       display: flex;
       align-content: center;
       gap: 2em;
+
+      img {
+        width: 15vw;
+      }
     }
   }
 
   width: 100%;
-  background-color: darkslateblue;
+  background-color: $clr-background-grey-dark;
 }
 
 .nicolas {
@@ -173,7 +362,6 @@
             ". . ."
             ". . ."
             ". . .";
-
         }
       }
     }
