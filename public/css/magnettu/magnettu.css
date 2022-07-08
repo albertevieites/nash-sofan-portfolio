@@ -1,30 +1,114 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .hero {
   display: flex;
+  justify-content: center;
+  padding: 3em 0;
   width: 100%;
-  background-color: aqua;
+}
+.hero .hero__div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 35%;
+  letter-spacing: 0.04em;
+}
+.hero .hero__div h1 {
+  font-size: 2rem;
+  color: hsl(331deg, 100%, 50%);
+  margin: 0;
+}
+.hero .hero__div p {
+  font-size: 1.5rem;
+  margin: 0.2em;
+}
+.hero .hero__div span {
+  font-weight: 600;
+}
+.hero img {
+  width: 40%;
 }
 
-.overview__div {
+.overview {
   display: flex;
+  justify-content: center;
   width: 100%;
-  background-color: burlywood;
+  padding: 2rem;
+  background-color: hsl(0deg, 9%, 94%);
 }
-.overview__div .overview__div--right {
-  width: 50vw;
-}
-.overview__div .overview__div--left {
+.overview .overview__div {
   display: flex;
-  width: 50vw;
+  gap: 2em;
+  width: 80%;
+  padding: 0 2em;
+}
+.overview .overview__div h3 {
+  font-size: 0.9rem;
+  margin: 0.2em 0;
+}
+.overview .overview__div p {
+  font-size: 0.8rem;
+  margin: 0;
+  line-height: 1.6em;
+  letter-spacing: 0.04em;
+}
+.overview .overview__div .overview__div--left {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+}
+.overview .overview__div .overview__div--right {
+  display: flex;
+  gap: 1em;
+  width: 40vw;
+}
+.overview .overview__div .overview__div--rightone {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 15vw;
+}
+.overview .overview__div .overview__div--righttwo {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 15vw;
+}
+.overview .overview__div .overview__div--righttwo .overview__div--righttwo--team ul {
+  padding-left: 0;
+}
+.overview .overview__div .overview__div--righttwo .overview__div--righttwo--team li {
+  font-size: 0.8rem;
+  list-style: none;
 }
 
 .first {
-  width: 100%;
-  background-color: lightcoral;
+  margin: 3em auto;
+  width: 90%;
+}
+.first h2 {
+  font-size: 1rem;
+  color: hsl(331deg, 100%, 50%);
+  margin-left: 5em;
 }
 .first .first__div {
-  width: 75%;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
   margin: 0 auto;
+}
+.first .first__div .div__title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+.first .first__div .div__paragraph {
+  font-size: 0.9rem;
+  line-height: 1.6em;
+  letter-spacing: 0.04em;
+  margin-top: 0;
+}
+.first .first__div .div__paragraph span {
+  font-weight: 700;
 }
 
 .hypothesis {
@@ -32,48 +116,92 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-color: darkgreen;
+  padding: 3em 0;
+  background-color: hsl(331deg, 100%, 50%);
+  color: hsl(0deg, 0%, 100%);
+}
+.hypothesis .hypothesis__paragraph {
+  font-weight: 500;
+  margin: 0 13em 2em;
+  line-height: 1.6em;
+  letter-spacing: 0.04em;
+}
+.hypothesis .hypothesis__button input {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: hsl(331deg, 100%, 50%);
+  padding: 0.5em 1.3em;
+  border: none;
+  border-radius: 0.2em;
 }
 
 .audience {
-  width: 100%;
-  background-color: lightseagreen;
+  margin: 3em auto;
+  width: 90%;
+}
+.audience h2 {
+  font-size: 1.25rem;
+  color: hsl(331deg, 100%, 50%);
+  margin-left: 5em;
 }
 .audience .audience__div {
-  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
   margin: 0 auto;
-  width: 75vw;
+}
+.audience .audience__div h3 {
+  font-size: 1rem;
+}
+.audience .audience__div p {
+  line-height: 1.6em;
+  letter-spacing: 0.04em;
+}
+.audience .audience__div p span {
+  font-weight: 600;
+}
+.audience .audience__div a {
+  font-weight: 500;
+  color: hsl(331deg, 100%, 50%);
+  text-decoration: underline;
 }
 .audience .audience__div > div {
-  border: 2px solid red;
   display: flex;
 }
 .audience .audience__div > div div {
-  border: 2px solid yellow;
-  width: 50vw;
+  width: 35vw;
 }
 .audience .audience__div > div img {
-  border: 2px solid blue;
-  width: 50vw;
+  width: 30vw;
+  max-height: 17em;
+  margin-top: 2em;
+}
+.audience .audience__div .audience__div--bottom {
+  display: flex;
+  gap: 3em;
 }
 
 .findings {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2em;
   width: 100%;
-  background-color: darkslateblue;
+  background-color: hsl(0deg, 0%, 74%);
 }
 .findings .findings__div {
   display: flex;
   flex-direction: column;
   width: 40vw;
 }
-.findings .findings__div div {
+.findings .findings__div .div__blocks {
   border: 2px solid black;
   display: flex;
   align-content: center;
   gap: 2em;
+}
+.findings .findings__div .div__blocks img {
+  width: 15vw;
 }
 
 .nicolas {
