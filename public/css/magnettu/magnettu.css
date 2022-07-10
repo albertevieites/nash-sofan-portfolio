@@ -189,19 +189,50 @@
   width: 100%;
   background-color: hsl(0deg, 0%, 74%);
 }
+.findings h3 {
+  font-size: 1.1rem;
+}
+.findings p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6em;
+  letter-spacing: 0.04em;
+}
 .findings .findings__div {
   display: flex;
   flex-direction: column;
-  width: 40vw;
+  width: 50vw;
 }
 .findings .findings__div .div__blocks {
-  border: 2px solid black;
   display: flex;
-  align-content: center;
-  gap: 2em;
+  align-items: center;
+  gap: 3em;
 }
-.findings .findings__div .div__blocks img {
-  width: 15vw;
+.findings .findings__div span {
+  font-weight: 600;
+}
+.findings .div__blocks--four {
+  padding: 1em;
+}
+.findings .div__blocks--four img {
+  max-height: 6.4em;
+  padding-left: 0.9em;
+}
+.findings .div__blocks--eight {
+  display: flex;
+  padding: 1em;
+}
+.findings .div__blocks--eight img {
+  max-height: 2.9em;
+  padding-left: 3em;
+}
+.findings .div__blocks--seven {
+  display: flex;
+  padding: 1em;
+}
+.findings .div__blocks--seven img {
+  max-height: 2.9em;
+  padding-left: 3em;
 }
 
 .nicolas {

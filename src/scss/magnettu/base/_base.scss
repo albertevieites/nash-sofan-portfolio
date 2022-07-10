@@ -261,26 +261,67 @@
 
   padding: 2em;
 
+  width: 100%;
+  background-color: $clr-background-grey-dark;
+
+  h3 {
+    font-size: $f-s-440;
+  }
+
+  p {
+    font-size: $f-s-400;
+    font-weight: $f-w-400;
+
+    line-height: 1.6em;
+    letter-spacing: 0.04em;
+  }
+
   .findings__div {
     display: flex;
     flex-direction: column;
 
-    width: 40vw;
+    width: 50vw;
 
     .div__blocks {
-      border: 2px solid black;
       display: flex;
-      align-content: center;
-      gap: 2em;
+      align-items: center;
+      gap: 3em;
+    }
 
-      img {
-        width: 15vw;
-      }
+    span {
+      font-weight: $f-w-600;
     }
   }
 
-  width: 100%;
-  background-color: $clr-background-grey-dark;
+  .div__blocks--four {
+    padding: 1em;
+    img {
+      max-height: 6.4em;
+      padding-left: 0.9em;
+    }
+  }
+
+  .div__blocks--eight {
+    display: flex;
+
+    padding: 1em;
+
+    img {
+      max-height: 2.9em;
+      padding-left: 3em;
+    }
+  }
+
+  .div__blocks--seven {
+    display: flex;
+
+    padding: 1em;
+
+    img {
+      max-height: 2.9em;
+      padding-left: 3em;
+    }
+  }
 }
 
 .nicolas {
