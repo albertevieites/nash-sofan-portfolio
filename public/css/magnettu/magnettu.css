@@ -356,9 +356,20 @@
 .identity .identity--content .identity__div--left {
   width: 35vw;
 }
+.identity .identity--content .identity__div--left img {
+  margin-bottom: 3em;
+}
+.identity .identity--content .identity__div--left .brand__img--logo {
+  width: 10vw;
+}
+.identity .identity--content .identity__div--left .brand__img--multi {
+  width: 10vw;
+}
+.identity .identity--content .identity__div--left .left__div--colors img {
+  width: 20vw;
+}
 .identity .identity--content .identity__div--right {
   width: 60vw;
-  border: 2px solid blueviolet;
 }
 .identity .identity--content .identity__div--right .div__right--top {
   display: flex;
@@ -366,12 +377,21 @@
 .identity .identity--content .identity__div--right .div__right--top .top__div--font {
   width: 30vw;
 }
-.identity .identity--content .identity__div--right .div__right--top .icons--wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas: ". . ." ". . ." ". . .";
+.identity .identity--content .identity__div--right .div__right--top .top__div--font .font__p--regular {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.identity .identity--content .identity__div--right .div__right--top .top__div--font .font__p--medium {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.identity .identity--content .identity__div--right .div__right--top .top__div--font .font__p--semibold {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.identity .identity--content .identity__div--right .div__right--top .top__div--font .font__p--bold {
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 .midfi {
