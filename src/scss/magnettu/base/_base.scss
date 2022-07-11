@@ -331,6 +331,10 @@
   margin: 3em auto;
   width: 80%;
 
+  h1 {
+    font-size: $f-s-1240;
+  }
+
   h3 * {
     font-size: $f-s-400;
   }
@@ -362,10 +366,6 @@
       font-weight: $f-w-500;
 
       color: $clr-primary-light;
-
-      h1 {
-        font-size: $f-s-800;
-      }
 
       & > p {
         font-weight: $f-w-700;
@@ -399,32 +399,83 @@
 }
 
 .alexander {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  background-color: $clr-background-grey-dark;
+
+  h1 {
+    font-size: $f-s-1240;
+  }
+
+  h3 * {
+    font-size: $f-s-400;
+  }
+
   .alexander__div--medium {
     display: flex;
 
-    width: 100%;
-    border: 2px solid brown;
+    width: 80%;
+
+    margin: 3em auto;
+
+    color: $clr-primary-light;
+
+    p {
+      line-height: 1.6em;
+      letter-spacing: 0.04em;
+
+      font-weight: $f-w-600;
+    }
 
     img {
-      width: 50vw;
+      min-height: 30em;
+      width: 20vw;
+
+      object-fit: cover;
     }
 
     .medium__content {
       width: 50vw;
 
+      h3 {
+        border-bottom: 0.1em solid $clr-primary-light;
+      }
+
+      & > p {
+        font-weight: $f-w-700;
+      }
+
+      .content--bio {
+        width: 42%;
+      }
+
       .content--bottom {
         display: flex;
+        gap: 2em;
       }
     }
   }
-
-  width: 100%;
-  background-color: yellowgreen;
+  .alexander__div--bottom {
+    width: 80%;
+    
+    margin: 0 auto;
+    padding-bottom: 5em;
+  }
 }
 
 .identity {
-  width: 100%;
-  background-color: crimson;
+  width: 80%;
+
+  margin: 0 auto;
+  padding: 3em 0;
+
+  h2,
+  h5 {
+    color: $clr-primary-light;
+  }
 
   .identity--content {
     display: flex;

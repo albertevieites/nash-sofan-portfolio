@@ -241,6 +241,9 @@
   margin: 3em auto;
   width: 80%;
 }
+.nicolas h1 {
+  font-size: 2.8rem;
+}
 .nicolas h3 * {
   font-size: 1rem;
 }
@@ -264,9 +267,6 @@
   width: 50vw;
   font-weight: 500;
   color: hsl(331deg, 100%, 50%);
-}
-.nicolas .nicolas__div--medium .medium__content h1 {
-  font-size: 2rem;
 }
 .nicolas .nicolas__div--medium .medium__content > p {
   font-weight: 700;
@@ -292,27 +292,63 @@
 }
 
 .alexander {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  background-color: yellowgreen;
+  background-color: hsl(0deg, 0%, 74%);
+}
+.alexander h1 {
+  font-size: 2.8rem;
+}
+.alexander h3 * {
+  font-size: 1rem;
 }
 .alexander .alexander__div--medium {
   display: flex;
-  width: 100%;
-  border: 2px solid brown;
+  width: 80%;
+  margin: 3em auto;
+  color: hsl(331deg, 100%, 50%);
+}
+.alexander .alexander__div--medium p {
+  line-height: 1.6em;
+  letter-spacing: 0.04em;
+  font-weight: 600;
 }
 .alexander .alexander__div--medium img {
-  width: 50vw;
+  min-height: 30em;
+  width: 20vw;
+  object-fit: cover;
 }
 .alexander .alexander__div--medium .medium__content {
   width: 50vw;
 }
+.alexander .alexander__div--medium .medium__content h3 {
+  border-bottom: 0.1em solid hsl(331deg, 100%, 50%);
+}
+.alexander .alexander__div--medium .medium__content > p {
+  font-weight: 700;
+}
+.alexander .alexander__div--medium .medium__content .content--bio {
+  width: 42%;
+}
 .alexander .alexander__div--medium .medium__content .content--bottom {
   display: flex;
+  gap: 2em;
+}
+.alexander .alexander__div--bottom {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 5em;
 }
 
 .identity {
-  width: 100%;
-  background-color: crimson;
+  width: 80%;
+  margin: 0 auto;
+  padding: 3em 0;
+}
+.identity h2,
+.identity h5 {
+  color: hsl(331deg, 100%, 50%);
 }
 .identity .identity--content {
   display: flex;
