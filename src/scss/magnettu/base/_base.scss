@@ -568,14 +568,167 @@
     .wrapper--right {
       display: flex;
       flex-direction: column;
-      gap: 4em;
+      gap: 3.6em;
     }
   }
 }
 
 .test {
-  margin: 3em auto;
-  width: 90%;
+  margin: 5em auto;
+  width: 85%;
+
+  h2 {
+    color: $clr-primary-light;
+  }
+
+  img {
+    width: 70vw;
+
+    margin: 0 auto;
+  }
+
+  .test__line {
+    width: 70%;
+
+    margin: 3em auto;
+
+    border: 0.05em solid $clr-background-grey-light;
+  }
+
+  .test__div--wrapper {
+    width: 90%;
+
+    margin: 0 auto;
+    padding: 1em;
+
+    & > p {
+      padding-bottom: 1em;
+    }
+
+    span {
+      font-weight: $f-w-700;
+    }
+
+    .div--italic {
+      padding: 1em 0;
+
+      p {
+        font-style: italic;
+        text-align: center;
+
+        color: $clr-primary-light;
+      }
+    }
+
+    .wrapper--link {
+      font-size: $f-s-500;
+      font-weight: $f-w-400;
+      text-align: center;
+
+      width: 30%;
+
+      margin: 0 auto;
+      padding: 2em 0;
+
+      color: $clr-primary-light;
+    }
+
+    .img--filtered {
+      padding-bottom: 5em;
+    }
+
+    .paragraph--overwhelming {
+      i {
+        color: $clr-primary-light;
+      }
+    }
+
+    .wrapper--post {
+      padding-bottom: 7em;
+
+      img {
+        width: 40%;
+      }
+
+      .post--top {
+        display: flex;
+        align-items: center;
+
+        img {
+          margin: 0 2em 0 10em;
+        }
+
+        p {
+          font-size: $f-s-400;
+          font-style: italic;
+
+          color: $clr-primary-light;
+        }
+      }
+
+      .post--bottom {
+        display: flex;
+        align-items: center;
+
+        img {
+          margin: 0 2em 0 10em;
+        }
+
+        p {
+          font-size: $f-s-480;
+          color: $clr-primary-light;
+        }
+
+        span {
+          font-weight: $f-w-600;
+        }
+      }
+    }
+
+    .wrapper--suggestion {
+      display: flex;
+      img {
+        width: 15vw;
+        margin: 0 13em;
+      }
+
+      .suggestion--right {
+        width: 18%;
+        
+        h3 {
+          font-size: $f-s-500;
+
+          width: 50%;
+
+          margin: 1em -8em;
+
+          color: $clr-primary-light;
+        }
+
+        & > p {
+          font-weight: $f-w-600;
+
+          margin: 0;
+        }
+
+        a {
+          margin: 0;
+        }
+
+        .suggestion--before {
+          font-style: italic;
+
+          color: $clr-primary-light;
+        }
+      }
+    }
+
+    .wrapper--redesigned {
+      img {
+        width: 15vw;
+      }
+    }
+  }
 }
 
 .next {

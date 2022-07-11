@@ -422,12 +422,120 @@
 .midfi .midfi__div--wrapper .wrapper--right {
   display: flex;
   flex-direction: column;
-  gap: 4em;
+  gap: 3.6em;
 }
 
 .test {
+  margin: 5em auto;
+  width: 85%;
+}
+.test h2 {
+  color: hsl(331deg, 100%, 50%);
+}
+.test img {
+  width: 70vw;
+  margin: 0 auto;
+}
+.test .test__line {
+  width: 70%;
   margin: 3em auto;
+  border: 0.05em solid hsl(0deg, 9%, 94%);
+}
+.test .test__div--wrapper {
   width: 90%;
+  margin: 0 auto;
+  padding: 1em;
+}
+.test .test__div--wrapper > p {
+  padding-bottom: 1em;
+}
+.test .test__div--wrapper span {
+  font-weight: 700;
+}
+.test .test__div--wrapper .div--italic {
+  padding: 1em 0;
+}
+.test .test__div--wrapper .div--italic p {
+  font-style: italic;
+  text-align: center;
+  color: hsl(331deg, 100%, 50%);
+}
+.test .test__div--wrapper .wrapper--link {
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+  padding: 2em 0;
+  color: hsl(331deg, 100%, 50%);
+}
+.test .test__div--wrapper .img--filtered {
+  padding-bottom: 5em;
+}
+.test .test__div--wrapper .paragraph--overwhelming i {
+  color: hsl(331deg, 100%, 50%);
+}
+.test .test__div--wrapper .wrapper--post {
+  padding-bottom: 7em;
+}
+.test .test__div--wrapper .wrapper--post img {
+  width: 40%;
+}
+.test .test__div--wrapper .wrapper--post .post--top {
+  display: flex;
+  align-items: center;
+}
+.test .test__div--wrapper .wrapper--post .post--top img {
+  margin: 0 2em 0 10em;
+}
+.test .test__div--wrapper .wrapper--post .post--top p {
+  font-size: 1rem;
+  font-style: italic;
+  color: hsl(331deg, 100%, 50%);
+}
+.test .test__div--wrapper .wrapper--post .post--bottom {
+  display: flex;
+  align-items: center;
+}
+.test .test__div--wrapper .wrapper--post .post--bottom img {
+  margin: 0 2em 0 10em;
+}
+.test .test__div--wrapper .wrapper--post .post--bottom p {
+  font-size: 1.2rem;
+  color: hsl(331deg, 100%, 50%);
+}
+.test .test__div--wrapper .wrapper--post .post--bottom span {
+  font-weight: 600;
+}
+.test .test__div--wrapper .wrapper--suggestion {
+  display: flex;
+}
+.test .test__div--wrapper .wrapper--suggestion img {
+  width: 15vw;
+  margin: 0 13em;
+}
+.test .test__div--wrapper .wrapper--suggestion .suggestion--right {
+  width: 18%;
+}
+.test .test__div--wrapper .wrapper--suggestion .suggestion--right h3 {
+  font-size: 1.25rem;
+  width: 50%;
+  margin: 1em -8em;
+  color: hsl(331deg, 100%, 50%);
+}
+.test .test__div--wrapper .wrapper--suggestion .suggestion--right > p {
+  font-weight: 600;
+  margin: 0;
+}
+.test .test__div--wrapper .wrapper--suggestion .suggestion--right a {
+  margin: 0;
+}
+.test .test__div--wrapper .wrapper--suggestion .suggestion--right .suggestion--before {
+  font-style: italic;
+  color: hsl(331deg, 100%, 50%);
+}
+.test .test__div--wrapper .wrapper--redesigned img {
+  width: 15vw;
 }
 
 .next {
