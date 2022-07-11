@@ -534,16 +534,48 @@
 }
 
 .midfi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   width: 100%;
-  background-color: blanchedalmond;
+
+  padding: 3rem 0;
+
+  background-color: $clr-background-grey-dark;
+
+  h2 {
+    margin-left: -67.5em;
+  }
   .midfi__div--wrapper {
     display: flex;
+    gap: 2em;
+
+    width: 80%;
+
+    h3 {
+      font-size: $f-s-400;
+      font-weight: $f-w-500;
+
+      margin-left: 0.5em;
+      margin-bottom: 0;
+    }
+
+    img {
+      margin: 0;
+    }
+
+    .wrapper--right {
+      display: flex;
+      flex-direction: column;
+      gap: 4em;
+    }
   }
 }
 
 .test {
-  width: 100%;
-  background-color: firebrick;
+  margin: 3em auto;
+  width: 90%;
 }
 
 .next {

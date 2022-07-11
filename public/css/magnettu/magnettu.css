@@ -395,16 +395,39 @@
 }
 
 .midfi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  background-color: blanchedalmond;
+  padding: 3rem 0;
+  background-color: hsl(0deg, 0%, 74%);
+}
+.midfi h2 {
+  margin-left: -67.5em;
 }
 .midfi .midfi__div--wrapper {
   display: flex;
+  gap: 2em;
+  width: 80%;
+}
+.midfi .midfi__div--wrapper h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: 0.5em;
+  margin-bottom: 0;
+}
+.midfi .midfi__div--wrapper img {
+  margin: 0;
+}
+.midfi .midfi__div--wrapper .wrapper--right {
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
 }
 
 .test {
-  width: 100%;
-  background-color: firebrick;
+  margin: 3em auto;
+  width: 90%;
 }
 
 .next {
