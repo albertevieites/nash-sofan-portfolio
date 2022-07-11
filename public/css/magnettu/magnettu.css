@@ -540,12 +540,12 @@
 
 .next {
   width: 100%;
-  background-color: gold;
 }
 
 .prototype {
-  width: 100%;
-  background-color: aqua;
+  width: 90%;
+  margin: 0 auto;
+  color: hsl(331deg, 100%, 50%);
 }
 
 html {
