@@ -236,22 +236,59 @@
 }
 
 .nicolas {
-  width: 100%;
-  background-color: cadetblue;
+  display: flex;
+  flex-direction: column;
+  margin: 3em auto;
+  width: 80%;
+}
+.nicolas h3 * {
+  font-size: 1rem;
+}
+.nicolas p {
+  line-height: 1.6em;
+  letter-spacing: 0.04em;
+}
+.nicolas p span {
+  font-weight: 600;
 }
 .nicolas .nicolas__div--medium {
   display: flex;
   width: 100%;
-  border: 2px solid brown;
 }
 .nicolas .nicolas__div--medium img {
-  width: 50vw;
+  min-height: 30em;
+  width: 20vw;
+  object-fit: cover;
 }
 .nicolas .nicolas__div--medium .medium__content {
   width: 50vw;
+  font-weight: 500;
+  color: hsl(331deg, 100%, 50%);
+}
+.nicolas .nicolas__div--medium .medium__content h1 {
+  font-size: 2rem;
+}
+.nicolas .nicolas__div--medium .medium__content > p {
+  font-weight: 700;
+}
+.nicolas .nicolas__div--medium .medium__content h3 {
+  border-bottom: 0.1em solid hsl(331deg, 100%, 50%);
+}
+.nicolas .nicolas__div--medium .medium__content .content--bio {
+  width: 45%;
 }
 .nicolas .nicolas__div--medium .medium__content .content--bottom {
   display: flex;
+  gap: 2em;
+}
+.nicolas .nicolas__div--medium .medium__content .content--bottom .bottom--pain {
+  width: 45%;
+}
+.nicolas .nicolas__div--bottom {
+  margin-top: 5em;
+}
+.nicolas .nicolas__div--bottom span {
+  color: hsl(0deg, 0%, 74%);
 }
 
 .alexander {
