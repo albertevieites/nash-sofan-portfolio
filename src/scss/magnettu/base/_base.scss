@@ -460,7 +460,7 @@
   }
   .alexander__div--bottom {
     width: 80%;
-    
+
     margin: 0 auto;
     padding-bottom: 5em;
   }
@@ -482,28 +482,51 @@
 
     .identity__div--left {
       width: 35vw;
+
+      img {
+        margin-bottom: 3em;
+      }
+
+      .brand__img--logo {
+        width: 10vw;
+      }
+
+      .brand__img--multi {
+        width: 10vw;
+      }
+
+      .left__div--colors {
+        img {
+          width: 20vw;
+        }
+      }
     }
 
     .identity__div--right {
       width: 60vw;
-      border: 2px solid blueviolet;
 
       .div__right--top {
         display: flex;
 
         .top__div--font {
           width: 30vw;
-        }
 
-        .icons--wrapper {
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
-          grid-template-rows: 1fr 1fr 1fr;
-          gap: 0px 0px;
-          grid-template-areas:
-            ". . ."
-            ". . ."
-            ". . .";
+          .font__p--regular {
+            font-size: $f-s-500;
+            font-weight: $f-w-400;
+          }
+          .font__p--medium {
+            font-size: $f-s-500;
+            font-weight: $f-w-500;
+          }
+          .font__p--semibold {
+            font-size: $f-s-500;
+            font-weight: $f-w-600;
+          }
+          .font__p--bold {
+            font-size: $f-s-500;
+            font-weight: $f-w-700;
+          }
         }
       }
     }
