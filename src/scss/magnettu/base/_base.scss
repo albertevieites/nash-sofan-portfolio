@@ -581,21 +581,15 @@
     color: $clr-primary-light;
   }
 
-  img {
-    width: 70vw;
+  .test__div--headline {
+    p {
+      width: 85%;
 
-    margin: 0 auto;
+      margin: 0 auto;
+    }
   }
 
-  .test__line {
-    width: 70%;
-
-    margin: 3em auto;
-
-    border: 0.05em solid $clr-background-grey-light;
-  }
-
-  .test__div--wrapper {
+  .test__div--content {
     width: 90%;
 
     margin: 0 auto;
@@ -694,7 +688,7 @@
 
       .suggestion--right {
         width: 18%;
-        
+
         h3 {
           font-size: $f-s-500;
 
@@ -728,6 +722,14 @@
         width: 15vw;
       }
     }
+  }
+
+  .test__line {
+    width: 70%;
+
+    margin: 3em auto;
+
+    border: 0.05em solid $clr-background-grey-light;
   }
 }
 

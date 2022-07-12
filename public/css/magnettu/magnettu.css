@@ -432,35 +432,30 @@
 .test h2 {
   color: hsl(331deg, 100%, 50%);
 }
-.test img {
-  width: 70vw;
+.test .test__div--headline p {
+  width: 85%;
   margin: 0 auto;
 }
-.test .test__line {
-  width: 70%;
-  margin: 3em auto;
-  border: 0.05em solid hsl(0deg, 9%, 94%);
-}
-.test .test__div--wrapper {
+.test .test__div--content {
   width: 90%;
   margin: 0 auto;
   padding: 1em;
 }
-.test .test__div--wrapper > p {
+.test .test__div--content > p {
   padding-bottom: 1em;
 }
-.test .test__div--wrapper span {
+.test .test__div--content span {
   font-weight: 700;
 }
-.test .test__div--wrapper .div--italic {
+.test .test__div--content .div--italic {
   padding: 1em 0;
 }
-.test .test__div--wrapper .div--italic p {
+.test .test__div--content .div--italic p {
   font-style: italic;
   text-align: center;
   color: hsl(331deg, 100%, 50%);
 }
-.test .test__div--wrapper .wrapper--link {
+.test .test__div--content .wrapper--link {
   font-size: 1.25rem;
   font-weight: 400;
   text-align: center;
@@ -469,73 +464,78 @@
   padding: 2em 0;
   color: hsl(331deg, 100%, 50%);
 }
-.test .test__div--wrapper .img--filtered {
+.test .test__div--content .img--filtered {
   padding-bottom: 5em;
 }
-.test .test__div--wrapper .paragraph--overwhelming i {
+.test .test__div--content .paragraph--overwhelming i {
   color: hsl(331deg, 100%, 50%);
 }
-.test .test__div--wrapper .wrapper--post {
+.test .test__div--content .wrapper--post {
   padding-bottom: 7em;
 }
-.test .test__div--wrapper .wrapper--post img {
+.test .test__div--content .wrapper--post img {
   width: 40%;
 }
-.test .test__div--wrapper .wrapper--post .post--top {
+.test .test__div--content .wrapper--post .post--top {
   display: flex;
   align-items: center;
 }
-.test .test__div--wrapper .wrapper--post .post--top img {
+.test .test__div--content .wrapper--post .post--top img {
   margin: 0 2em 0 10em;
 }
-.test .test__div--wrapper .wrapper--post .post--top p {
+.test .test__div--content .wrapper--post .post--top p {
   font-size: 1rem;
   font-style: italic;
   color: hsl(331deg, 100%, 50%);
 }
-.test .test__div--wrapper .wrapper--post .post--bottom {
+.test .test__div--content .wrapper--post .post--bottom {
   display: flex;
   align-items: center;
 }
-.test .test__div--wrapper .wrapper--post .post--bottom img {
+.test .test__div--content .wrapper--post .post--bottom img {
   margin: 0 2em 0 10em;
 }
-.test .test__div--wrapper .wrapper--post .post--bottom p {
+.test .test__div--content .wrapper--post .post--bottom p {
   font-size: 1.2rem;
   color: hsl(331deg, 100%, 50%);
 }
-.test .test__div--wrapper .wrapper--post .post--bottom span {
+.test .test__div--content .wrapper--post .post--bottom span {
   font-weight: 600;
 }
-.test .test__div--wrapper .wrapper--suggestion {
+.test .test__div--content .wrapper--suggestion {
   display: flex;
 }
-.test .test__div--wrapper .wrapper--suggestion img {
+.test .test__div--content .wrapper--suggestion img {
   width: 15vw;
   margin: 0 13em;
 }
-.test .test__div--wrapper .wrapper--suggestion .suggestion--right {
+.test .test__div--content .wrapper--suggestion .suggestion--right {
   width: 18%;
 }
-.test .test__div--wrapper .wrapper--suggestion .suggestion--right h3 {
+.test .test__div--content .wrapper--suggestion .suggestion--right h3 {
   font-size: 1.25rem;
   width: 50%;
   margin: 1em -8em;
   color: hsl(331deg, 100%, 50%);
 }
-.test .test__div--wrapper .wrapper--suggestion .suggestion--right > p {
+.test .test__div--content .wrapper--suggestion .suggestion--right > p {
   font-weight: 600;
   margin: 0;
 }
-.test .test__div--wrapper .wrapper--suggestion .suggestion--right a {
+.test .test__div--content .wrapper--suggestion .suggestion--right a {
   margin: 0;
 }
-.test .test__div--wrapper .wrapper--suggestion .suggestion--right .suggestion--before {
+.test .test__div--content .wrapper--suggestion .suggestion--right .suggestion--before {
   font-style: italic;
   color: hsl(331deg, 100%, 50%);
 }
-.test .test__div--wrapper .wrapper--redesigned img {
+.test .test__div--content .wrapper--redesigned img {
   width: 15vw;
+}
+.test .test__line {
+  width: 70%;
+  margin: 3em auto;
+  border: 0.05em solid hsl(0deg, 9%, 94%);
 }
 
 .next {
