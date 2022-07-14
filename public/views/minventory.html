@@ -1,12 +1,414 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>minventory</title>
-</head>
-<body>
-  Hi, there!
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/minventory/minventory.css" />
+    <title>Minventory</title>
+  </head>
+
+  <body>
+    <!-- SETCION 1 - HERO -->
+    <section class="hero">
+      <div class="hero__container">
+        <div class="hero__text">
+          <h1>Sass Web App</h1>
+          <p>An effective, seamless tool to track materials and professional inventory.</p>
+        </div>
+        <div class="hero__line"></div>
+      </div>
+      <img
+        src="../assets/images/portfolio/minventory.svg"
+        alt="minventory screengrab"
+        class="hero__image"
+      />
+    </section>
+
+    <!-- SECTION 2 - SPECS -->
+    <section class="specs">
+      <div class="specs__container">
+        <div class="specs__text specs__text--left">
+          <div class="text__left--top">
+            <h3">Team Size</h3>
+            <p>
+              Individual
+            </p>
+          </div>
+          <div class="text__left--bottom">
+            <h3">Duration</h3>
+            <p>
+              Spring 2022
+            </p>
+            <p>
+              1 Week
+            </p>
+          </div>
+        </div>
+        <div class="specs__text specs__text--center">
+          <h3>Responsabilities</h3>
+          <ul>
+            <li>Research</li>
+            <li>Affinity Mapping</li>
+            <li>User Flows</li>
+            <li>Sketching</li>
+            <li>Usabitlity</li>
+            <li>Mid-fi</li>
+            <li>Hi-fi Prototype</li>
+          </ul>
+        </div>
+        <div class="specs__text specs__text--right">
+          <h3>Materials</h3>
+          <ul>
+            <li>Index Cards</li>
+            <li>Pen and Paper</li>
+            <li>Figma</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3 - OVERVIEW -->
+    <section class="overview">
+      <div class="overview__container">
+        <h3>Project Overview</h3>
+        <p>
+          The challenge of this project was to build a desktop web app/product to help professional teams get their work done more effectively.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 4 - BACKGROUND -->
+    <section class="background">
+      <h1>Background</h1>
+      <div class="background__text">
+        <div class="text--top">
+          <h3>Problem Statement</h3>
+          <p><snap>Small businesses</snap> with limited budgets, spend time and money for <snap>material-inventory bookeeping</snap> yet end up losing clients and consistency. Hence, want to keep the business running and prevent interruptions.</p>
+        </div>
+        <div class="text--bottom">
+          <h3>Hypothesis</h3>
+          <p>A B2B tool to <snap>track</snap> and <snap>manage professional inventory</snap> by integrating with POS systems to <snap>calculate when and how</snap> much inventory is needed to keep businesses running without interruptions.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5 - RESEARCH -->
+    <section class="research">
+      <h2>Research</h2>
+      <div class="research__text">
+        <p>
+          I chose to focus on small businesses, mainly because they were <span>impacted the most by the pandemic</span> and there isn’t a lot of SaaS tools targeted for them. 
+        </p>
+        <h3>Interviews</h3>
+        <p>I conducted <snap>10</snap> interviews with <snap>managers</snap> and/or <snap>owners</snap> of small to medium <snap>spas</snap>, <snap>dental clinics</snap>, and <snap>beauty centers</snap> in 7 different locations around the world.</p>
+        <div class="research__bottom">
+            <img
+                src="../assets/images/minventory/research_illustration.svg"
+                alt="research illustration image"
+                class="research__image"
+              />
+            <div class="bottom__text">
+              <p>
+                Each interview took approximately <snap>15-20 minutes</snap> and was initiated by asking them the following question:
+              </p>
+              <p>
+                “Could you walk me through an exhaustive management task at your business?”
+              </p>
+            </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- SECTION 6 - INSIGHTS -->
+    <section class="insights">
+      <h3>Inisghts</h3>
+      <div class="insights__content">
+        <p>Although the interviews were with business owners from different backgrounds and markets, I was fascinated that there were common patterns when it came to their pain-points.</p>
+        <div class="insights__images">
+          <img src="../assets/images/minventory/insights_left.svg" alt="">
+          <img src="../assets/images/minventory/insights_right.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7 - SYNTHESIS -->
+    <section class="synthesis">
+      <h2 class="synthesis__title">Synthesis and Ideaditon</h2>
+      <div class="synthesis__content">
+        <p>After gathering all the insights, I began to formulate the user personas, to be able to design the prototype with the user in mind.</p>
+        <h3>User Personas</h3>
+        <p>I came up with two user personas. What’s different is that they own different businesses, one is a beauty center and the other is a dental clinic. However, for the flow, I will focus on Brianna as her business is more complex and if we solve her problems, all other businesses’ problems will be solved.</p>
+        
+      </div>
+    </section>
+
+    <!-- SECTION 9 - IDENTITY -->
+    <section class="identity">
+      <h2>Adding Identity</h2>
+      <div class="identity--content">
+        <div class="identity__div--left">
+          <div class="left__div--brand">
+            <h5>Brand</h5>
+            <img
+              src="../assets/images/magnettu/magnettu-logo.png"
+              class="brand__img brand__img--logo"
+              alt="logo text"
+            />
+            <img
+              src="../assets/images/magnettu/multi-magnettu-logo.png"
+              class="brand__img brand__img--multi"
+              alt="different logos"
+            />
+          </div>
+          <div class="left__div--colors">
+            <h5>Colors</h5>
+            <img
+              src="../assets/images/magnettu/palette.png"
+              alt="color palette"
+            />
+          </div>
+        </div>
+
+        <div class="identity__div--right">
+          <div class="div__right--top">
+            <div class="top__div--font">
+              <h5>Family Font</h5>
+              <p class="font__p--regular">Raleway Regular 400</p>
+              <p class="font__p--medium">Raleway Medium 500</p>
+              <p class="font__p--semibold">Raleway SemiBold 600</p>
+              <p class="font__p--bold">Raleway Bold 700</p>
+            </div>
+            <div class="top__div--icons">
+              <h5>Icons</h5>
+              <div class="top__icons">
+                <img
+                  src="../assets/images/magnettu/icons.png"
+                  alt="cisco logo"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="div__right--bottom">
+            <h5>Components</h5>
+            <img
+              src="../assets/images/magnettu/components.png"
+              alt="components picture"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 10 - MID-FI -->
+    <section class="midfi">
+      <h2>Mid-Fi</h2>
+      <div class="midfi__div--wrapper">
+        <div class="wrapper--left">
+          <h3>Marketing Landing Page</h3>
+          <img
+            src="../assets/images/magnettu/landingPage.png"
+            alt="landing page screengrab"
+          />
+        </div>
+        <div class="wrapper--right">
+          <div>
+            <h3>Manager's Dashboard</h3>
+            <img
+              src="../assets/images/magnettu/manager.png"
+              alt="manager's dashboard screengrab"
+            />
+          </div>
+          <div>
+            <h3>New Post</h3>
+            <img
+              src="../assets/images/magnettu/post.png"
+              alt="new post screengrab"
+            />
+          </div>
+          <div>
+            <h3>user's Dashboard</h3>
+            <img
+              src="../assets/images/magnettu/user.png"
+              alt="user's dashboard screengrab"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 11 - TEST -->
+    <section class="test">
+      <div class="test__div test__div--headline">
+        <h2>Test, Iterate and Repeat</h2>
+        <p>
+          With the Mid-Fi ready, we began a usability testing sprint for three
+          days with potential users. After conducting more than
+          <span> 20 usability tests </span> we came across plenty of design
+          faults and patterns that needed to be redesigned to meet user’s
+          intuitions, familiarity, and wants. I decided to shed light to the
+          <span>3 main iterations</span> from the many that we had and will
+          still do.
+        </p>
+      </div>
+
+      <div class="test__div test__div--content">
+        <div class="content--1user">
+          <h3>1.0 User Dashboard</h3>
+          <p>
+            <span>17</span> users wanted to easily access posts that have been
+            shared, as well as filter the content cards based on category.
+          </p>
+          <div class="div--italic">
+            <p>
+              ”How can I filter the content to just see news or my company
+              content?”
+            </p>
+            <p>“Where can I see the content I’ve shared?”</p>
+          </div>
+
+          <img
+            src="../assets/images/magnettu/welcome.png"
+            alt="welcome back scren"
+          />
+          <div class="wrapper--link">
+            <p>
+              We listened to our users and introduced <span>sorting</span> and
+              <span>filtering</span> tools!
+            </p>
+          </div>
+          <img
+            src="../assets/images/magnettu/filtered.png"
+            alt="filtered tools adding page"
+            class="img--filtered"
+          />
+        </div>
+
+        <div class="content--2scheduling">
+          <h3>2.0 Scheduling Posts</h3>
+          <p>
+            <span>12</span> users wanted the ability to schedule posts and or
+            <span>save as drafts</span>, because in our initial design users
+            were only able to share the post on-the-spot.
+          </p>
+          <p class="paragraph--overwhelming">
+            We added the ability to save as a draft and conducted more testing,
+            and the responses we got were
+            <i> “its overwhelming” “too many decision making” </i>. Therefore we
+            decided to not do a ‘Save as Draft’ feature and rely on the
+            favorites and scheduling features, where users will then have the
+            ability to come back to it.
+          </p>
+          <div class="wrapper--post">
+            <div class="post--top">
+              <img
+                src="../assets/images/magnettu/drag.png"
+                alt="post screengrab"
+              />
+              <div>
+                <p>
+                  “What if I want to save a draft or schedule it to post
+                  tomorrow morning?”
+                </p>
+                <p>“I’m hesitant about this post, can I save it as a draft?”</p>
+              </div>
+            </div>
+            <div class="test__line"></div>
+            <div class="post--bottom">
+              <img
+                src="../assets/images/magnettu/schedule.png"
+                alt="scheduling screengrab"
+              />
+              <p>
+                Ability to <span>schedule</span> posts and
+                <span>edit</span> them using the schedule feature.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content--3content">
+          <h3>3.0 Content Cards</h3>
+          <p>
+            We initially designed the content cards with a huge emphasis and
+            focus on <span>hover</span>. Throughout usability testing, users
+            didn’t know how to <span>‘Favorite’</span> and <span>‘Share’</span>.
+            So we redesigned content cards to always present actions at all
+            times. Furthermore, made alterations to the colors to align with the
+            brand identity and be less overwhelming.
+          </p>
+          <div class="wrapper--suggestion">
+            <img
+              src="../assets/images/magnettu/suggestion.png"
+              alt="suggestion screengrab"
+            />
+            <div class="suggestion--content">
+              <h3>You, yes you! Hover on me!</h3>
+              <div class="content--bottom">
+                <p>Before</p>
+                <a>Hover State</a>
+                <div class="content--italic">
+                  <p>“What if im using a tablet or smartphone?”</p>
+                  <p>
+                    “I accidently figured it out by moving my mouse around the
+                    screen, however it was not intuitive.”
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="test__line"></div>
+          <div class="wrapper--redesigned">
+            <div class="redesigned--left">
+              <span>After</span>
+              <p>Default State</p>
+              <p class="paragraph--pink">
+                “Redesigned to be compatible to all <span>devices</span> and meet user’s
+                <span>intuitions</span>.
+              </p>
+            </div>
+            <img src="../assets/images/magnettu/new.png" alt="new screengrab" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 12 - NEXT -->
+    <section class="next">
+      <h2>What’s Next? (Besides testing, testing, and more testing)</h2>
+      <div class="next__div--container">
+        <div class="next__section">
+          <img src="../assets/images/magnettu/rewards.png" alt="rewards logo" />
+          <p>Design the Rewards and Rankings page for users and managers</p>
+        </div>
+        <div class="next__section next__section--meta">
+          <img src="../assets/images/magnettu/meta.png" alt="meta logo" />
+          <p>
+            Introduce the ability to share on more social media platforms (e.g
+            Instagram, Facebook)
+          </p>
+        </div>
+        <div class="next__section">
+          <img
+            src="../assets/images/magnettu/restrict.png"
+            alt="restrict logo"
+          />
+          <p>
+            Allow brand managers to restrict and censor content(e.g politics,
+            inappropriate words)
+          </p>
+        </div>
+        <div class="next__section">
+          <img src="../assets/images/magnettu/mobile.png" alt="mobile logo" />
+          <p>Craft and design a mobile and tablet version of Magnettü</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 12 - PROTOTYPE -->
+    <section class="prototype">
+      <h2>Prototype</h2>
+    </section>
+  </body>
 </html>
