@@ -1,0 +1,45 @@
+@import "../abstracts/colors";
+@import "../abstracts/variables";
+
+.specs {
+  width: 100%;
+  background-color: $clr-primary-light-blue;
+  .specs__container {
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 100%;
+  }
+}
+
+.background {
+  width: 100%;
+  background-color: $clr-primary-blue;
+  color: $clr-white;
+}
+
+.research {
+  width: 75%;
+  margin: 0 auto 5em auto;
+  .research__bottom {
+    .research__image {
+      width: 20vw;
+      float: right;
+      shape-outside: circle(50%);
+      shape-margin: 1em;
+    }
+  }
+}
+
+.insights {
+  width: 100%;
+  background-color: $clr-grey;
+
+  .insights__images {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 25%;
+    }
+  }
+}
