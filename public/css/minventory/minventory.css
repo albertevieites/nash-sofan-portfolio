@@ -158,6 +158,11 @@
 
 .prototyping {
   width: 100%;
+  background-color: hsl(0deg, 0%, 92%);
+}
+.prototyping h2 {
+  margin-top: 0;
+  padding-top: 2em;
 }
 .prototyping .lofi__content {
   display: flex;
@@ -178,6 +183,24 @@
 .prototyping .prototyping__container {
   width: 80%;
   margin: 0 auto;
+}
+
+.next-phase {
+  width: 100%;
+}
+.next-phase .hero__line {
+  height: 0.3em;
+  width: 3em;
+  border-radius: 8em;
+  background-image: linear-gradient(90deg, hsl(245deg, 96%, 34%), hsl(288deg, 80%, 48%));
+}
+.next-phase .next-phase__content {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+}
+.next-phase .next-phase__content img {
+  width: 50%;
 }
 
 html {
