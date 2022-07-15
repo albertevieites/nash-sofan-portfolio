@@ -199,7 +199,6 @@ iframe,
 embed,
 object {
   display: block;
-  max-width: 100%;
 }
 
 audio:not([controls]) {

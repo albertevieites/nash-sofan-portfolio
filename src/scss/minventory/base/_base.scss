@@ -1,6 +1,34 @@
 @import "../abstracts/colors";
 @import "../abstracts/variables";
 
+.hero {
+  display: flex;
+  justify-content: center;
+
+  .hero__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 30%;
+    .hero__line {
+      height: 0.3em;
+      width: 3em;
+      border-radius: 8em;
+      background-image: linear-gradient(
+        90deg,
+        hsla(245, 96%, 34%, 1),
+        hsla(288, 80%, 48%, 1)
+      );
+    }
+  }
+
+  img {
+    width: 50%;
+  }
+}
+
 .specs {
   width: 100%;
   background-color: $clr-primary-light-blue;
@@ -22,11 +50,9 @@
   width: 75%;
   margin: 0 auto 5em auto;
   .research__bottom {
+    display: flex;
     .research__image {
       width: 20vw;
-      float: right;
-      shape-outside: circle(50%);
-      shape-margin: 1em;
     }
   }
 }
@@ -41,5 +67,173 @@
     img {
       width: 25%;
     }
+  }
+}
+
+.synthesis {
+  width: 100%;
+
+  .synthesis__content {
+    width: 80%;
+    margin: 0 auto;
+
+    .synthesis__persona {
+      display: flex;
+    }
+
+    .synthesis__photo {
+      width: 30%;
+    }
+  }
+
+  .synthesis__persona {
+    h5 {
+      width: 20vw;
+      border-bottom: 0.1em solid $clr-grey;
+    }
+  }
+  
+
+  .brianna__container {
+    display: flex;
+    gap: 2em;
+
+    .brianna__container--left {
+      padding: 3em;
+
+      h5 {
+        width: 20vw;
+        border-bottom: 0.1em solid $clr-grey;
+      }
+      .brianna__icon--person {
+        p::before {
+          content: url("../../../assets/images/minventory/person_icon.png");
+        }
+      }
+      .brianna__icon--business {
+        p::before {
+          content: url("../../../assets/images/minventory/business_icon.png");
+        }
+      }
+      .brianna__icon--location {
+        p::before {
+          content: url("../../../assets/images/minventory/location_icon.png");
+        }
+      }
+      .brianna__icon--home {
+        p::before {
+          content: url("../../../assets/images/minventory/home_icon.png");
+        }
+      }
+    }
+
+    .brianna__container--right {
+      padding: 3em;
+    }
+
+    .synthesis__brand-icons {
+      display: flex;
+      gap: 1em;
+
+      img {
+        width: 4em;
+      }
+
+      .synthesis__brand-icons--zendesk {
+        width: 8em;
+        max-height: 1.5em;
+
+        margin-top: 2em;
+      }
+    }
+  }
+
+  .clara__container {
+    display: flex;
+    gap: 2em;
+
+    .clara__container--left {
+      padding: 3em;
+
+      .clara__icon--person {
+        p::before {
+          content: url("../../../assets/images/minventory/person_icon.png");
+        }
+      }
+
+      .clara__icon--business {
+        p::before {
+          content: url("../../../assets/images/minventory/business_icon.png");
+        }
+      }
+
+      .clara__icon--location {
+        p::before {
+          content: url("../../../assets/images/minventory/location_icon.png");
+        }
+      }
+
+      .clara__icon--home {
+        p::before {
+          content: url("../../../assets/images/minventory/home_icon.png");
+        }
+      }
+    }
+
+    .clara__container--right { 
+      padding: 3em;
+
+      .synthesis__brand-icons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+
+        img {
+          width: 6em;
+        }
+      }
+    }
+  }
+}
+
+.scenario {
+  width: 100%;
+
+  background-color: $clr-primary-blue;
+  color: $clr-white;
+
+  .scenario__text {
+    width: 80%;
+    margin: 0 auto;
+    padding: 5em;
+  }
+}
+
+.prototyping {
+  width: 100%;
+
+  .lofi__content {
+    display:flex;
+    gap: 1em;
+
+    img {
+      width: 96%;
+      margin: 0;
+    }
+  }
+
+    .midfi__content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+
+      img {
+        width: 48%;
+      }
+    }
+
+  .prototyping__container {
+    width: 80%;
+    margin: 0 auto;
   }
 }
