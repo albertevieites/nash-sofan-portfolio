@@ -4,88 +4,87 @@
 ### Structure
 ```
 .
-└── src
-    ├── assets
-    │   └── images
-    │       └── portfolio
-    │           ├── external-link.svg
-    │           ├── frio.png
-    │           ├── habitTracking.png
-    │           ├── linkedin.svg
-    │           ├── magnettu.png
-    │           ├── medium.svg
-    │           ├── minventory.png
-    │           └── nash-photo.jpg
-    ├── index.html
-    ├── scss
-    │   ├── about
-    │   │   ├── _config.scss
-    │   │   ├── _local.scss
-    │   │   ├── about.scss
-    │   │   └── local
-    │   │       ├── abstracts
-    │   │       └── base
-    │   │           └── _base.scss
-    │   ├── base-layer
-    │   │   ├── _local.scss
-    │   │   ├── base-layer.scss
-    │   │   └── local
-    │   │       └── abstracts
-    │   │           ├── _normalize.scss
-    │   │           ├── _resets.scss
-    │   │           └── _typography.scss
-    │   ├── contact
-    │   │   ├── _config.scss
-    │   │   ├── _local.scss
-    │   │   ├── contact.scss
-    │   │   └── local
-    │   │       └── base
-    │   │           └── _base.scss
-    │   ├── habitTracker
-    │   │   ├── _config.scss
-    │   │   ├── _local.scss
-    │   │   ├── config
-    │   │   │   ├── _breakpoints.scss
-    │   │   │   ├── _colors.scss
-    │   │   │   └── _common.scss
-    │   │   └── habitTracker.scss
-    │   ├── magnettu
-    │   │   ├── abstracts
-    │   │   │   ├── _colors.scss
-    │   │   │   └── _variables.scss
-    │   │   ├── base
-    │   │   │   ├── _base.scss
-    │   │   │   └── _font.scss
-    │   │   └── magnettu.scss
-    │   ├── minventory
-    │   │   ├── _config.scss
-    │   │   ├── _local.scss
-    │   │   ├── config
-    │   │   │   ├── _breakpoints.scss
-    │   │   │   ├── _colors.scss
-    │   │   │   └── _common.scss
-    │   │   └── minventory.scss
-    │   ├── portfolio
-    │   │   ├── _local.scss
-    │   │   ├── local
-    │   │   │   ├── abstracts
-    │   │   │   │   ├── _colors.scss
-    │   │   │   │   └── _variables.scss
-    │   │   │   ├── base
-    │   │   │   │   ├── _base.scss
-    │   │   │   │   └── _font.scss
-    │   │   │   └── components
-    │   │   │       ├── _footer.scss
-    │   │   │       └── _nav.scss
-    │   │   └── portfolio.scss
-    │   └── style.scss
-    └── views
-        ├── about.html
-        ├── contact.html
-        ├── frio.html
-        ├── magnettu.html
-        ├── minventory.html
-        └── tracking.html
+├── src
+    ├── assets
+    │   └── images
+    │       ├── magnettu
+    │       ├── minventory
+    │       └──portfolio
+    ├── scss
+    │   ├── about
+    │   │   ├── local
+    │   │   │   └── base
+    │   │   │       └── _base.scss
+    │   │   ├── about.scss
+    │   │   ├── _config.scss
+    │   │   └── _local.scss
+    │   ├── base-layer
+    │   │   ├── local
+    │   │   │   └── abstracts
+    │   │   │       ├── _normalize.scss
+    │   │   │       ├── _resets.scss
+    │   │   │       └── _typography.scss
+    │   │   ├── base-layer.scss
+    │   │   └── _local.scss
+    │   ├── contact
+    │   │   ├── local
+    │   │   │   └── base
+    │   │   │       └── _base.scss
+    │   │   ├── _config.scss
+    │   │   ├── contact.scss
+    │   │   └── _local.scss
+    │   ├── habitTracker
+    │   │   ├── config
+    │   │   │   ├── _breakpoints.scss
+    │   │   │   ├── _colors.scss
+    │   │   │   └── _common.scss
+    │   │   ├── _config.scss
+    │   │   ├── habitTracker.scss
+    │   │   └── _local.scss
+    │   ├── magnettu
+    │   │   ├── abstracts
+    │   │   │   ├── _colors.scss
+    │   │   │   └── _variables.scss
+    │   │   ├── base
+    │   │   │   ├── _base.scss
+    │   │   │   └── _font.scss
+    │   │   └── magnettu.scss
+    │   ├── minventory
+    │   │   ├── abstracts
+    │   │   │   ├── _colors.scss
+    │   │   │   └── _variables.scss
+    │   │   ├── base
+    │   │   │   ├── _base.scss
+    │   │   │   └── _font.scss
+    │   │   ├── config
+    │   │   │   ├── _breakpoints.scss
+    │   │   │   └── _common.scss
+    │   │   ├── _config.scss
+    │   │   ├── _local.scss
+    │   │   └── minventory.scss
+    │   ├── portfolio
+    │   │   ├── local
+    │   │   │   ├── abstracts
+    │   │   │   │   ├── _colors.scss
+    │   │   │   │   └── _variables.scss
+    │   │   │   ├── base
+    │   │   │   │   ├── _base.scss
+    │   │   │   │   └── _font.scss
+    │   │   │   └── components
+    │   │   │       ├── _footer.scss
+    │   │   │       └── _nav.scss
+    │   │   ├── _local.scss
+    │   │   └── portfolio.scss
+    │   └── style.scss
+    ├── views
+    │   ├── frio.html
+    │   ├── magnettu.html
+    │   ├── minventory.html
+    │   └── tracking.html
+    ├── about.html
+    ├── contact.html
+    └── index.html
+
 ```
 ## Technologies
 <p align="left"> 
