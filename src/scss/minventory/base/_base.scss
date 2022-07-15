@@ -12,6 +12,7 @@
     justify-content: center;
 
     width: 30%;
+
     .hero__line {
       height: 0.3em;
       width: 3em;
@@ -92,7 +93,6 @@
       border-bottom: 0.1em solid $clr-grey;
     }
   }
-  
 
   .brianna__container {
     display: flex;
@@ -180,7 +180,7 @@
       }
     }
 
-    .clara__container--right { 
+    .clara__container--right {
       padding: 3em;
 
       .synthesis__brand-icons {
@@ -212,8 +212,15 @@
 .prototyping {
   width: 100%;
 
+  background-color: $clr-grey;
+
+  h2 {
+    margin-top: 0;
+    padding-top: 2em;
+  }
+
   .lofi__content {
-    display:flex;
+    display: flex;
     gap: 1em;
 
     img {
@@ -222,18 +229,43 @@
     }
   }
 
-    .midfi__content {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1em;
+  .midfi__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
 
-      img {
-        width: 48%;
-      }
+    img {
+      width: 48%;
     }
+  }
 
   .prototyping__container {
     width: 80%;
     margin: 0 auto;
+  }
+}
+
+.next-phase {
+  width: 100%;
+
+  .hero__line {
+    height: 0.3em;
+    width: 3em;
+    border-radius: 8em;
+    background-image: linear-gradient(
+      90deg,
+      hsla(245, 96%, 34%, 1),
+      hsla(288, 80%, 48%, 1)
+    );
+  }
+
+  .next-phase__content {
+    display: flex;
+
+    width: 70%;
+    margin: 0 auto;
+    img {
+      width: 50%;
+    }
   }
 }
