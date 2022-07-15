@@ -185,6 +185,10 @@
   margin: 0 auto;
 }
 
+.usability {
+  width: 100%;
+}
+
 .next-phase {
   width: 100%;
 }
@@ -209,7 +213,6 @@ html {
 
 html {
   line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
 }
 
 main {

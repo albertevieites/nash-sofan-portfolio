@@ -5,6 +5,7 @@
 .header .header__container {
   display: flex;
   width: 75vw;
+  padding-top: 2em;
 }
 
 .header__div {
@@ -54,7 +55,7 @@
 }
 
 .form-container {
-  min-height: 70vh;
+  min-height: 87vh;
   width: 100%;
   display: flex;
   justify-content: center;
