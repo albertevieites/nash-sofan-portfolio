@@ -9,7 +9,7 @@
     │   └── images
     │       ├── magnettu
     │       ├── minventory
-    │       └──portfolio
+    │       └── portfolio
     ├── scss
     │   ├── about
     │   │   ├── local
