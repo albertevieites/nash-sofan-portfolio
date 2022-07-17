@@ -71,8 +71,8 @@
     <!-- SECTION 4 - BACKGROUND -->
     <section class="background">
       <h1>Background</h1>
-      <div class="background__text">
-        <div class="text--top">
+      <div class="background__content">
+        <div class="background__content--top">
           <h3>PROJECT OVERVIEW</h3>
           <p>
             During my UX/UI Bootcamp at IronHack, I was proposed with a project
@@ -83,7 +83,7 @@
             research.
           </p>
         </div>
-        <div class="text--bottom">
+        <div class="background__content--bottom">
           <h3>HYPOTHESIS</h3>
           <p>
             A smart tool that curates and
@@ -182,77 +182,265 @@
     <section class="synthesis">
       <h2 class="synthesis__title">Synthesis and Ideaditon</h2>
 
-      <div class="synthesis__div--affinity">
-        <h3>AFFINITY MAPPING</h3>
-        <p>
-          After conducting the interviews, I created an affinity maps to pull
-          together patterns and key information, then categorized them according
-          to what they had in common. Ultimately, I did multiple rounds until I
-          ended up with <span>six main</span> categories:
-        </p>
-          
-        <div class="affinity__list">
-          <ul>
-            <li>Family mindset</li>
-            <li>Emotional Caller</li>
-            <li>Mode of contact</li>
-            <li>Time constraint</li>
-            <li>Occasional Caller</li>
-            <li>Time constraints</li>
-          </ul>
+      <div class="synthesis__content">
+        <div class="synthesis__div--affinity">
+          <h3>AFFINITY MAPPING</h3>
+          <p>
+            After conducting the interviews, I created an affinity maps to pull
+            together patterns and key information, then categorized them
+            according to what they had in common. Ultimately, I did multiple
+            rounds until I ended up with <span>six main</span> categories:
+          </p>
+          <div class="affinity__list">
+            <ul>
+              <li>Family mindset</li>
+              <li>Emotional Caller</li>
+              <li>Mode of contact</li>
+              <li>Time constraint</li>
+              <li>Occasional Caller</li>
+              <li>Time constraints</li>
+            </ul>
+          </div>
+          <div class="affinity__images">
+            <div class="affinity__image-container affinity__images-round1">
+              <h3>ROUND 1</h3>
+              <img
+                src="../assets/images/habitTracker/round1.svg"
+                alt="round1 image"
+              />
+            </div>
+            <div class="affinity__image-container affinity__images-round2">
+              <h3>ROUND 2</h3>
+              <img
+                src="../assets/images/habitTracker/round2.svg"
+                alt="round2 image"
+              />
+            </div>
+          </div>
+          <div class="affinity__line"></div>
+          <p>
+            All interviewees wanted to speak more often to their families,
+            however are having difficulties <span>finding time</span>;
+            <span>forget</span> because they are distracted with their careers;
+            need encouragement and motivation; even keep <span>track</span> of
+            their calling frequency with ease and no thinking.
+          </p>
         </div>
+        <div class="synthesis__div--persona">
+          <h3>USER PERSONA</h3>
+          <p>
+            I came up with a user persona. It helps to better understand
+            behaviours, experiences, needs and goals of potential users that
+            would not have been obvious.
+          </p>
+          <img
+            src="../assets/images/habitTracker/alex.svg"
+            alt="alex picture"
+          />
+        </div>
+        <div class="synthesis__div--scenario">
+          <h3>SCENARIO</h3>
+          <p>The specific task flow is as follows:</p>
+          <p>
+            Alex launches the application and would like to add his Girlfriend,
+            Fiona, to his contact list so he can be reminded to speak to her on
+            a daily basis. He will add her and then wait for the app to suggest
+            to him when to call her.
+          </p>
+        </div>
+        <div class="synthesis__div--brainstorming">
+          <h3>BRAINSTORMING/ROUGH SKETCHES</h3>
+          <p>
+            After zeroing in the top interesting ideas, I did a
+            <span>Crazy 8’s</span> sketch just to get ideas on paper visually
+            and get a feel for what my project would be. And again for three
+            times until I reached this final sketch.
+          </p>
+          <img
+            src="../assets/images/habitTracker/brainstorming.jpg"
+            alt="brainstorming picture"
+          />
+        </div>
+      </div>
+    </section>
 
-        <div class="affinity__images">
-          <div class="affinity__image-container affinity__images-round1">
-            <h3>ROUND 1</h3>
+    <!-- SECTION 8 - PROTOTYPING -->
+    <section class="prototyping">
+      <h2>Prototyping</h2>
+      <div class="prototyping__content">
+        <div class="prototyping__content prototyping__content--lofi">
+          <h3>LO-FIDELITY PROTOTYPING</h3>
+          <p>
+            Keeping my insights in mind, I went into Figma to start prototype
+            the user flow of the habit tracking app.
+          </p>
+          <div class="prototyping__images">
             <img
-              src="../assets/images/habitTracker/round1.svg"
-              alt="round1 image"
+              src="../assets/images/habitTracker/welcome.svg"
+              alt="welcome screen"
+            />
+            <img
+              src="../assets/images/habitTracker/create.svg"
+              alt="create contact screen"
+            />
+            <img
+              src="../assets/images/habitTracker/badges.svg"
+              alt="badges screen"
+            />
+            <img
+              src="../assets/images/habitTracker/summary.svg"
+              alt="summary screen"
             />
           </div>
-          <div class="affinity__image-container affinity__images-round2">
-            <h3>ROUND 2</h3>
+        </div>
+
+        <div class="prototyping__content prototyping__content--midfi">
+          <h3>LOW/MID-FIDELITY PROTOTYPING</h3>
+          <p>
+            After refining the overall experience and the flow, I began to
+            modify the lo-fi prototype into low/mid fidelity.
+          </p>
+          <div class="prototyping__images">
             <img
-              src="../assets/images/habitTracker/round2.svg"
-              alt="round2 image"
+              src="../assets/images/habitTracker/welcomeAlex.svg"
+              alt="welcome screen"
+            />
+            <img
+              src="../assets/images/habitTracker/connections.svg"
+              alt="connections screen"
+            />
+            <img
+              src="../assets/images/habitTracker/addConnection.svg"
+              alt="add connections screen"
+            />
+            <img
+              src="../assets/images/habitTracker/badgesMidfi.svg"
+              alt="badges screen in midfi"
             />
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="affinity__line"></div>
+    <!-- SECTION 9 - TESTING -->
+    <section class="testing">
+      <h2>Testing and Iterating</h2>
+      <div class="testing__content">
+        <p>
+          For the usability testing phase, I conducted
+          <span>nine thorough tests</span> of the flow and the test results were
+          amazing. I completed multiple iterations for each of the flows, as
+          well as added a few pages to make the app complete. Although there
+          were plenty of minor changes, I would like to shed light to the
+          <span>main and drastic</span> changes of the design that were based
+          off of the usability tests.
+        </p>
 
-        <p>
-          All interviewees wanted to speak more often to their families, however
-          are having difficulties <span>finding time</span>;
-          <span>forget</span> because they are distracted with their careers;
-          need encouragement and motivation; even keep <span>track</span> of
-          their calling frequency with ease and no thinking.
-        </p>
+        <div class="testing__content--navigation">
+          <h3>NAVIGATION BAR -> FLOATING BUTTONS</h3>
+          <div class="navigation__images">
+            <div class="navigation__images--left">
+              <p>“It’s irrelevant”</p>
+              <p>“The home page is overwhelming”</p>
+              <img
+                src="../assets/images/habitTracker/bottomScreen.svg"
+                alt="bottom screen"
+              />
+            </div>
+            <div class="navigation__images--middle">
+              <img
+                src="../assets/images/habitTracker/arrow.svg"
+                alt="arrow icon"
+              />
+            </div>
+            <div class="navigation__images--right">
+              <img
+                src="../assets/images/habitTracker/topScreen.svg"
+                alt="top screen"
+              />
+              <p>“Minimalistic & Uncluttered”</p>
+              <p>“Ahhh much better”</p>
+            </div>
+          </div>
+          <p>
+            Users were confused to where the sections of the Navigation bar at
+            the bottom of the screen would take them. Some even said
+            <i
+              >“It’s a little overwhelming for an app that should be simple and
+              easy to use”</i
+            >. As a result, I decided to take a bold move and redesigned how
+            users navigate around the app by using floating buttons on the top
+            of the screen.
+          </p>
+        </div>
+        <div class="testing__content--connections">
+          <h3>NAVIGATION BAR -> FLOATING BUTTONS</h3>
+          <div class="connections__images">
+            <img
+              src="../assets/images/habitTracker/connections-testing.svg"
+              alt="connections screen"
+            />
+            <img
+              src="../assets/images/habitTracker/arrow-testing.svg"
+              alt="testing arrow icon"
+            />
+            <img
+              src="../assets/images/habitTracker/avatars-connections.svg"
+              alt="connection with avatar images"
+            />
+          </div>
+          <p>
+            Initially, the <span>‘Connections’</span> page was very confusing to
+            the users. The “<span>Add</span>” button was a little hidden.
+            Furthermore, users felt like this page does not resonate with the
+            feel and concept of the App. Hence, I redesigned the whole UI of it
+            and made it feel and look more pleasant and easy to use. Making the
+            ‘Add’ button very clear, as well as changed each contact card to be
+            easily read and visualized.
+          </p>
+        </div>
+
+        <div class="testing__content--cecklist">
+          <h3>NAVIGATION BAR -> FLOATING BUTTONS</h3>
+          <div class="checklist__images">
+            <div class="checklist__images--left">
+              <div class="checklist__text">
+                <p>“Are these <span>buttons</span>? Can I <span>click</span> on them?”</p>
+              </div>
+              <img
+                src="../assets/images/habitTracker/reminder.svg"
+                alt="reminders images"
+              />
+            </div>
+            <div class="checklist__images--right">
+              <img
+                src="../assets/images/habitTracker/notification.svg"
+                alt="notification images"
+              />
+            </div>
+          </div>
+          <p>Initially, the reminders were only a <span>checklist</span>. Clicking on the radio button would mean that the task was complete. However through user testability, 9 users kept on clicking on the card, assuming it was a button. I then redesigned the reminders to be <span>‘click-able’</span> and giving the user the ability to choose between ‘Done’ or ‘Remind me later’.</p>
+        </div>
       </div>
-      <div class="synthesis__div--persona">
-        <h3>USER PERSONA</h3>
-        <p>
-          I came up with a user persona. It helps to better understand
-          behaviours, experiences, needs and goals of potential users that would
-          not have been obvious.
-        </p>
-        <img src="../assets/images/habitTracker/alex.svg" alt="alex picture" />
+    </section>
+
+    <!-- SECTION 9 - FINAL PRODUCT -->
+    <section class="final">
+      <h2>Final Product Prototype</h2>
+      <div class="final__images">
+        <img src="../assets/images/habitTracker/final.svg" alt="final product prototype image">
       </div>
-      <div class="synthesis__div--scenario">
-        <h3>SCENARIO</h3>
-        <p>The specific task flow is as follows:</p>
-        <p>
-          Alex launches the application and would like to add his Girlfriend,
-          Fiona, to his contact list so he can be reminded to speak to her on a
-          daily basis. He will add her and then wait for the app to suggest to
-          him when to call her.
-        </p>
-      </div>
-      <div class="synthesis__div--brainstorming">
-        <h3>BRAINSTORMING/ROUGH SKETCHES</h3>
-        <p>After zeroing in the top interesting ideas, I did a <span>Crazy 8’s</span> sketch just to get ideas on paper visually and get a feel for what my project would be. And again for three times until I reached this final sketch.</p>
-        <img src="../assets/images/habitTracker/brainstorming.jpg" alt="brainstorming picture">
-      </div>
+    </section>
+
+    <!-- SECTION 10 - NEXT STEPS -->
+    <section class="next">
+      <h2>Next Steps</h2>
+      <ul>
+        <li>Due to time constraints and scope of the project brief, I only made a low hi-fi of the habit tracking app, therefore a main next step is to design and test the next launch as a full -hi-fi product.</li>
+        <li>Research and design the Profile page of the prototype.</li>
+        <li>Allow users to link social media accounts to make it easy to share their badges with their friends and network.</l>
+        <li>Integrate the gamification aspect into the app to allow users to compete and engage with one another in the habit tracking app itself.</li>
+    </ul>
     </section>
   </body>
 </html>
