@@ -14,14 +14,14 @@
     font-weight: $f-w-500;
 
     margin: 0;
-    }
+  }
 
   p {
     font-size: $f-s-400;
     font-weight: $f-w-200;
 
     margin: 0.6em 0;
-    }
+  }
 
   .hero__container {
     display: flex;
@@ -50,164 +50,261 @@
 
 .specs {
   width: 100%;
+  padding: 5em;
+
   background-color: $clr-primary-light-blue;
+
+  h4 {
+    font-weight: $f-w-500;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: $f-s-380;
+    font-weight: $f-w-200;
+
+    margin-top: 0;
+  }
+
+  ul {
+    margin-top: 0;
+    padding: 0;
+    list-style-type: none;
+    li {
+      font-size: $f-s-380;
+      font-weight: $f-w-200;
+    }
+  }
+
   .specs__container {
     display: flex;
     justify-content: space-evenly;
+  }
+}
 
-    width: 100%;
+.overview {
+  width: 80%;
+  margin: 0 auto;
+  padding: 5em;
+
+  p {
+    font-weight: $f-w-200;
   }
 }
 
 .background {
   width: 100%;
+  padding: 5em;
   background-color: $clr-primary-blue;
   color: $clr-white;
+
+  h4 {
+    font-weight: $f-w-500;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: $f-s-380;
+    font-weight: $f-w-200;
+  }
+
+  span {
+    font-weight: $f-w-600;
+  }
+
+  .background__content {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .text--top {
+    margin-bottom: 3em;
+  }
 }
 
 .research {
-  width: 75%;
-  margin: 0 auto 5em auto;
+  width: 100%;
+  margin: 0 auto;
+  padding: 5em;
+
+  h4 {
+    font-weight: $f-w-500;
+    margin-bottom: 1em;
+  }
+
+  p {
+    width: 90%;
+    margin: 0 auto;
+
+    font-size: $f-s-380;
+    font-weight: $f-w-200;
+  }
+
+  span {
+    font-weight: $f-w-600;
+  }
+
+  .research__content {
+    width: 80%;
+    margin: 0 auto;
+  }
+
   .research__bottom {
     display: flex;
+    align-items: center;
+
+    p {
+      width: 80%;
+    }
     .research__image {
-      width: 20vw;
+      width: 30vw;
     }
   }
 }
 
 .insights {
   width: 100%;
+  margin: 0 auto;
+  padding: 5em;
   background-color: $clr-grey;
 
+  h4 {
+    font-weight: $f-w-500;
+  }
+
+  p {
+    font-size: $f-s-380;
+    font-weight: $f-w-200;
+  }
+
+  .insights__container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .insights__content {
+    width: 80%;
+    margin: 0 auto;
+  }
+
   .insights__images {
-    display: flex;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(2, 1fr);
+
     justify-content: center;
+    justify-items: center;
     img {
-      width: 25%;
+      width: 20vw;
     }
   }
 }
 
 .synthesis {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
+  padding: 5em;
 
-  .synthesis__content {
-    width: 80%;
-    margin: 0 auto;
+  h4 {
+    margin-bottom: 0;
 
-    .synthesis__persona {
-      display: flex;
-    }
-
-    .synthesis__photo {
-      width: 30%;
-    }
+    font-weight: $f-w-500;
   }
 
+  p {
+    line-height: 1.7em;
+
+    font-size: $f-s-380;
+    font-weight: $f-w-200;
+  }
+
+  .synthesis__text {
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.synthesis__content {
+  width: 80%;
+  margin: 0 auto;
+
   .synthesis__persona {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    padding: 1em 0;
+
     h5 {
       width: 20vw;
       border-bottom: 0.1em solid $clr-grey;
     }
-  }
 
-  .brianna__container {
-    display: flex;
-    gap: 2em;
-
-    .brianna__container--left {
-      padding: 3em;
-
-      h5 {
-        width: 20vw;
-        border-bottom: 0.1em solid $clr-grey;
-      }
-      .brianna__icon--person {
-        p::before {
-          content: url("../../../assets/images/minventory/person_icon.png");
-        }
-      }
-      .brianna__icon--business {
-        p::before {
-          content: url("../../../assets/images/minventory/business_icon.png");
-        }
-      }
-      .brianna__icon--location {
-        p::before {
-          content: url("../../../assets/images/minventory/location_icon.png");
-        }
-      }
-      .brianna__icon--home {
-        p::before {
-          content: url("../../../assets/images/minventory/home_icon.png");
-        }
-      }
+    img {
+      width: 22vw;
     }
 
-    .brianna__container--right {
-      padding: 3em;
-    }
-
-    .synthesis__brand-icons {
-      display: flex;
-      gap: 1em;
-
-      img {
-        width: 4em;
-      }
-
-      .synthesis__brand-icons--zendesk {
-        width: 8em;
-        max-height: 1.5em;
-
-        margin-top: 2em;
-      }
-    }
-  }
-
-  .clara__container {
-    display: flex;
-    gap: 2em;
-
-    .clara__container--left {
-      padding: 3em;
-
-      .clara__icon--person {
-        p::before {
-          content: url("../../../assets/images/minventory/person_icon.png");
-        }
-      }
-
-      .clara__icon--business {
-        p::before {
-          content: url("../../../assets/images/minventory/business_icon.png");
-        }
-      }
-
-      .clara__icon--location {
-        p::before {
-          content: url("../../../assets/images/minventory/location_icon.png");
-        }
-      }
-
-      .clara__icon--home {
-        p::before {
-          content: url("../../../assets/images/minventory/home_icon.png");
-        }
-      }
-    }
-
-    .clara__container--right {
-      padding: 3em;
-
-      .synthesis__brand-icons {
+    .persona__content {
+      .persona__content--top {
         display: flex;
-        flex-wrap: wrap;
+        gap: 1em;
+        .persona__container--about {
+          .persona__icon--person {
+            p {
+              &:before {
+                content: url("../../../assets/images/minventory/person_icon.png");
+
+                padding-right: 1em;
+              }
+            }
+          }
+          .persona__icon--business {
+            p {
+              &:before {
+                content: url("../../../assets/images/minventory/business_icon.png");
+
+                padding-right: 1em;
+              }
+            }
+          }
+          .persona__icon--location {
+            p {
+              &:before {
+                content: url("../../../assets/images/minventory/location_icon.png");
+
+                padding-right: 1em;
+              }
+            }
+          }
+          .persona__icon--home {
+            p {
+              &:before {
+                content: url("../../../assets/images/minventory/home_icon.png");
+
+                padding-right: 1em;
+              }
+            }
+          }
+        }
+      }
+
+      .persona__content--bottom {
+        display: flex;
         gap: 1em;
 
-        img {
-          width: 6em;
+        .persona__container--icons {
+          display: flex;
+          flex-direction: column;
+
+          .icons__images {
+            display: flex;
+            align-items: center;
+            gap: 1em;
+          }
+          img {
+            width: 5vw;
+          }
         }
       }
     }
@@ -265,7 +362,6 @@
 
 .usability {
   width: 100%;
-    
 }
 
 .next-phase {

@@ -35,127 +35,201 @@
 
 .specs {
   width: 100%;
+  padding: 5em;
   background-color: hsl(216deg, 64%, 92%);
+}
+.specs h4 {
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.specs p {
+  font-size: 0.9rem;
+  font-weight: 200;
+  margin-top: 0;
+}
+.specs ul {
+  margin-top: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.specs ul li {
+  font-size: 0.9rem;
+  font-weight: 200;
 }
 .specs .specs__container {
   display: flex;
   justify-content: space-evenly;
-  width: 100%;
+}
+
+.overview {
+  width: 80%;
+  margin: 0 auto;
+  padding: 5em;
+}
+.overview p {
+  font-weight: 200;
 }
 
 .background {
   width: 100%;
+  padding: 5em;
   background-color: hsl(247deg, 87%, 38%);
   color: hsl(0deg, 0%, 100%);
 }
+.background h4 {
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.background p {
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+.background span {
+  font-weight: 600;
+}
+.background .background__content {
+  width: 80%;
+  margin: 0 auto;
+}
+.background .text--top {
+  margin-bottom: 3em;
+}
 
 .research {
-  width: 75%;
-  margin: 0 auto 5em auto;
+  width: 100%;
+  margin: 0 auto;
+  padding: 5em;
+}
+.research h4 {
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+.research p {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+.research span {
+  font-weight: 600;
+}
+.research .research__content {
+  width: 80%;
+  margin: 0 auto;
 }
 .research .research__bottom {
   display: flex;
+  align-items: center;
+}
+.research .research__bottom p {
+  width: 80%;
 }
 .research .research__bottom .research__image {
-  width: 20vw;
+  width: 30vw;
 }
 
 .insights {
   width: 100%;
+  margin: 0 auto;
+  padding: 5em;
   background-color: hsl(0deg, 0%, 92%);
 }
-.insights .insights__images {
-  display: flex;
-  justify-content: center;
+.insights h4 {
+  font-weight: 500;
 }
-.insights .insights__images img {
-  width: 25%;
+.insights p {
+  font-size: 0.9rem;
+  font-weight: 200;
 }
-
-.synthesis {
-  width: 100%;
+.insights .insights__container {
+  width: 90%;
+  margin: 0 auto;
 }
-.synthesis .synthesis__content {
+.insights .insights__content {
   width: 80%;
   margin: 0 auto;
 }
-.synthesis .synthesis__content .synthesis__persona {
+.insights .insights__images {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  justify-items: center;
+}
+.insights .insights__images img {
+  width: 20vw;
+}
+
+.synthesis {
+  width: 90%;
+  margin: 0 auto;
+  padding: 5em;
+}
+.synthesis h4 {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.synthesis p {
+  line-height: 1.7em;
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+.synthesis .synthesis__text p {
+  margin: 0;
+}
+
+.synthesis__content {
+  width: 80%;
+  margin: 0 auto;
+}
+.synthesis__content .synthesis__persona {
   display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1em 0;
 }
-.synthesis .synthesis__content .synthesis__photo {
-  width: 30%;
-}
-.synthesis .synthesis__persona h5 {
+.synthesis__content .synthesis__persona h5 {
   width: 20vw;
   border-bottom: 0.1em solid hsl(0deg, 0%, 92%);
 }
-.synthesis .brianna__container {
-  display: flex;
-  gap: 2em;
+.synthesis__content .synthesis__persona img {
+  width: 22vw;
 }
-.synthesis .brianna__container .brianna__container--left {
-  padding: 3em;
-}
-.synthesis .brianna__container .brianna__container--left h5 {
-  width: 20vw;
-  border-bottom: 0.1em solid hsl(0deg, 0%, 92%);
-}
-.synthesis .brianna__container .brianna__container--left .brianna__icon--person p::before {
-  content: url("../../../assets/images/minventory/person_icon.png");
-}
-.synthesis .brianna__container .brianna__container--left .brianna__icon--business p::before {
-  content: url("../../../assets/images/minventory/business_icon.png");
-}
-.synthesis .brianna__container .brianna__container--left .brianna__icon--location p::before {
-  content: url("../../../assets/images/minventory/location_icon.png");
-}
-.synthesis .brianna__container .brianna__container--left .brianna__icon--home p::before {
-  content: url("../../../assets/images/minventory/home_icon.png");
-}
-.synthesis .brianna__container .brianna__container--right {
-  padding: 3em;
-}
-.synthesis .brianna__container .synthesis__brand-icons {
+.synthesis__content .synthesis__persona .persona__content .persona__content--top {
   display: flex;
   gap: 1em;
 }
-.synthesis .brianna__container .synthesis__brand-icons img {
-  width: 4em;
-}
-.synthesis .brianna__container .synthesis__brand-icons .synthesis__brand-icons--zendesk {
-  width: 8em;
-  max-height: 1.5em;
-  margin-top: 2em;
-}
-.synthesis .clara__container {
-  display: flex;
-  gap: 2em;
-}
-.synthesis .clara__container .clara__container--left {
-  padding: 3em;
-}
-.synthesis .clara__container .clara__container--left .clara__icon--person p::before {
+.synthesis__content .synthesis__persona .persona__content .persona__content--top .persona__container--about .persona__icon--person p:before {
   content: url("../../../assets/images/minventory/person_icon.png");
+  padding-right: 1em;
 }
-.synthesis .clara__container .clara__container--left .clara__icon--business p::before {
+.synthesis__content .synthesis__persona .persona__content .persona__content--top .persona__container--about .persona__icon--business p:before {
   content: url("../../../assets/images/minventory/business_icon.png");
+  padding-right: 1em;
 }
-.synthesis .clara__container .clara__container--left .clara__icon--location p::before {
+.synthesis__content .synthesis__persona .persona__content .persona__content--top .persona__container--about .persona__icon--location p:before {
   content: url("../../../assets/images/minventory/location_icon.png");
+  padding-right: 1em;
 }
-.synthesis .clara__container .clara__container--left .clara__icon--home p::before {
+.synthesis__content .synthesis__persona .persona__content .persona__content--top .persona__container--about .persona__icon--home p:before {
   content: url("../../../assets/images/minventory/home_icon.png");
+  padding-right: 1em;
 }
-.synthesis .clara__container .clara__container--right {
-  padding: 3em;
-}
-.synthesis .clara__container .clara__container--right .synthesis__brand-icons {
+.synthesis__content .synthesis__persona .persona__content .persona__content--bottom {
   display: flex;
-  flex-wrap: wrap;
   gap: 1em;
 }
-.synthesis .clara__container .clara__container--right .synthesis__brand-icons img {
-  width: 6em;
+.synthesis__content .synthesis__persona .persona__content .persona__content--bottom .persona__container--icons {
+  display: flex;
+  flex-direction: column;
+}
+.synthesis__content .synthesis__persona .persona__content .persona__content--bottom .persona__container--icons .icons__images {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.synthesis__content .synthesis__persona .persona__content .persona__content--bottom .persona__container--icons img {
+  width: 5vw;
 }
 
 .scenario {
