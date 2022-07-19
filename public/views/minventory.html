@@ -208,15 +208,39 @@
               <div class="persona__container--about">
                 <h5>ABOUT</h5>
                 <div class="persona__icon--person">
+                  <div class="synthesis__icons">
+                    <img
+                      src="../assets/images/minventory/person_icon.png"
+                      alt="person icon"
+                    />
+                  </div>
                   <p>Age 35</p>
                 </div>
                 <div class="persona__icon--business">
+                  <div class="synthesis__icons">
+                    <img
+                      src="../assets/images/minventory/business_icon.png"
+                      alt="business icon"
+                    />
+                  </div>
                   <p>Cosmetician</p>
                 </div>
                 <div class="persona__icon--location">
+                  <div class="synthesis__icons">
+                    <img
+                      src="../assets/images/minventory/location_icon.png"
+                      alt="location icon"
+                    />
+                  </div>
                   <p>London, UK</p>
                 </div>
                 <div class="persona__icon--home">
+                  <div class="synthesis__icons">
+                    <img
+                      src="../assets/images/minventory/home_icon.png"
+                      alt="home icon"
+                    />
+                  </div>
                   <p>Single</p>
                 </div>
               </div>
@@ -290,16 +314,40 @@
               <div class="persona__container--about">
                 <h5>ABOUT</h5>
                 <div class="persona__icon--person">
-                  <p>Age 46</p>
+                  <div class="synthesis__icons">
+                    <img
+                      src="../assets/images/minventory/person_icon.png"
+                      alt="person icon"
+                    />
+                  </div>
+                  <p>Age 35</p>
                 </div>
                 <div class="persona__icon--business">
-                  <p>Dentist</p>
+                  <div class="synthesis__icons">
+                    <img
+                      src="../assets/images/minventory/business_icon.png"
+                      alt="business icon"
+                    />
+                  </div>
+                  <p>Cosmetician</p>
                 </div>
                 <div class="persona__icon--location">
-                  <p>Barcelona, Spain</p>
+                  <div class="synthesis__icons">
+                    <img
+                      src="../assets/images/minventory/location_icon.png"
+                      alt="location icon"
+                    />
+                  </div>
+                  <p>London, UK</p>
                 </div>
                 <div class="persona__icon--home">
-                  <p>Married with 2 children</p>
+                  <div class="synthesis__icons">
+                    <img
+                      src="../assets/images/minventory/home_icon.png"
+                      alt="home icon"
+                    />
+                  </div>
+                  <p>Single</p>
                 </div>
               </div>
               <div class="persona__container--bio">
@@ -362,8 +410,8 @@
 
     <!-- SECTION 9 - SCENARIO -->
     <section class="scenario">
-      <div class="scenario__text">
-        <h2>Scenario</h2>
+      <h2>Scenario</h2>
+      <div class="scenario__content">
         <p>
           Brianna purchased materials for a new service she is implementing in
           her beauty center and will manually input the details to the tacking
@@ -422,26 +470,87 @@
     <!-- SECTION 11 - USABILITY -->
     <section class="usability">
       <h2>Usability Tests and Iterations</h2>
-      <div class="usability__container">
-        <div class="usability__content usability__content--service">
-          <h3>Adding New Service</h3>
-          <div class="usability__content--top">
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <p>
-              “I am concerned about why this needs to be two seperate screens.”
-            </p>
-            <p>
-              Initially I had two different screens for adding a new item to the
-              menu of services. However users were annoyed of the amount of
-              steps taken to complete a simple task.
-            </p>
+      <div class="usability__content">
+        <h3>Adding New Service</h3>
+        <div class="usability__content--service">
+          <div class="usability__service--top">
+            <div class="usability__--service-top-left">
+              <img
+                src="../assets/images/minventory/new-service.svg"
+                alt="new service capture"
+              />
+              <div class="usability__quote">
+                <quote>
+                  “I am concerned about why this needs to be
+                  <span>two seperate screens</span>.”
+                </quote>
+              </div>
+            </div>
+            <div class="usability__service--top-right">
+              <p>
+                Initially I had two different screens for adding a new item to
+                the menu of services. However users were annoyed of the amount
+                of steps taken to complete a simple task.
+              </p>
+            </div>
           </div>
-          <div class="usability__content--bottom">
-            <p>
-              So I redesigned it all to fit into a screen. One simple screen
-              with components and variants.
-            </p>
+
+          <div class="usability__service--bottom">
+            <div class="usability__--service-bottom-left">
+              <div class="service-bottom-left__paragraph">
+                <p>
+                  So I redesigned it all to fit into a screen. <span>One simple screen</span> with components and variants.
+                </p>
+              </div>
+              <div class="usability__quote"></div>
+            </div>
+            <div class="usability__service--bottom-right">
+              <img
+                src="../assets/images/minventory/new-service-redesigned.svg"
+                alt="new service redesigned capture"
+              />
+            </div>
+          </div>
+        </div>
+
+        <h3>Inventory List</h3>
+        <div class="usability__content--inventory">
+          <p>Initially the inventory page looked like this, however users wanted to be able to search.</p>
+          <div class="usability__inventory--top">
+            <div class="usability__--inventory-top-left">
+              <img
+                src="../assets/images/minventory/inventory-stock.svg"
+                alt="new service capture"
+              />
+            </div>
+            <div class="usability__service--top-right">
+              <div class="usability__quote">
+                <quote>
+                  “Why am I still seeing this
+                  <span>banner</span> on the top?”
+                </quote>
+                <quote>
+                  “We have a lot of materials, I want to be able to <span>search</span> and or <span>filter</span> by category.”
+                </quote>
+              </div>
+            </div>
+          </div>
+          <div class="usability__inventory--line"></div>
+          <div class="usability__inventory--bottom">
+            <img src="../assets/images/minventory/categories.svg" alt="categories capture">
+            <div class="usability__inventory--bottom-right">
+              <p>Filter and Sort by different preferences.</p>
+              <quote><span>Easy</span>, <span>familiar</span>, and <span>intuitive</span> way to sort things based on necessity.</quote>
+            </div>
+          </div>
+          <p>Added the features that allows users to filter and search based on supplier, category, and name. Also, sort materials based on expiry dates and status.</p>
+        </div>
+
+        <h3>Adding Inventory</h3>
+        <div class="wrap__inventory">
+          <div class="usability__content--add-inventory">
+            <p>During usability testing, users were super confused to how and why there are two measurements. I simply changed the organization of the inputs and changed some of the wording. </p>
+            <img src="../assets/images/minventory/adding-inventory.svg" alt="adding inventory capture">
           </div>
         </div>
       </div>

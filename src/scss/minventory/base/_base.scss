@@ -223,87 +223,87 @@
       margin: 0;
     }
   }
-}
 
-.synthesis__content {
-  width: 80%;
-  margin: 0 auto;
+  .synthesis__content {
+    width: 80%;
+    margin: 0 auto;
 
-  .synthesis__persona {
-    display: flex;
-    align-items: center;
+    .synthesis__persona {
+      display: flex;
+      align-items: center;
 
-    width: 100%;
-    padding: 1em 0;
+      width: 100%;
+      padding: 1em 0;
 
-    h5 {
-      width: 20vw;
-      border-bottom: 0.1em solid $clr-grey;
-    }
+      h5 {
+        width: 20vw;
+        border-bottom: 0.1em solid $clr-grey;
+      }
 
-    img {
-      width: 22vw;
-    }
+      img {
+        width: 22vw;
+      }
 
-    .persona__content {
-      .persona__content--top {
-        display: flex;
-        gap: 1em;
-        .persona__container--about {
-          .persona__icon--person {
-            p {
-              &:before {
-                content: url("../../../assets/images/minventory/person_icon.png");
+      .persona__content {
+        .persona__content--top {
+          display: flex;
+          gap: 1em;
+          .persona__container--about {
+            .persona__icon--person {
+              display: flex;
+              align-items: center;
+              gap: 1em;
 
-                padding-right: 1em;
+              img {
+                width: 1em;
               }
             }
-          }
-          .persona__icon--business {
-            p {
-              &:before {
-                content: url("../../../assets/images/minventory/business_icon.png");
+            .persona__icon--business {
+              display: flex;
+              align-items: center;
+              gap: 1em;
 
-                padding-right: 1em;
+              img {
+                width: 1em;
               }
             }
-          }
-          .persona__icon--location {
-            p {
-              &:before {
-                content: url("../../../assets/images/minventory/location_icon.png");
+            .persona__icon--location {
+              display: flex;
+              align-items: center;
+              gap: 1em;
 
-                padding-right: 1em;
+              img {
+                width: 1em;
               }
             }
-          }
-          .persona__icon--home {
-            p {
-              &:before {
-                content: url("../../../assets/images/minventory/home_icon.png");
+            .persona__icon--home {
+              display: flex;
+              align-items: center;
+              gap: 1em;
 
-                padding-right: 1em;
+              img {
+                width: 1em;
               }
             }
           }
         }
-      }
 
-      .persona__content--bottom {
-        display: flex;
-        gap: 1em;
-
-        .persona__container--icons {
+        .persona__content--bottom {
           display: flex;
-          flex-direction: column;
+          gap: 1em;
 
-          .icons__images {
+          .persona__container--icons {
             display: flex;
-            align-items: center;
-            gap: 1em;
-          }
-          img {
-            width: 5vw;
+            flex-direction: column;
+
+            .icons__images {
+              display: flex;
+              align-items: center;
+              gap: 1em;
+            }
+            img {
+              width: 5vw;
+            }
           }
         }
       }
@@ -313,7 +313,7 @@
 
 .scenario {
   width: 100%;
-
+  padding: 5em;
   background-color: $clr-primary-blue;
   color: $clr-white;
 
@@ -322,16 +322,36 @@
     margin: 0 auto;
     padding: 5em;
   }
+
+  p {
+    font-size: $f-s-380;
+    font-weight: $f-w-200;
+  }
+
+  .scenario__content {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .prototyping {
   width: 100%;
+  padding: 2em 5em 5em 5em;
 
   background-color: $clr-grey;
 
   h2 {
     margin-top: 0;
     padding-top: 2em;
+  }
+
+  h3 {
+    font-size: $f-s-400;
+    font-weight: $f-w-400;
+  }
+
+  p {
+    font-weight: $f-w-200;
   }
 
   .lofi__content {
@@ -362,14 +382,148 @@
 
 .usability {
   width: 100%;
+  padding: 4em;
+
+  h3 {
+    padding-top: 1em;
+
+    font-size: $f-s-500;
+    font-weight: $f-w-300;
+  }
+
+  span {
+    font-weight: $f-w-500;
+  }
+
+  .usability__content {
+    width: 80%;
+    margin: 0 auto;
+
+    p {
+      font-size: $f-s-440;
+      font-weight: $f-w-100;
+    }
+
+    .usability__service--top {
+      display: flex;
+      gap: 1em;
+
+      margin: 0 5% 2em 5%;
+
+      img {
+        width: 35vw;
+      }
+
+      .usability__quote {
+        width: 30vw;
+        margin-left: 8%;
+        color: $clr-secundary-purple;
+
+        font-weight: $f-w-200;
+        font-style: italic;
+      }
+    }
+
+    .usability__service--bottom {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1em;
+
+      margin: 0 auto;
+
+      img {
+        width: 35vw;
+      }
+
+      .service-bottom-left__paragraph {
+        width: 20vw;
+      }
+    }
+
+    .usability__content--inventory {
+      width: 90%;
+      margin: 0 auto;
+
+      img {
+        width: 35vw;
+      }
+
+      quote {
+        display: block;
+
+        margin-bottom: 2em;
+        color: $clr-secundary-purple;
+
+        font-weight: $f-w-200;
+        font-style: italic;
+      }
+
+      .usability__inventory--top {
+        display: flex;
+        gap: 1em;
+        align-items: center;
+      }
+
+      .usability__inventory--line {
+        padding: 1em 0;
+        border-bottom: 0.1em solid $clr-grey;
+      }
+
+      .usability__inventory--bottom {
+        display: flex;
+        gap: 1em;
+
+        width: 60vw;
+        padding-top: 2em;
+        p {
+          font-size: $f-s-400;
+          font-weight: $f-w-400;
+        }
+      }
+    }
+
+    .usability__content--add-inventory {
+      display: flex;
+      gap: 2em;
+
+      width: 90%;
+
+      img {
+        width: 35vw;
+      }
+    }
+
+    .wrap__inventory {
+      display: flex;
+      justify-content: center;
+    }
+  }
 }
 
 .next-phase {
   width: 100%;
+  padding: 5em;
+
+  h2 {
+    margin-bottom: 0.2em;
+  }
+
+  h3 {
+    font-size: $f-s-440;
+    font-weight: $f-w-500;
+  }
+
+  p {
+    font-size: $f-s-380;
+    font-weight: $f-w-200;
+  }
 
   .hero__line {
     height: 0.3em;
     width: 3em;
+    margin-bottom: 2em;
+
     border-radius: 8em;
     background-image: linear-gradient(
       90deg,
@@ -384,7 +538,12 @@
     width: 70%;
     margin: 0 auto;
     img {
-      width: 50%;
+      width: 60%;
     }
   }
+}
+
+.final-product {
+  width: 85%;
+  margin: 0 auto;
 }
