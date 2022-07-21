@@ -1,19 +1,25 @@
 @import "../abstracts/colors";
 @import "../abstracts/variables";
+@import "../abstracts/breakpoints";
 
 .hero {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 
-  padding: 3em 0;
+  padding: 3em 5em;
 
-  .hero__div {
+  &__card {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
 
-    width: 35%;
+    @include base {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 
+  &__content {
     letter-spacing: 0.04em;
 
     h1 {
@@ -21,11 +27,23 @@
       color: $clr-primary-light;
 
       margin: 0;
+
+      @include base {
+        font-size: $f-s-700;
+        text-align: center;
+      }
     }
 
     p {
       font-size: $f-s-600;
       margin: 0.2em;
+
+      @include base {
+        padding-bottom: 1em;
+
+        font-size: $f-s-500;
+        text-align: center;
+      }
     }
 
     span {
@@ -33,11 +51,16 @@
     }
   }
 
-  img {
-    width: 40%;
-  }
+  &__image {
+    max-width: 40vw;
 
-  width: 100%;
+    @include base {
+      max-width: 65vw;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
 }
 
 .overview {
@@ -46,26 +69,21 @@
 
   width: 100%;
 
-  padding: 2rem;
-
   background-color: $clr-background-grey-light;
-
-  .overview__div {
+  &__div {
     display: flex;
-    gap: 2em;
+    justify-content: space-evenly;
 
-    width: 80%;
-
-    padding: 0 2em;
+    padding: 1em 0;
 
     h3 {
-      font-size: $f-s-380;
+      font-size: $f-s-400;
 
       margin: 0.2em 0;
     }
 
     p {
-      font-size: $f-s-340;
+      font-size: $f-s-400;
 
       margin: 0;
 
@@ -73,63 +91,96 @@
       letter-spacing: 0.04em;
     }
 
-    .overview__div--left {
+    &--left {
       display: flex;
       flex-direction: column;
 
       width: 40vw;
+
+      @include base {
+        width: 85%;
+        margin: 1em auto;
+      }
     }
 
-    .overview__div--right {
+    &--right {
       display: flex;
+      justify-content: space-evenly;
       gap: 1em;
 
       width: 40vw;
+
+      @include base {
+        width: 85%;
+        margin: 0 auto;
+      }
     }
 
-    .overview__div--rightone {
+    &--rightone {
       display: flex;
       flex-direction: column;
       gap: 1em;
 
       width: 15vw;
+      @include base {
+        width: 100%;
+      }
     }
 
-    .overview__div--righttwo {
+    &--righttwo {
       display: flex;
       flex-direction: column;
       gap: 1em;
 
       width: 15vw;
 
-      .overview__div--righttwo--team {
+      @include base {
+        width: 100%;
+      }
+
+      &--team {
         ul {
+          margin-top: 0;
           padding-left: 0;
         }
 
         li {
-          font-size: $f-s-340;
+          font-size: $f-s-400;
 
           list-style: none;
         }
       }
     }
+    @include base {
+      display: flex;
+      flex-direction: column;
+
+      width: 100%;
+    }
   }
 }
 
 .first {
-  margin: 3em auto;
+  margin: 2em auto;
   width: 90%;
 
   h2 {
-    font-size: $f-s-400;
-
+    margin-bottom: 0;
+    margin-left: 5em;
     color: $clr-primary-light;
 
-    margin-left: 5em;
+    font-size: $f-s-600;
+
+    @include base {
+      margin-left: 0.5em;
+    }
   }
 
-  .first__div {
+  p {
+    letter-spacing: 0.05em;
+  }
+
+  &__div {
     display: flex;
     flex-direction: column;
 
@@ -137,14 +188,18 @@
 
     margin: 0 auto;
 
-    .div__title {
+    @include base {
+      width: 85%;
+    }
+
+    &__title {
       font-size: $f-s-380;
       font-weight: $f-w-600;
 
       margin-bottom: 0.5em;
     }
 
-    .div__paragraph {
+    &__paragraph {
       font-size: $f-s-380;
 
       line-height: 1.6em;
@@ -166,27 +221,32 @@
 
   width: 100%;
 
-  padding: 3em 0;
+  padding: 1em 0;
 
   background-color: $clr-primary-light;
   color: $clr-background-white;
 
+  h2 {
+    margin-bottom: 0;
+  }
+
   .hypothesis__paragraph {
+    width: 75%;
+    margin-bottom: 2em;
+
     font-weight: $f-w-500;
-
-    margin: 0 13em 2em;
-
-    line-height: 1.6em;
+    line-height: 1.5em;
     letter-spacing: 0.04em;
   }
 
   .hypothesis__button {
+    padding-bottom: 1.5em;
     input {
-      font-size: $f-s-340;
-      font-weight: $f-w-600;
+      padding: 1em 1.3em;
       color: $clr-primary-light;
 
-      padding: 0.5em 1.3em;
+      font-size: $f-s-340;
+      font-weight: $f-w-600;
 
       border: none;
       border-radius: 0.2em;
@@ -195,27 +255,28 @@
 }
 
 .audience {
-  margin: 3em auto;
-  width: 90%;
+  width: 80%;
+  margin: 0 auto;
 
   h2 {
-    font-size: $f-s-500;
-
+    margin-left: 5em;
     color: $clr-primary-light;
 
-    margin-left: 5em;
+    @include base {
+      margin-left: 0;
+      margin-bottom: 0;
+    }
   }
 
-  .audience__div {
+  &__div {
     display: flex;
     flex-direction: column;
 
-    width: 70%;
-
+    width: 100%;
     margin: 0 auto;
 
     h3 {
-      font-size: $f-s-400;
+      font-size: $f-s-500;
     }
 
     p {
@@ -248,9 +309,12 @@
       }
     }
 
-    .audience__div--bottom {
+    &--bottom {
       display: flex;
-      gap: 3em;
+      justify-content: center;
+      gap: 2em;
+
+      
     }
   }
 }
@@ -822,4 +886,11 @@
   margin: 0 auto;
 
   color: $clr-primary-light;
+}
+
+// Media queries
+@media screen and(max-width: 480px) {
+  .hero__card {
+    flex-direction: column;
+  }
 }

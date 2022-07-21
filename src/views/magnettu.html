@@ -9,16 +9,21 @@
   </head>
 
   <body>
+    <div class="responsive-test">CHANGING SIZE SCREEN</div>
     <!-- SETCION 1 - HERO -->
     <section class="hero">
-      <div class="hero__div">
-        <h1>Magnettü</h1>
-        <p><span>Architecting</span> the MVP for a business collaboration</p>
+      <div class="hero__card">
+        <div class="hero__content">
+          <h1>Magnettü</h1>
+          <p><span>Architecting</span> the MVP for a business collaboration</p>
+        </div>
+        <div class="hero__image">
+          <img
+            src="../assets/images/portfolio/magnettu.svg"
+            alt="magnettu screengrab"
+          />
+        </div>
       </div>
-      <img
-        src="../assets/images/portfolio/magnettu.svg"
-        alt="magnettu screengrab"
-      />
     </section>
 
     <!-- SECTION 2 - OVERVIEW -->
@@ -93,7 +98,7 @@
 
     <!-- SECTION 4 - HYPOTHESIS -->
     <section class="hypothesis">
-      <h3 class="hypothesis__title">Hypothesis</h3>
+      <h2 class="hypothesis__title">Hypothesis</h2>
       <p class="hypothesis__paragraph">
         Creating an easy tool to help employees play a more active in social
         media and managers to track content, will generate lead conversions at a
@@ -101,7 +106,9 @@
         and empower employees to build a personal brand.
       </p>
       <div class="hypothesis__button">
-        <input type="submit" value="Skip to Prototype" />
+        <a href="#prototype">
+          <input type="submit" value="Skip to Prototype" />
+        </a>
       </div>
     </section>
 
@@ -505,8 +512,8 @@
               <span>After</span>
               <p>Default State</p>
               <p class="paragraph--pink">
-                “Redesigned to be compatible to all <span>devices</span> and meet user’s
-                <span>intuitions</span>.
+                “Redesigned to be compatible to all <span>devices</span> and
+                meet user’s <span>intuitions</span>.
               </p>
             </div>
             <img src="../assets/images/magnettu/new.png" alt="new screengrab" />
@@ -548,7 +555,7 @@
     </section>
 
     <!-- SECTION 12 - PROTOTYPE -->
-    <section class="prototype">
+    <section class="prototype" id="prototype">
       <h2>Prototype</h2>
     </section>
   </body>
