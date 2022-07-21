@@ -1,0 +1,51 @@
+$breackpoints: (
+  "base": 1px,
+  "phone": 480px,
+  "tablet": 768px,
+  "desktop": 1024px,
+  "large-dektop": 1201px,
+);
+
+@mixin base {
+  @media screen and(min-width: map-get($breackpoints, "base")) and(max-width: map-get($breackpoints, "phone")){
+    @content;
+  }
+}
+@mixin phone {
+  @media screen and(min-width: map-get($breackpoints, "phone")) and (max-width: map-get($breackpoints, "tablet")) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: map-get($breackpoints, "tablet")) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: map-get($breackpoints, "desktop")) {
+    @content;
+  }
+}
+@mixin large-desktop {
+  @media (min-width: map-get($breackpoints, "large-desktop")) {
+    @content;
+  }
+}
+
+.responsive-test {
+  @include phone {
+    background-color: red;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1em;
+  }
+  @include tablet {
+    background-color: blue;
+  }
+  @include desktop {
+    background-color: green;
+  }
+  @include large-desktop {
+    background-color: purple;
+  }
+}

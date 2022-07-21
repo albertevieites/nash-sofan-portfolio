@@ -1,113 +1,207 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .responsive-test {
+    background-color: red;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1em;
+  }
+}
+@media (min-width: 768px) {
+  .responsive-test {
+    background-color: blue;
+  }
+}
+@media (min-width: 1024px) {
+  .responsive-test {
+    background-color: green;
+  }
+}
+@media (min-width: ) {
+  .responsive-test {
+    background-color: purple;
+  }
+}
+
 .hero {
   display: flex;
-  justify-content: center;
-  padding: 3em 0;
-  width: 100%;
+  justify-content: space-between;
+  padding: 3em 5em;
 }
-.hero .hero__div {
+.hero__card {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 35%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media screen and (min-width: 1px) and (max-width: 480px) {
+  .hero__card {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.hero__content {
   letter-spacing: 0.04em;
 }
-.hero .hero__div h1 {
+.hero__content h1 {
   font-size: 2rem;
   color: hsl(331deg, 100%, 50%);
   margin: 0;
 }
-.hero .hero__div p {
+@media screen and (min-width: 1px) and (max-width: 480px) {
+  .hero__content h1 {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+}
+.hero__content p {
   font-size: 1.5rem;
   margin: 0.2em;
 }
-.hero .hero__div span {
+@media screen and (min-width: 1px) and (max-width: 480px) {
+  .hero__content p {
+    padding-bottom: 1em;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+}
+.hero__content span {
   font-weight: 600;
 }
-.hero img {
-  width: 40%;
+.hero__image {
+  max-width: 40vw;
+}
+@media screen and (min-width: 1px) and (max-width: 480px) {
+  .hero__image {
+    max-width: 65vw;
+  }
+}
+.hero__image img {
+  max-width: 100%;
 }
 
 .overview {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 2rem;
   background-color: hsl(0deg, 9%, 94%);
 }
-.overview .overview__div {
+.overview__div {
   display: flex;
-  gap: 2em;
-  width: 80%;
-  padding: 0 2em;
+  justify-content: space-evenly;
+  padding: 1em 0;
 }
-.overview .overview__div h3 {
-  font-size: 0.9rem;
+.overview__div h3 {
+  font-size: 1rem;
   margin: 0.2em 0;
 }
-.overview .overview__div p {
-  font-size: 0.8rem;
+.overview__div p {
+  font-size: 1rem;
   margin: 0;
   line-height: 1.6em;
   letter-spacing: 0.04em;
 }
-.overview .overview__div .overview__div--left {
+.overview__div--left {
   display: flex;
   flex-direction: column;
   width: 40vw;
 }
-.overview .overview__div .overview__div--right {
+@media screen and (min-width: 1px) and (max-width: 480px) {
+  .overview__div--left {
+    width: 85%;
+    margin: 1em auto;
+  }
+}
+.overview__div--right {
   display: flex;
+  justify-content: space-evenly;
   gap: 1em;
   width: 40vw;
 }
-.overview .overview__div .overview__div--rightone {
+@media screen and (min-width: 1px) and (max-width: 480px) {
+  .overview__div--right {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+.overview__div--rightone {
   display: flex;
   flex-direction: column;
   gap: 1em;
   width: 15vw;
 }
-.overview .overview__div .overview__div--righttwo {
+@media screen and (min-width: 1px) and (max-width: 480px) {
+  .overview__div--rightone {
+    width: 100%;
+  }
+}
+.overview__div--righttwo {
   display: flex;
   flex-direction: column;
   gap: 1em;
   width: 15vw;
 }
-.overview .overview__div .overview__div--righttwo .overview__div--righttwo--team ul {
+@media screen and (min-width: 1px) and (max-width: 480px) {
+  .overview__div--righttwo {
+    width: 100%;
+  }
+}
+.overview__div--righttwo--team ul {
+  margin-top: 0;
   padding-left: 0;
 }
-.overview .overview__div .overview__div--righttwo .overview__div--righttwo--team li {
-  font-size: 0.8rem;
+.overview__div--righttwo--team li {
+  font-size: 1rem;
   list-style: none;
+}
+@media screen and (min-width: 1px) and (max-width: 480px) {
+  .overview__div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 .first {
-  margin: 3em auto;
+  margin: 2em auto;
   width: 90%;
 }
 .first h2 {
-  font-size: 1rem;
-  color: hsl(331deg, 100%, 50%);
+  margin-bottom: 0;
   margin-left: 5em;
+  color: hsl(331deg, 100%, 50%);
+  font-size: 1.5rem;
 }
-.first .first__div {
+@media screen and (min-width: 1px) and (max-width: 480px) {
+  .first h2 {
+    margin-left: 0.5em;
+  }
+}
+.first p {
+  letter-spacing: 0.05em;
+}
+.first__div {
   display: flex;
   flex-direction: column;
   width: 70%;
   margin: 0 auto;
 }
-.first .first__div .div__title {
+@media screen and (min-width: 1px) and (max-width: 480px) {
+  .first__div {
+    width: 85%;
+  }
+}
+.first__div__title {
   font-size: 0.9rem;
   font-weight: 600;
   margin-bottom: 0.5em;
 }
-.first .first__div .div__paragraph {
+.first__div__paragraph {
   font-size: 0.9rem;
   line-height: 1.6em;
   letter-spacing: 0.04em;
   margin-top: 0;
 }
-.first .first__div .div__paragraph span {
+.first__div__paragraph span {
   font-weight: 700;
 }
 
@@ -116,69 +210,82 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 3em 0;
+  padding: 1em 0;
   background-color: hsl(331deg, 100%, 50%);
   color: hsl(0deg, 0%, 100%);
 }
+.hypothesis h2 {
+  margin-bottom: 0;
+}
 .hypothesis .hypothesis__paragraph {
+  width: 75%;
+  margin-bottom: 2em;
   font-weight: 500;
-  margin: 0 13em 2em;
-  line-height: 1.6em;
+  line-height: 1.5em;
   letter-spacing: 0.04em;
 }
+.hypothesis .hypothesis__button {
+  padding-bottom: 1.5em;
+}
 .hypothesis .hypothesis__button input {
+  padding: 1em 1.3em;
+  color: hsl(331deg, 100%, 50%);
   font-size: 0.8rem;
   font-weight: 600;
-  color: hsl(331deg, 100%, 50%);
-  padding: 0.5em 1.3em;
   border: none;
   border-radius: 0.2em;
 }
 
 .audience {
-  margin: 3em auto;
-  width: 90%;
-}
-.audience h2 {
-  font-size: 1.25rem;
-  color: hsl(331deg, 100%, 50%);
-  margin-left: 5em;
-}
-.audience .audience__div {
-  display: flex;
-  flex-direction: column;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
-.audience .audience__div h3 {
-  font-size: 1rem;
+.audience h2 {
+  margin-left: 5em;
+  color: hsl(331deg, 100%, 50%);
 }
-.audience .audience__div p {
+@media screen and (min-width: 1px) and (max-width: 480px) {
+  .audience h2 {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+.audience__div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+.audience__div h3 {
+  font-size: 1.25rem;
+}
+.audience__div p {
   line-height: 1.6em;
   letter-spacing: 0.04em;
 }
-.audience .audience__div p span {
+.audience__div p span {
   font-weight: 600;
 }
-.audience .audience__div a {
+.audience__div a {
   font-weight: 500;
   color: hsl(331deg, 100%, 50%);
   text-decoration: underline;
 }
-.audience .audience__div > div {
+.audience__div > div {
   display: flex;
 }
-.audience .audience__div > div div {
+.audience__div > div div {
   width: 35vw;
 }
-.audience .audience__div > div img {
+.audience__div > div img {
   width: 30vw;
   max-height: 17em;
   margin-top: 2em;
 }
-.audience .audience__div .audience__div--bottom {
+.audience__div--bottom {
   display: flex;
-  gap: 3em;
+  justify-content: center;
+  gap: 2em;
 }
 
 .findings {
@@ -597,8 +704,37 @@
   color: hsl(331deg, 100%, 50%);
 }
 
+@media screen and (max-width: 480px) {
+  .hero__card {
+    flex-direction: column;
+  }
+}
 html {
   font-family: "Raleway", sans-serif;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .responsive-test {
+    background-color: red;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1em;
+  }
+}
+@media (min-width: 768px) {
+  .responsive-test {
+    background-color: blue;
+  }
+}
+@media (min-width: 1024px) {
+  .responsive-test {
+    background-color: green;
+  }
+}
+@media (min-width: ) {
+  .responsive-test {
+    background-color: purple;
+  }
 }
 
 html {
