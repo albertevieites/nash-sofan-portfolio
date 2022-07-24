@@ -1,58 +1,46 @@
-@import '../abstracts/colors';
-@import '../abstracts/variables';
+@import "../abstracts/colors";
+@import "../abstracts/variables";
 
 .header {
   display: flex;
   justify-content: center;
 
-  .header__container {
+  &__container {
     display: flex;
 
     width: 75vw;
     padding-top: 2em;
   }
-}
 
-.header__div {
-  display: flex;
-  align-items: center;
-
-  width: 10vw;
-
-  a {
-    text-decoration: none;
-    color: $clr-dark;
-  }
-}
-
-.header__nav {
-  font-size: $f-s-400;
-
-  width: 100%;
-
-  .link-nav {
+  &__name {
     display: flex;
+    align-items: center;
 
-    color: $clr-light-dark;
+    width: 10vw;
+
+    a {
+      color: $clr-dark;
+
+      text-decoration: none;
+    }
   }
 
-  ul {
+  &__nav {
+    width: 100%;
+
+    font-size: $f-s-400;
+  }
+
+  &__list {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 
     margin: 0;
     padding: 0;
+    color: $clr-light-dark;
 
     list-style-type: none;
-
-    .resume {
-      a {
-        display: flex;
-        img {
-          width: 1.7em;
-        }
-      }
-    }
 
     a {
       display: flex;
@@ -70,6 +58,15 @@
       &:active {
         color: $clr-light-dark;
         font-weight: $f-w-700;
+      }
+    }
+  }
+
+  &__item--resume {
+    a {
+      display: flex;
+      img {
+        width: 1.6em;
       }
     }
   }

@@ -13,19 +13,20 @@
     <!-- HEADER -->   
     <header class="header">
       <div class="header__container">
-        <div class="header__div">
+        <div class="header__name">
           <a href="./">Nash Sofan</a>
         </div>
+
         <nav class="header__nav">
           <ul class="header__list">
-            <li class="link-nav work"><a href="./">Work</a></li>
-            <li class="link-nav about">
+            <li class="header__item header__item--work"><a href="./">Work</a></li>
+            <li class="header__item header__item--about">
               <a href="./about.html">About</a>
             </li>
-            <li class="link-nav contact">
+            <li class="header__item header__item--contact">
               <a href="./contact.html">Contact</a>
             </li>
-            <li class="link-nav resume">
+            <li class="header__item header__item--resume">
               <a
                 href="https://storage.googleapis.com/uxfolio/6209e7ec1a83970003c773dc/cv/Nash_Resume_PD_ZUK.pdf"
               >
@@ -60,12 +61,11 @@
 
     <!-- SECTION  2 - PROJECTS -->
     <section class="projects">
-      <div class="projects__div">
+      <div class="projects__grid">
 
         <!-- Magnettu Card -->
         <a href="./views/magnettu.html" target="_self">
-          <div class="card magnettu-card">
-            <div class="card__img">
+          <div class="projects__card projects__card--magnettu">
               <img
                 src="./assets/images/portfolio/magnettu.svg"
                 alt="magnettu link"
@@ -78,15 +78,13 @@
                 their personal branding.
               </p>
             </div>
-          </div>
         </a>
 
         <!-- minventory Card -->
         <a href="./views/minventory.html" target="_self">
-          <div class="card minventory-card">
-            <div class="card__img">
+          <div class="projects__card projects__card--minventory">
               <img
-                src="./assets/images/portfolio/minventory.png"
+                src="./assets/images/portfolio/minventory.svg"
                 alt="magnettu link"
               />
             </div>
@@ -97,18 +95,17 @@
                 professional inventory.
               </p>
             </div>
-          </div>
         </a>
 
         <!-- Habit Tracking Card -->
         <a href="./views/habitTracker.html">
-          <div class="card habitTracking-card">
-            <div class="card__img">
+          <div class="projects__card projects__card--tracker">
+
               <img
                 src="./assets/images/portfolio/habitTracking.png"
                 alt="habitTracking link"
               />
-            </div>
+
             <div class="card__content">
               <h2 class="card__title">Habit Tracking App</h2>
               <p class="card__description">
@@ -121,10 +118,10 @@
 
         <!-- Frio Card -->
         <a href="./" target="_self">
-          <div class="card frio-card">
-            <div class="card__img">
+          <div class="projects__card projects__card--frio">
+
               <img src="./assets/images/portfolio/frio.png" alt="frio link" />
-            </div>
+
             <div class="card__content">
               <h2 class="card__title">Frio. (Under Construction)</h2>
               <p class="card__description">
