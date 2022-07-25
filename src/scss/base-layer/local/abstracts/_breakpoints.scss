@@ -7,12 +7,12 @@ $breackpoints: (
 );
 
 @mixin base {
-  @media screen and(min-width: map-get($breackpoints, "base")) and(max-width: map-get($breackpoints, "phone")){
+  @media (min-width: map-get($breackpoints, "base")) {
     @content;
   }
 }
 @mixin phone {
-  @media screen and(min-width: map-get($breackpoints, "phone")) and (max-width: map-get($breackpoints, "tablet")) {
+  @media (min-width: map-get($breackpoints, "phone")) {
     @content;
   }
 }
