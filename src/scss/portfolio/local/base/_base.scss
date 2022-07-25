@@ -64,6 +64,14 @@ body {
 .projects {
   max-width: 1201px;
 
+  img {
+    transition: all .2s ease-in-out;
+  }
+
+  a:hover img {
+    transform: scale(1.03);
+  }
+
   &__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -71,22 +79,22 @@ body {
   }
 
   &__card {
-    height: 77%;
-    padding: 5em 1.5em;
-
+    min-height: 500px;
     border-radius: 0.8em;
 
     img {
-      width: 100%;
+      width: 90%;
       margin: 0 auto;
     }
+  }
 
-    .card__content {
-      width: 95%;
-      }
+  .card__content {
+    width: 95%;
   }
 
   &__card--magnettu {
+    display: flex;
+
     background: linear-gradient(
       150deg,
       hsla(340, 65, 62, 78%) 40%,
@@ -94,12 +102,43 @@ body {
     );
   }
   &__card--minventory {
-    padding: 6.5em 1.5em;
+    display: flex;
+
     background: linear-gradient(
       220deg,
       hsla(228, 55, 25, 74%),
       hsla(342, 88, 83, 63%)
     );
+  }
+  &__card--tracker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+      220deg,
+      hsla(159, 68, 35, 44%) 60%,
+      hsla(142, 89, 78, 62%)
+    );
+
+    .projects__image {
+      width: 80%;
+      }
+  }
+  &__card--frio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+      140deg,
+      hsla(0, 0, 97, 72%),
+      hsla(0, 0, 7, 18%) 90%
+    );
+
+    .projects__image {
+      width: 60%;
+      }
   }
 }
 

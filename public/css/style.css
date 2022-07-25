@@ -370,29 +370,53 @@ body {
 .projects {
   max-width: 1201px;
 }
+.projects img {
+  transition: all 0.2s ease-in-out;
+}
+.projects a:hover img {
+  transform: scale(1.03);
+}
 .projects__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2em;
 }
 .projects__card {
-  height: 77%;
-  padding: 5em 1.5em;
+  min-height: 500px;
   border-radius: 0.8em;
 }
 .projects__card img {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
 }
-.projects__card .card__content {
+.projects .card__content {
   width: 95%;
 }
 .projects__card--magnettu {
+  display: flex;
   background: linear-gradient(150deg, hsla(340deg, 65%, 62%, 0.78) 40%, hsla(23deg, 86%, 78%, 0.76));
 }
 .projects__card--minventory {
-  padding: 6.5em 1.5em;
+  display: flex;
   background: linear-gradient(220deg, hsla(228deg, 55%, 25%, 0.74), hsla(342deg, 88%, 83%, 0.63));
+}
+.projects__card--tracker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(220deg, hsla(159deg, 68%, 35%, 0.44) 60%, hsla(142deg, 89%, 78%, 0.62));
+}
+.projects__card--tracker .projects__image {
+  width: 80%;
+}
+.projects__card--frio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(140deg, hsla(0deg, 0%, 97%, 0.72), hsla(0deg, 0%, 7%, 0.18) 90%);
+}
+.projects__card--frio .projects__image {
+  width: 60%;
 }
 
 .footer {
