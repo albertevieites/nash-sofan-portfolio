@@ -1,4 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@media screen and (max-width: 480px) {
+  .responsive-test {
+    background-color: red;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .responsive-test {
+    background-color: blue;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .responsive-test {
+    background-color: green;
+  }
+}
+@media screen and (max-width: ) {
+  .responsive-test {
+    background-color: purple;
+  }
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -36,6 +60,7 @@
   padding: 0.5rem 1rem;
   color: inherit;
   text-decoration: none;
+  transition: 0.7s ease;
 }
 .header__list a:hover {
   color: hsl(197deg, 100%, 50%);
@@ -49,6 +74,23 @@
 }
 .header__item--resume a img {
   width: 1.6em;
+}
+.header .hamburger {
+  display: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .header .hamburger {
+    display: block;
+  }
+}
+.header .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s easy-in-out;
+  background-color: green;
 }
 
 footer {
@@ -64,7 +106,7 @@ footer img {
   width: 1.5em;
 }
 
-@media (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .responsive-test {
     background-color: red;
     font-size: 2rem;
@@ -72,17 +114,17 @@ footer img {
     padding: 1em;
   }
 }
-@media (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .responsive-test {
     background-color: blue;
   }
 }
-@media (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .responsive-test {
     background-color: green;
   }
 }
-@media (min-width: ) {
+@media screen and (max-width: ) {
   .responsive-test {
     background-color: purple;
   }
@@ -141,12 +183,13 @@ body {
 }
 .projects__grid {
   display: grid;
-  gap: 2em;
-  grid-auto-rows: 40em;
+  column-gap: 2em;
+  row-gap: 2em;
+  grid-auto-rows: 35em;
   grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
 }
 .projects__card {
-  min-height: 400px;
+  min-height: 18.75em;
   border-radius: 0.8em;
 }
 .projects__card img {
@@ -181,6 +224,11 @@ body {
 }
 .projects__card--frio .projects__image {
   width: 60%;
+}
+@media screen and (max-width: 1024px) {
+  .projects__card--frio .projects__image {
+    width: 50%;
+  }
 }
 
 .footer {

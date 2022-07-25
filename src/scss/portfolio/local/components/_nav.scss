@@ -1,5 +1,6 @@
 @import "../abstracts/colors";
 @import "../abstracts/variables";
+@import "../../../base-layer/local/abstracts/breakpoints";
 
 .header {
   display: flex;
@@ -47,9 +48,10 @@
       align-items: center;
 
       padding: 0.5rem 1rem;
-
       color: inherit;
       text-decoration: none;
+
+      transition: 0.7s ease;
 
       &:hover {
         color: $clr-hover;
@@ -70,4 +72,23 @@
       }
     }
   }
+
+  .hamburger {
+    display: none;
+
+    cursor: pointer;
+
+    @include tablet {
+      display: block;
+    }
+    }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s easy-in-out;
+    background-color: green;
+    }
 }

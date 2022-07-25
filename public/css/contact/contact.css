@@ -1,3 +1,27 @@
+@media screen and (max-width: 480px) {
+  .responsive-test {
+    background-color: red;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .responsive-test {
+    background-color: blue;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .responsive-test {
+    background-color: green;
+  }
+}
+@media screen and (max-width: ) {
+  .responsive-test {
+    background-color: purple;
+  }
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -35,6 +59,7 @@
   padding: 0.5rem 1rem;
   color: inherit;
   text-decoration: none;
+  transition: 0.7s ease;
 }
 .header__list a:hover {
   color: hsl(197deg, 100%, 50%);
@@ -48,6 +73,23 @@
 }
 .header__item--resume a img {
   width: 1.6em;
+}
+.header .hamburger {
+  display: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .header .hamburger {
+    display: block;
+  }
+}
+.header .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s easy-in-out;
+  background-color: green;
 }
 
 .form-container {

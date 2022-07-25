@@ -7,27 +7,27 @@ $breackpoints: (
 );
 
 @mixin base {
-  @media (min-width: map-get($breackpoints, "base")) {
+  @media screen and (max-width: map-get($breackpoints, "base")) {
     @content;
   }
 }
 @mixin phone {
-  @media (min-width: map-get($breackpoints, "phone")) {
+  @media screen and (max-width: map-get($breackpoints, "phone")) {
     @content;
   }
 }
 @mixin tablet {
-  @media (min-width: map-get($breackpoints, "tablet")) {
+  @media screen and (max-width: map-get($breackpoints, "tablet")) {
     @content;
   }
 }
 @mixin desktop {
-  @media (min-width: map-get($breackpoints, "desktop")) {
+  @media screen and(max-width: map-get($breackpoints, "desktop")) {
     @content;
   }
 }
 @mixin large-desktop {
-  @media (min-width: map-get($breackpoints, "large-desktop")) {
+  @media screen and(max-width: map-get($breackpoints, "large-desktop")) {
     @content;
   }
 }
