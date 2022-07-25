@@ -1,151 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
-    <title>Nash's Portfolio</title>
-  </head>
 
-  <body>
-    <!-- HEADER -->   
-    <header class="header">
-      <div class="header__container">
-        <div class="header__name">
-          <a href="./">Nash Sofan</a>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  <title>Nash's Portfolio</title>
+</head>
 
-        <nav class="header__nav">
-          <ul class="header__list">
-            <li class="header__item header__item--work"><a href="./">Work</a></li>
-            <li class="header__item header__item--about">
-              <a href="./about.html">About</a>
-            </li>
-            <li class="header__item header__item--contact">
-              <a href="./contact.html">Contact</a>
-            </li>
-            <li class="header__item header__item--resume">
-              <a
-                href="https://storage.googleapis.com/uxfolio/6209e7ec1a83970003c773dc/cv/Nash_Resume_PD_ZUK.pdf"
-              >
-                <p>Resume</p>
-                <img
-                  src="./assets/images/portfolio/external-link.svg"
-                  class="link-nav__img"
-                  alt="link to cv"
-                />
-              </a>
-            </li>
-          </ul>
-        </nav>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header__container">
+      <div class="header__name">
+        <a href="./">Nash Sofan</a>
       </div>
-    </header>
 
-    <!-- SECTION 1 - INTRODUCTION -->
-    <section class="introduction">
-      <h1>Hey! I'm Nash Sofan,</h1>
-      <article class="introduction__article">
-        <div class="introduction__div">
-          <p>
-            <span>Product Designer</span> that’s trying to understand humans
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item header__item--work"><a href="./" class="header__link">Work</a></li>
+          <li class="header__item header__item--about">
+            <a href="./about.html" class="header__link">About</a>
+          </li>
+          <li class="header__item header__item--contact">
+            <a href="./contact.html" class="header__link">Contact</a>
+          </li>
+          <li class="header__item header__item--resume">
+            <a href="https://storage.googleapis.com/uxfolio/6209e7ec1a83970003c773dc/cv/Nash_Resume_PD_ZUK.pdf" class="header__link">
+              <span>Resume</span>
+              <img src="./assets/images/portfolio/external-link.svg" class="link-nav__img" alt="link to cv" />
+            </a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- mobile nav -->
+  <!-- <nav class="header__nav--mobile">
+    <ul class="mobile__list">
+      <li class="mobile__item mobile__item--work"><a href="./">Work</a></li>
+      <li class="mobile__item mobile__item--about">
+        <a href="./about.html">About</a>
+      </li>
+      <li class="mobile__item mobile__item--contact">
+        <a href="./contact.html">Contact</a>
+      </li>
+      <li>
+        <a href="https://storage.googleapis.com/uxfolio/6209e7ec1a83970003c773dc/cv/Nash_Resume_PD_ZUK.pdf">Resume</a>
+      </li>
+    </ul>
+  </nav> -->
+
+  <!-- SECTION 1 - INTRODUCTION -->
+  <section class="introduction">
+    <h1>Hey! I'm Nash Sofan,</h1>
+    <article class="introduction__article">
+      <div class="introduction__div">
+        <p>
+          <span>Product Designer</span> that’s trying to understand humans
+        </p>
+      </div>
+      <p class="introduction__paragraph">
+        Crafting meaningful user-focused experiences backed by research and
+        aligned with business goals.
+      </p>
+    </article>
+  </section>
+
+  <!-- SECTION  2 - PROJECTS -->
+  <section class="projects">
+    <div class="projects__grid">
+
+      <!-- Magnettu Card -->
+      <a href="./views/magnettu.html" target="_self">
+        <div class="projects__card projects__card--magnettu">
+          <img src="./assets/images/portfolio/magnettu.svg" alt="magnettu link" />
+        </div>
+        <div class="card__content">
+          <h2 class="card__title">Magnettü</h2>
+          <p class="card__description">
+            A B2B SaaS that leverages AI to empower employees to develop
+            their personal branding.
           </p>
         </div>
-        <p class="introduction__paragraph">
-          Crafting meaningful user-focused experiences backed by research and
-          aligned with business goals.
-        </p>
-      </article>
-    </section>
-
-    <!-- SECTION  2 - PROJECTS -->
-    <section class="projects">
-      <div class="projects__grid">
-
-        <!-- Magnettu Card -->
-        <a href="./views/magnettu.html" target="_self">
-          <div class="projects__card projects__card--magnettu">
-              <img
-                src="./assets/images/portfolio/magnettu.svg"
-                alt="magnettu link"
-              />
-            </div>
-            <div class="card__content">
-              <h2 class="card__title">Magnettü</h2>
-              <p class="card__description">
-                A B2B SaaS that leverages AI to empower employees to develop
-                their personal branding.
-              </p>
-            </div>
-        </a>
-
-        <!-- minventory Card -->
-        <a href="./views/minventory.html" target="_self">
-          <div class="projects__card projects__card--minventory">
-            <img
-              src="./assets/images/portfolio/minventory.svg"
-              alt="magnettu link"
-            />
-          </div>
-          <div class="card__content">
-            <h2 class="card__title">Minventory</h2>
-            <p class="card__description">
-              An effective, seamless Web-App tool that tracks materials and
-              professional inventory.
-            </p>
-          </div>
-        </a>
-
-        <!-- Habit Tracking Card -->
-        <a href="./views/habitTracker.html">
-          <div class="projects__card projects__card--tracker">
-              <div class="projects__image">
-                <img
-                  src="./assets/images/portfolio/habitTracking.png"
-                  alt="habitTracking link"
-                  class="projects__image--magnettu"
-                />
-              </div>
-          </div>
-          <div class="card__content">
-            <h2 class="card__title">Habit Tracking App</h2>
-            <p class="card__description">
-              A habit tracking app that leverages AI to encourage contacting
-              loved ones habitually.
-            </p>
-          </div>
-        </a>
-
-        <!-- Frio Card -->
-        <a href="./" target="_self">
-          <div class="projects__card projects__card--frio">
-            <div class="projects__image">
-              <img
-                src="./assets/images/portfolio/frio.png"
-                alt="frio link"
-              />
-            </div>
-          </div>
-          <div class="card__content">
-            <h2 class="card__title">Frio. (Under Construction)</h2>
-            <p class="card__description">
-              A clothing rental business - Renting an extra layer for those
-              chilly nights!
-            </p>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-      <a href="https://www.linkedin.com/in/nashsofan/">
-        <img src="./assets/images/portfolio/linkedin.svg" alt="linkedin logo" />
       </a>
-      <a href="https://medium.com/@sofannash"">
-        <img src="./assets/images/portfolio/medium.svg" alt="medium logo" />
+
+      <!-- minventory Card -->
+      <a href="./views/minventory.html" target="_self">
+        <div class="projects__card projects__card--minventory">
+          <img src="./assets/images/portfolio/minventory.svg" alt="magnettu link" />
+        </div>
+        <div class="card__content">
+          <h2 class="card__title">Minventory</h2>
+          <p class="card__description">
+            An effective, seamless Web-App tool that tracks materials and
+            professional inventory.
+          </p>
+        </div>
       </a>
-    </footer>
-  </body>
+
+      <!-- Habit Tracking Card -->
+      <a href="./views/habitTracker.html">
+        <div class="projects__card projects__card--tracker">
+          <div class="projects__image">
+            <img src="./assets/images/portfolio/habitTracking.png" alt="habitTracking link"
+              class="projects__image--magnettu" />
+          </div>
+        </div>
+        <div class="card__content">
+          <h2 class="card__title">Habit Tracking App</h2>
+          <p class="card__description">
+            A habit tracking app that leverages AI to encourage contacting
+            loved ones habitually.
+          </p>
+        </div>
+      </a>
+
+      <!-- Frio Card -->
+      <a href="./" target="_self">
+        <div class="projects__card projects__card--frio">
+          <div class="projects__image">
+            <img src="./assets/images/portfolio/frio.png" alt="frio link" />
+          </div>
+        </div>
+        <div class="card__content">
+          <h2 class="card__title">Frio. (Under Construction)</h2>
+          <p class="card__description">
+            A clothing rental business - Renting an extra layer for those
+            chilly nights!
+          </p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <a href="https://www.linkedin.com/in/nashsofan/">
+      <img src="./assets/images/portfolio/linkedin.svg" alt="linkedin logo" />
+    </a>
+    <a href="https://medium.com/@sofannash"">
+        <img src=" ./assets/images/portfolio/medium.svg" alt="medium logo" />
+    </a>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="./assets/js/main.js"></script>
+</body>
+
 </html>
