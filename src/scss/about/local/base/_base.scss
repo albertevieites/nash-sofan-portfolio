@@ -1,24 +1,65 @@
-@import '../../../portfolio/local/abstracts/variables';
+@import "../../../portfolio/local/abstracts/variables";
+@import "../../../base-layer/local/abstracts/breakpoints";
 
-.content-section {
-  display: flex;
-  justify-content: space-between;
-  gap: 7em;
+.header {
+  &__container {
+    display: flex;
+    align-items: center;
+  }
 
-  padding-top: 6em;
-  padding-bottom: 2em;
-  margin: 0 2em;
+  &__div {
+    width: 100%;
+  }
 
-  img {
-    min-height: 35em;
-    max-width: 45%;
-
-    padding-top: 1em;
-    padding-bottom: 4em;
+  &__list .resume {
+    a {
+      display: flex;
+      img {
+        width: 1.5em;
+      }
+    }
   }
 }
 
-.self-intro {
+.about__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6em;
+
+  max-width: 1201px;
+  padding-top: 6em;
+  padding-bottom: 2em;
+
+  @include large-desktop {
+    gap: 5em;
+  }
+  @include desktop {
+    gap: 5em;
+  }
+  @include tablet {
+    flex-direction: column;
+  }
+
+  .about__image {
+    @include desktop {
+      width: 100%;
+    }
+
+    @include large-desktop {
+      width: 95%;
+    }
+    @include tablet {
+      width: 100%;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.about__self-intro {
+  width: 95%;
   padding-right: 2rem;
 
   h2 {
@@ -27,19 +68,26 @@
   }
 
   p {
-    font-size: $f-s-480;
-    font-weight: $f-w-300;
-
     padding-bottom: 1em;
+
+    font-size: $f-s-440;
+    font-weight: $f-w-500;
     line-height: 1.4em;
+
+    @include desktop {
+      font-size: 95%;
+    }
+    @include tablet {
+      font-size: 100%;
+    }
   }
 
   span {
-    font-weight: $f-w-700;
+    font-weight: $f-w-800;
   }
 }
 
-.short-content-section {
+.about__hobbies {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,25 +95,41 @@
   margin: 0 10em;
   padding-bottom: 5rem;
 
+  @include tablet {
+    margin: 0 5em;
+  }
+
+  @include phone {
+    margin: 0 2em;
+  }
+
   h2 {
     font-size: $f-s-600;
     font-weight: $f-w-600;
+
+    @include tablet {
+      font-size: $f-s-580;
+    }
   }
 
   p {
     font-size: $f-s-480;
-    font-weight: $f-w-300;
+    font-weight: $f-w-500;
 
     padding-bottom: 1em;
     line-height: 1.4em;
+
+    @include tablet {
+      font-size: 99%;
+    }
   }
 
   span {
-    font-weight: $f-w-700;
+    font-weight: $f-w-800;
   }
 }
 
-.carrousel-section {
+.about__carrousel {
   min-height: 30em;
   width: 100%;
 
@@ -74,7 +138,7 @@
   background-color: magenta;
 }
 
-.talk-section {
+.about__talk {
   text-align: center;
 
   margin: 0 auto;

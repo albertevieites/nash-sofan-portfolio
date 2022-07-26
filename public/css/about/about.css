@@ -16,7 +16,7 @@
     background-color: green;
   }
 }
-@media screen and (max-width: ) {
+@media screen and (max-width: 1201px) {
   .responsive-test {
     background-color: purple;
   }
@@ -141,76 +141,173 @@
   transition: all 0.3s easy-in-out;
 }
 
-.content-section {
-  display: flex;
-  justify-content: space-between;
-  gap: 7em;
-  padding-top: 6em;
-  padding-bottom: 2em;
-  margin: 0 2em;
+@media screen and (max-width: 480px) {
+  .responsive-test {
+    background-color: red;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1em;
+  }
 }
-.content-section img {
-  min-height: 35em;
-  max-width: 45%;
-  padding-top: 1em;
-  padding-bottom: 4em;
+@media screen and (max-width: 768px) {
+  .responsive-test {
+    background-color: blue;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .responsive-test {
+    background-color: green;
+  }
+}
+@media screen and (max-width: 1201px) {
+  .responsive-test {
+    background-color: purple;
+  }
 }
 
-.self-intro {
+.header__container {
+  display: flex;
+  align-items: center;
+}
+.header__div {
+  width: 100%;
+}
+.header__list .resume a {
+  display: flex;
+}
+.header__list .resume a img {
+  width: 1.5em;
+}
+
+.about__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6em;
+  max-width: 1201px;
+  padding-top: 6em;
+  padding-bottom: 2em;
+}
+@media screen and (max-width: 1201px) {
+  .about__content {
+    gap: 5em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about__content {
+    gap: 5em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about__content {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about__content .about__image {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1201px) {
+  .about__content .about__image {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about__content .about__image {
+    width: 100%;
+  }
+}
+.about__content .about__image img {
+  width: 100%;
+}
+
+.about__self-intro {
+  width: 95%;
   padding-right: 2rem;
 }
-.self-intro h2 {
+.about__self-intro h2 {
   font-size: 1.5rem;
   font-weight: 700;
 }
-.self-intro p {
-  font-size: 1.2rem;
-  font-weight: 300;
+.about__self-intro p {
   padding-bottom: 1em;
+  font-size: 1.1rem;
+  font-weight: 500;
   line-height: 1.4em;
 }
-.self-intro span {
-  font-weight: 700;
+@media screen and (max-width: 1024px) {
+  .about__self-intro p {
+    font-size: 95%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about__self-intro p {
+    font-size: 100%;
+  }
+}
+.about__self-intro span {
+  font-weight: 800;
 }
 
-.short-content-section {
+.about__hobbies {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 10em;
   padding-bottom: 5rem;
 }
-.short-content-section h2 {
+@media screen and (max-width: 768px) {
+  .about__hobbies {
+    margin: 0 5em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about__hobbies {
+    margin: 0 2em;
+  }
+}
+.about__hobbies h2 {
   font-size: 1.5rem;
   font-weight: 600;
 }
-.short-content-section p {
+@media screen and (max-width: 768px) {
+  .about__hobbies h2 {
+    font-size: 1.4rem;
+  }
+}
+.about__hobbies p {
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 500;
   padding-bottom: 1em;
   line-height: 1.4em;
 }
-.short-content-section span {
-  font-weight: 700;
+@media screen and (max-width: 768px) {
+  .about__hobbies p {
+    font-size: 99%;
+  }
+}
+.about__hobbies span {
+  font-weight: 800;
 }
 
-.carrousel-section {
+.about__carrousel {
   min-height: 30em;
   width: 100%;
   margin-bottom: 6em;
   background-color: magenta;
 }
 
-.talk-section {
+.about__talk {
   text-align: center;
   margin: 0 auto;
 }
-.talk-section p {
+.about__talk p {
   font-size: 1.1rem;
   font-weight: 400;
   line-height: 1em;
 }
-.talk-section a {
+.about__talk a {
   font-size: 1.1rem;
   color: hsl(197deg, 100%, 50%);
 }
