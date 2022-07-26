@@ -440,6 +440,10 @@ footer img {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0 10%;
   height: 100vh;
