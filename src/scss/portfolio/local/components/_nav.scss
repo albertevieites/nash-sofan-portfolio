@@ -19,6 +19,10 @@
 
     width: 10vw;
 
+    @include tablet {
+      width: 100%;
+    }
+
     a {
       color: $clr-dark;
 
@@ -62,7 +66,31 @@
         font-weight: $f-w-700;
       }
     }
+
+    @include tablet {
+      position: fixed;
+      left: -100%;
+      top: 70px;
+      gap: 0;
+      flex-direction: column;
+      background-color: $clr-background;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+    }
   }
+
+  &__list.active {
+    @include tablet {
+      left: 0;
+    }
+  }
+
+  &__item {
+    @include tablet {
+      margin: 16px 0;
+    }
+    }
 
   &__item--resume {
     a {
@@ -79,16 +107,35 @@
     cursor: pointer;
 
     @include tablet {
-      display: block;
+      display: flex;
+      justify-content: end;
     }
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    @include tablet {
+      opacity: 0;
     }
+  }
+  .hamburger.active .bar:nth-child(1) {
+    @include tablet {
+      transform: translateY(8px) rotate(45deg);
+    }
+  }
+  .hamburger.active .bar:nth-child(3) {
+    @include tablet {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
 
   .bar {
-    display: block;
-    width: 25px;
+    display: flex;
+
+    width: 1.5625em;
     height: 3px;
     margin: 5px auto;
+    background-color: $clr-dark;
+
     transition: all 0.3s easy-in-out;
-    background-color: green;
-    }
+  }
 }
