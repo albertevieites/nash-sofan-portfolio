@@ -41,6 +41,11 @@
     width: 100%;
   }
 }
+@media screen and (max-width: 1024px) {
+  .header__name {
+    width: 100%;
+  }
+}
 .header__name a {
   color: hsl(0deg, 0%, 0%);
   text-decoration: none;
