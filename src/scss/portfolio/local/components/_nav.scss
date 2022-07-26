@@ -23,6 +23,10 @@
       width: 100%;
     }
 
+    @include desktop {
+      width: 100%;
+    }
+
     a {
       color: $clr-dark;
 
@@ -90,7 +94,7 @@
     @include tablet {
       margin: 16px 0;
     }
-    }
+  }
 
   &__item--resume {
     a {
