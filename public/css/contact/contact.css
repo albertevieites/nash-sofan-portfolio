@@ -16,7 +16,7 @@
     background-color: green;
   }
 }
-@media screen and (max-width: 1201px) {
+@media screen and (min-width: 1201px) {
   .responsive-test {
     background-color: purple;
   }
