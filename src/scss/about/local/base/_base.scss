@@ -93,7 +93,7 @@
   justify-content: center;
 
   margin: 0 10em;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
 
   @include tablet {
     margin: 0 5em;
@@ -130,12 +130,30 @@
 }
 
 .about__carrousel {
-  min-height: 30em;
-  width: 100%;
+  display: grid;
+  gap: 2em;
+  grid-auto-flow: column;
+  grid-auto-columns: 31%;
 
-  margin-bottom: 6em;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
 
-  background-color: magenta;
+  .about__media {
+    width: 100%;
+    padding: 1em;
+    img {
+      width: 25vw;
+    }
+  }
+}
+
+.snaps-inline {
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: 1em;
+}
+
+.snaps-inline > * {
+  scroll-snap-align: start;
 }
 
 .about__talk {
