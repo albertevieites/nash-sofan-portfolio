@@ -794,7 +794,6 @@ html {
   justify-content: space-between;
   align-items: center;
   gap: 6em;
-  max-width: 1201px;
   padding-top: 6em;
   padding-bottom: 2em;
 }
