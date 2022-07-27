@@ -1125,7 +1125,6 @@ html {
   justify-content: center;
   align-items: center;
   padding: 4em 0;
-  width: 100%;
 }
 
 .message__container {
@@ -1140,7 +1139,7 @@ html {
   font-weight: 400;
 }
 .message__container textarea {
-  width: 50vw;
+  width: 70vw;
   padding-top: 1em;
   padding-bottom: 12em;
   padding-left: 1em;
@@ -1189,7 +1188,7 @@ html {
   font-weight: 400;
 }
 .contact--details__container input {
-  width: 50vw;
+  width: 70vw;
   padding: 1em;
   outline: none;
   border: 0.01em solid hsl(212deg, 13%, 23%);
