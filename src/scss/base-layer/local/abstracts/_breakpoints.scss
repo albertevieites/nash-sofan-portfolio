@@ -38,7 +38,7 @@ $breackpoints: (
   }
 }
 @mixin large-desktop {
-  @media screen and(max-width: map-get($breackpoints, "large-desktop")) {
+  @media screen and(min-width: map-get($breackpoints, "large-desktop")) {
     @content;
   }
 }

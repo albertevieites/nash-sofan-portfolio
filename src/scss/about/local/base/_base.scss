@@ -1,6 +1,7 @@
 @import "../../../portfolio/local/abstracts/variables";
 @import "../../../base-layer/local/abstracts/breakpoints";
 
+
 .header {
   &__container {
     display: flex;
@@ -17,6 +18,10 @@
       img {
         width: 1.5em;
       }
+    }
+
+    p {
+      margin: 0;
     }
   }
 }
@@ -39,6 +44,12 @@
   }
   @include tablet {
     flex-direction: column;
+  }
+
+  @include medium-phone {
+    gap: 2em;
+
+    padding-top: 4em;
   }
 
   .about__image {
@@ -75,7 +86,7 @@
     line-height: 1.4em;
 
     @include desktop {
-      font-size: 95%;
+      font-size: 97%;
     }
     @include tablet {
       font-size: 100%;
@@ -95,8 +106,12 @@
   margin: 0 10em;
   padding-bottom: 3rem;
 
+  @include desktop {
+    margin: 0 7em;
+  }
+
   @include tablet {
-    margin: 0 5em;
+    margin: 0 3em;
   }
 
   @include phone {
@@ -107,8 +122,12 @@
     font-size: $f-s-600;
     font-weight: $f-w-600;
 
-    @include tablet {
+    @include desktop {
       font-size: $f-s-580;
+    }
+
+    @include tablet {
+      font-size: $f-s-480;
     }
   }
 
@@ -118,6 +137,10 @@
 
     padding-bottom: 1em;
     line-height: 1.4em;
+
+    @include desktop {
+      font-size: 99%;
+    }
 
     @include tablet {
       font-size: 99%;
@@ -141,8 +164,12 @@
   .about__media {
     width: 100%;
     padding: 1em;
+
     img {
       width: 25vw;
+      @include large-desktop {
+        max-width: 100%;
+      }
     }
   }
 }
@@ -157,15 +184,19 @@
 }
 
 .about__talk {
-  text-align: center;
-
   margin: 0 auto;
+  padding: 2em 0;
+
+  text-align: center;
 
   p {
     font-size: $f-s-440;
     font-weight: $f-w-400;
-
     line-height: 1em;
+
+    @include desktop {
+      font-size: 99%;
+    }
   }
 
   a {
