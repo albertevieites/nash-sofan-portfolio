@@ -1122,24 +1122,23 @@ html {
 }
 
 .form-container {
-  min-height: 87vh;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 4em 0;
+  width: 100%;
 }
 
 .message__container {
   display: flex;
   flex-direction: column;
-  gap: 1em;
-  width: 100%;
+  gap: 0.5em;
   padding-bottom: 3em;
 }
 .message__container span {
+  padding-bottom: 0.5em;
   font-size: 1.2rem;
   font-weight: 400;
-  padding-bottom: 0.5em;
 }
 .message__container textarea {
   width: 50vw;
@@ -1149,18 +1148,46 @@ html {
   outline: none;
   border: 0.01em solid hsl(212deg, 13%, 23%);
 }
+@media screen and (max-width: 480px) {
+  .message__container textarea {
+    font-size: 95%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .message__container textarea {
+    font-size: 75%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .message__container textarea {
+    font-size: 60%;
+  }
+}
 
 .contact--details__container {
   display: flex;
   flex-direction: column;
   gap: 1em;
-  width: 100%;
   padding-bottom: 2em;
+}
+@media screen and (max-width: 480px) {
+  .contact--details__container {
+    font-size: 95%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .contact--details__container {
+    font-size: 75%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .contact--details__container {
+    font-size: 60%;
+  }
 }
 .contact--details__container span {
   font-size: 1.2rem;
   font-weight: 400;
-  padding-bottom: 0.5em;
 }
 .contact--details__container input {
   width: 50vw;
@@ -1173,13 +1200,13 @@ html {
   display: flex;
   justify-content: center;
 }
-.button input {
-  width: 10vw;
-  padding: 1em 0;
-  border: none;
-  border-radius: 3em;
+.button button {
+  padding: 1em 2.5em;
   color: white;
   background-color: hsl(197deg, 100%, 50%);
   font-size: 0.9rem;
   font-weight: 500;
+  text-align: center;
+  border: none;
+  border-radius: 3em;
 }

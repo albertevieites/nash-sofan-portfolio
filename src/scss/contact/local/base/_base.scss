@@ -1,39 +1,46 @@
-@import '../../../portfolio/local/abstracts/variables';
+@import "../../../portfolio/local/abstracts/variables";
 
 .form-container {
-  min-height: 87vh;
-  width: 100%;
-
   display: flex;
   justify-content: center;
   align-items: center;
+
+  padding: 4em 0;
+  width: 100%;
 }
 
 .message__container {
   display: flex;
   flex-direction: column;
-  gap: 1em;
-
-  width: 100%;
+  gap: 0.5em;
 
   padding-bottom: 3em;
 
   span {
+    padding-bottom: 0.5em;
+
     font-size: $f-s-480;
     font-weight: $f-w-400;
-
-    padding-bottom: 0.5em;
   }
 
   textarea {
     width: 50vw;
-
     padding-top: 1em;
     padding-bottom: 12em;
     padding-left: 1em;
 
     outline: none;
     border: 0.01em solid $clr-light-dark;
+
+    @include phone {
+      font-size: 95%;
+    }
+    @include medium-phone {
+      font-size: 75%;
+    }
+    @include small-phone {
+      font-size: 60%;
+    }
   }
 }
 
@@ -42,20 +49,24 @@
   flex-direction: column;
   gap: 1em;
 
-  width: 100%;
-
   padding-bottom: 2em;
 
+  @include phone {
+    font-size: 95%;
+  }
+  @include medium-phone {
+    font-size: 75%;
+  }
+  @include small-phone {
+    font-size: 60%;
+  }
   span {
     font-size: $f-s-480;
     font-weight: $f-w-400;
-
-    padding-bottom: 0.5em;
   }
 
   input {
     width: 50vw;
-
     padding: 1em;
 
     outline: none;
@@ -67,19 +78,16 @@
   display: flex;
   justify-content: center;
 
-  input {
-    width: 10vw;
-
-    padding: 1em 0;
-
-    border: none;
-    border-radius: 3em;
-
+  button {
+    padding: 1em 2.5em;
     color: $clr-background;
     background-color: $clr-hover;
 
     font-size: $f-s-380;
     font-weight: $f-w-500;
+    text-align: center;
+
+    border: none;
+    border-radius: 3em;
   }
 }
-
