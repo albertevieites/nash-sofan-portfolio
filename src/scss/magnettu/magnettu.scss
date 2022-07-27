@@ -3,8 +3,8 @@
 
 @import './abstracts/colors';
 @import './abstracts/variables';
-@import './abstracts/_breakpoints';
+@import '../base-layer/local/abstracts/breakpoints';
 
-@import '../base-layer/local/abstracts/_normalize';
-@import '../base-layer/local/abstracts/_resets';
-@import '../base-layer/local/abstracts/_typography';
+@import '../base-layer/local/abstracts/normalize';
+@import '../base-layer/local/abstracts/resets';
+@import '../base-layer/local/abstracts/typography';

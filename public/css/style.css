@@ -862,7 +862,7 @@ html {
   flex-direction: column;
   justify-content: center;
   margin: 0 10em;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
 }
 @media screen and (max-width: 768px) {
   .about__hobbies {
@@ -899,10 +899,28 @@ html {
 }
 
 .about__carrousel {
-  min-height: 30em;
+  display: grid;
+  gap: 2em;
+  grid-auto-flow: column;
+  grid-auto-columns: 31%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+.about__carrousel .about__media {
   width: 100%;
-  margin-bottom: 6em;
-  background-color: magenta;
+  padding: 1em;
+}
+.about__carrousel .about__media img {
+  width: 25vw;
+}
+
+.snaps-inline {
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: 1em;
+}
+
+.snaps-inline > * {
+  scroll-snap-align: start;
 }
 
 .about__talk {
