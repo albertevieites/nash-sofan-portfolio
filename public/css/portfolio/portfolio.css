@@ -327,7 +327,7 @@ body {
   background: linear-gradient(140deg, hsla(0deg, 0%, 97%, 0.72), hsla(0deg, 0%, 7%, 0.18) 90%);
 }
 .projects__card--frio .projects__image {
-  width: 60%;
+  width: 50%;
 }
 @media screen and (max-width: 1024px) {
   .projects__card--frio .projects__image {
