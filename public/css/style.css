@@ -260,30 +260,6 @@ body {
   line-height: 1.3;
 }
 
-@media screen and (max-width: 480px) {
-  .responsive-test {
-    background-color: red;
-    font-size: 2rem;
-    text-align: center;
-    padding: 1em;
-  }
-}
-@media screen and (max-width: 768px) {
-  .responsive-test {
-    background-color: blue;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .responsive-test {
-    background-color: green;
-  }
-}
-@media screen and (min-width: 1201px) {
-  .responsive-test {
-    background-color: purple;
-  }
-}
-
 .header {
   display: flex;
   justify-content: center;
@@ -414,30 +390,6 @@ footer {
 }
 footer img {
   width: 1.5em;
-}
-
-@media screen and (max-width: 480px) {
-  .responsive-test {
-    background-color: red;
-    font-size: 2rem;
-    text-align: center;
-    padding: 1em;
-  }
-}
-@media screen and (max-width: 768px) {
-  .responsive-test {
-    background-color: blue;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .responsive-test {
-    background-color: green;
-  }
-}
-@media screen and (min-width: 1201px) {
-  .responsive-test {
-    background-color: purple;
-  }
 }
 
 html {
@@ -605,30 +557,6 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
-@media screen and (max-width: 480px) {
-  .responsive-test {
-    background-color: red;
-    font-size: 2rem;
-    text-align: center;
-    padding: 1em;
-  }
-}
-@media screen and (max-width: 768px) {
-  .responsive-test {
-    background-color: blue;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .responsive-test {
-    background-color: green;
-  }
-}
-@media screen and (min-width: 1201px) {
-  .responsive-test {
-    background-color: purple;
-  }
-}
-
 .header {
   display: flex;
   justify-content: center;
@@ -746,30 +674,6 @@ html {
   margin: 5px auto;
   background-color: hsl(0deg, 0%, 0%);
   transition: all 0.3s easy-in-out;
-}
-
-@media screen and (max-width: 480px) {
-  .responsive-test {
-    background-color: red;
-    font-size: 2rem;
-    text-align: center;
-    padding: 1em;
-  }
-}
-@media screen and (max-width: 768px) {
-  .responsive-test {
-    background-color: blue;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .responsive-test {
-    background-color: green;
-  }
-}
-@media screen and (min-width: 1201px) {
-  .responsive-test {
-    background-color: purple;
-  }
 }
 
 .header__container {
@@ -975,30 +879,6 @@ html {
 .about__talk a {
   font-size: 1.1rem;
   color: hsl(197deg, 100%, 50%);
-}
-
-@media screen and (max-width: 480px) {
-  .responsive-test {
-    background-color: red;
-    font-size: 2rem;
-    text-align: center;
-    padding: 1em;
-  }
-}
-@media screen and (max-width: 768px) {
-  .responsive-test {
-    background-color: blue;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .responsive-test {
-    background-color: green;
-  }
-}
-@media screen and (min-width: 1201px) {
-  .responsive-test {
-    background-color: purple;
-  }
 }
 
 .header {

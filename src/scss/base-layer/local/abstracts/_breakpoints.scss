@@ -42,21 +42,3 @@ $breackpoints: (
     @content;
   }
 }
-
-.responsive-test {
-  @include phone {
-    background-color: red;
-    font-size: 2rem;
-    text-align: center;
-    padding: 1em;
-  }
-  @include tablet {
-    background-color: blue;
-  }
-  @include desktop {
-    background-color: green;
-  }
-  @include large-desktop {
-    background-color: purple;
-  }
-}
