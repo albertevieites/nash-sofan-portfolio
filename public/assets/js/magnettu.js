@@ -13,3 +13,6 @@ function scrollProgress() {
 }
 
 document.addEventListener("scroll", scrollProgress);
+
+
+
