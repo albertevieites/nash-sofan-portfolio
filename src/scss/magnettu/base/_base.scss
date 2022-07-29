@@ -44,7 +44,7 @@
       }
 
       @include phone {
-        font-size: $f-s-700;
+        font-size: $f-s-840;
       }
     }
 
@@ -99,6 +99,7 @@
     @include phone {
       flex-direction: column;
     }
+
     h3 {
       font-size: $f-s-500;
 
@@ -142,6 +143,9 @@
       width: 100%;
     }
 
+    @include small-phone {
+      flex-direction: column;
+    }
     &--one {
       width: 50%;
       @include base {
@@ -314,9 +318,11 @@
     align-items: center;
     gap: 2em;
 
-    @include base {
+    @include phone {
       display: flex;
       flex-direction: column;
+
+      margin: 0 auto;
     }
   }
 
@@ -325,10 +331,7 @@
     img {
       width: 38vw;
       max-width: 600px;
-      @include base {
-        display: flex;
-        justify-content: center;
-
+      @include phone {
         width: 60vw;
         padding-bottom: 2em;
       }
@@ -371,11 +374,26 @@
     @include tablet {
       width: 80%;
     }
+
+    @include phone {
+      gap: 2em;
+    }
   }
 
   &__card {
     display: flex;
     align-items: center;
+
+    @include phone {
+      flex-direction: column;
+    }
+
+    p {
+      width: 70%;
+      @include small-phone {
+        width: 90%;
+      }
+    }
   }
 
   &__image {
@@ -384,6 +402,10 @@
     align-items: center;
 
     width: 50%;
+
+    @include phone {
+      width: 90%;
+    }
     img {
       width: 50%;
     }
@@ -404,10 +426,6 @@
     margin-bottom: 0;
 
     font-size: $f-s-1000;
-
-    @include base {
-      margin-bottom: 0;
-    }
   }
 
   h3 {
@@ -420,9 +438,6 @@
     line-height: 1.6em;
     letter-spacing: 0.04em;
 
-    @include base {
-      font-size: $f-s-400;
-    }
     span {
       font-weight: $f-w-600;
     }
@@ -432,14 +447,20 @@
     display: flex;
     align-items: center;
 
-    @include base {
+    @include phone {
       display: flex;
       flex-direction: column;
+
+      padding-top: 2em;
     }
 
     img {
       width: 30vw;
       max-width: 400px;
+
+      @include phone {
+        width: 100%;
+      }
     }
   }
 
@@ -466,19 +487,19 @@
       display: flex;
       gap: 1em;
 
-      @include base {
-        gap: 0.5em;
+      @include small-phone {
+        flex-direction: column;
       }
 
       .bottom--pain {
         width: 50%;
-        @include base {
+        @include small-phone {
           width: 100%;
         }
       }
       .bottom--goals {
         width: 50%;
-        @include base {
+        @include small-phone {
           width: 100%;
         }
       }
@@ -505,14 +526,9 @@
   background-color: $clr-background-grey-dark;
 
   h1 {
-    margin-top: 0;
     margin-bottom: 0;
 
     font-size: $f-s-1000;
-
-    @include base {
-      margin-bottom: 0;
-    }
   }
 
   h3 {
@@ -524,10 +540,6 @@
 
     line-height: 1.6em;
     letter-spacing: 0.04em;
-
-    span {
-      font-weight: $f-w-600;
-    }
   }
 
   &__container {
@@ -541,7 +553,7 @@
 
     color: $clr-primary-light;
 
-    @include base {
+    @include phone {
       display: flex;
       flex-direction: column;
 
@@ -551,6 +563,10 @@
     img {
       width: 30vw;
       max-width: 400px;
+
+      @include phone {
+        width: 100%;
+      }
     }
 
     p {
@@ -578,18 +594,18 @@
       display: flex;
       gap: 1em;
 
-      @include base {
-        gap: 0.5em;
+      @include small-phone {
+        flex-direction: column;
       }
       .bottom--pain {
         width: 50%;
-        @include base {
+        @include small-phone {
           width: 100%;
         }
       }
       .bottom--goals {
         width: 50%;
-        @include base {
+        @include small-phone {
           width: 100%;
         }
       }
@@ -626,8 +642,16 @@
   &__content {
     display: flex;
 
+    @include phone {
+      flex-direction: column;
+    }
+
     img {
       width: 80%;
+
+      @include phone {
+        width: 60%;
+      }
     }
   }
 
@@ -654,6 +678,10 @@
   &__right--top {
     display: flex;
     gap: 1em;
+
+    @include medium-phone {
+      flex-direction: column;
+    }
   }
 
   &__font {
@@ -663,6 +691,10 @@
 
     @include tablet {
       font-size: 95%;
+    }
+
+    @include small-phone {
+      width: 100%;
     }
     .font__regular {
       font-weight: $f-w-400;
@@ -680,6 +712,17 @@
 
   &__icons {
     width: 50%;
+    @include phone {
+      .top__icons {
+        width: 100%;
+        img {
+          width: 70%;
+          @include medium-phone {
+            width: 90%;
+          }
+        }
+      }
+    }
   }
 
   &__components {
@@ -699,7 +742,6 @@
   padding: 2rem 0;
   background-color: $clr-background-grey-dark;
 
-
   h3 {
     font-size: $f-s-400;
     font-weight: $f-w-500;
@@ -716,12 +758,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    }
+  }
 
   .wrapper--right {
     display: flex;
     flex-direction: column;
-    }
+  }
 
   .midfi__container {
     display: flex;
@@ -734,10 +776,12 @@
     .midfi__image {
       img {
         width: 36vw;
+        @include phone {
+          width: 70vw;
+        }
       }
     }
   }
-
 }
 
 .test {
@@ -824,7 +868,7 @@
       .user__content {
         width: 90%;
         margin: 0 auto;
-        }
+      }
     }
 
     .content--2scheduling {
@@ -835,12 +879,19 @@
 
         img {
           width: 60%;
+          @include phone {
+            width: 100%;
+          }
         }
 
         .post--top {
           display: flex;
           align-items: center;
           gap: 2em;
+
+          @include phone {
+            flex-direction: column;
+          }
 
           p {
             color: $clr-primary-light;
@@ -861,6 +912,10 @@
           display: flex;
           align-items: center;
           gap: 2em;
+
+          @include phone {
+            flex-direction: column;
+          }
 
           p {
             font-size: $f-s-480;
@@ -883,17 +938,25 @@
 
           margin: 2em 0;
 
+          @include phone {
+            flex-direction: column;
+          }
+
           img {
             width: 18vw;
 
-            @include base {
-              width: 70%;
+            @include phone {
+              width: 50%;
+              margin: 0 auto;
             }
           }
 
           .suggestion--content {
             width: 35%;
 
+            @include phone {
+              width: 100%;
+            }
 
             h3 {
               width: 50%;
@@ -903,10 +966,21 @@
               @include desktop {
                 width: 70%;
               }
+
+              @include phone {
+                width: 100%;
+
+                text-align: center;
+              }
             }
 
             .content--bottom {
               margin: 0 0 0 4em;
+
+              @include phone {
+                margin: 0 auto;
+                width: 70%;
+              }
 
               & > p {
                 font-weight: $f-w-800;
@@ -918,22 +992,11 @@
                 margin: 0;
               }
 
-              @include base {
-                margin: 0;
-              }
-
               .content--italic {
                 font-style: italic;
 
                 color: $clr-primary-light;
               }
-            }
-          }
-
-          .content__image3 {
-            @include base {
-              display: flex;
-              justify-content: center;
             }
           }
         }
@@ -951,11 +1014,16 @@
           justify-content: center;
           gap: 2em;
 
+          @include phone {
+            flex-direction: column;
+            align-items: center;
+          }
+
           img {
             width: 18vw;
 
-            @include base {
-              width: 70%;
+            @include phone {
+              width: 50%;
             }
           }
 
@@ -966,13 +1034,17 @@
 
             width: 35%;
 
+            @include phone {
+              width: 70%;
+            }
+
             p {
               margin: 0 0 1em;
             }
           }
 
           .redesigned__image {
-            @include base {
+            @include phone {
               display: flex;
               justify-content: center;
             }
@@ -1003,36 +1075,29 @@
   }
 
   &__wrapper {
-    @include base {
-      display: flex;
-      justify-content: center;
-    }
+    display: flex;
+    justify-content: center;
   }
 
   &__div--container {
     width: 85%;
-
-    @include base {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      width: 80%;
-    }
 
     .next__section {
       display: flex;
       gap: 2em;
       align-items: center;
 
-      @include base {
-        display: flex;
-        justify-content: center;
-      }
-
       .next__image {
         img {
           width: 2vw;
+
+          @include phone {
+            width: 4vw;
+          }
+
+          @include tablet {
+            width: 3vw;
+          }
         }
       }
     }
