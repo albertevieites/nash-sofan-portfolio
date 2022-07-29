@@ -11,38 +11,42 @@
   <body>
     <!-- SETCION 1 - HERO -->
     <section class="hero">
-      <div class="hero__container">
-        <div class="hero__text">
-          <h1>Sass Web App</h1>
-          <p>
-            An effective, seamless tool to track materials and professional
-            inventory.
-          </p>
+      <div class="hero__card">
+        <div class="hero__content">
+          <div class="hero__text">
+            <h1>Sass Web App</h1>
+            <p>
+              An effective, seamless tool to track materials and professional
+              inventory.
+            </p>
+          </div>
+          <div class="hero__line"></div>
         </div>
-        <div class="hero__line"></div>
-      </div>
 
-      <img
-        src="../assets/images/portfolio/minventory.svg"
-        alt="minventory screengrab"
-        class="hero__image"
-      />
+      <div class="hero__image">
+        <img
+          src="../assets/images/minventory/hero/minventory.svg"
+          alt="minventory screengrab"
+          class="hero__image"
+        />
+      </div>
+      </div>
     </section>
 
     <!-- SECTION 2 - SPECS -->
     <section class="specs">
       <div class="specs__container">
         <div class="specs__text specs__text--left">
-          <h4>Team Size</h4>
+          <h3>Team Size</h3>
           <p>Individual</p>
-          <h4>Duration</h4>
+          <h3>Duration</h3>
           <ul>
-            <li>Srping 2022</li>
+            <li>Spring 2022</li>
             <li>1 Week</li>
           </ul>
         </div>
         <div class="specs__text specs__text--center">
-          <h4>Responsabilities</h4>
+          <h3>Responsabilities</h3>
           <ul>
             <li>Research</li>
             <li>Affinity Mapping</li>
@@ -54,7 +58,7 @@
           </ul>
         </div>
         <div class="specs__text specs__text--right">
-          <h4>Materials</h4>
+          <h3>Materials</h3>
           <ul>
             <li>Index Cards</li>
             <li>Pen and Paper</li>
@@ -77,61 +81,71 @@
 
     <!-- SECTION 4 - BACKGROUND -->
     <section class="background">
-      <h2>Background</h2>
-      <div class="background__content">
-        <div class="text--top">
-          <h4>Problem Statement</h4>
-          <p>
-            <span>Small businesses</span> with limited budgets, spend time and
-            money for <span>material-inventory bookeeping</span> yet end up
-            losing clients and consistency. Hence, want to keep the business
-            running and prevent interruptions.
-          </p>
-        </div>
-        <div class="text--bottom">
-          <h4>Hypothesis</h4>
-          <p>
-            A B2B tool to <span>track</span> and
-            <span>manage professional inventory</span> by integrating with POS
-            systems to <snap>calculate when and how</snap> much inventory is
-            needed to keep businesses running without interruptions.
-          </p>
+      <div class="background__wrapper">
+        <h2>Background</h2>
+        <div class="background__content">
+          <div class="text--top">
+            <h3>Problem Statement</h3>
+            <p>
+              <span>Small businesses</span> with limited budgets, spend time and
+              money for <span>material-inventory bookeeping</span> yet end up
+              losing clients and consistency. Hence, want to keep the business
+              running and prevent interruptions.
+            </p>
+          </div>
+          <div class="text--bottom">
+            <h3>Hypothesis</h3>
+            <p>
+              A B2B tool to <span>track</span> and
+              <span>manage professional inventory</span> by integrating with POS
+              systems to <snap>calculate when and how</snap> much inventory is
+              needed to keep businesses running without interruptions.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- SECTION 5 - RESEARCH -->
     <section class="research">
-      <h2>Research</h2>
-      <div class="research__content">
-        <p>
-          I chose to focus on small businesses, mainly because they were
-          <span>impacted the most by the pandemic</span>
-          and there isn’t a lot of SaaS tools targeted for them.
-        </p>
-        <h4>Interviews</h4>
-        <p class="interview__paragraph">
-          I conducted <span>10</span> interviews with
-          <span>managers</span> and/or <snap>owners</snap> of small to medium
-          <snap>spas</snap>, <snap>dental clinics</snap>, and
-          <snap>beauty centers</snap> in 7 different locations around the world.
-        </p>
-        <div class="research__bottom">
-          <div class="bottom__text">
-            <p>
-              Each interview took approximately <span>15-20 minutes</span> and
-              was initiated by asking them the following question:
-            </p>
-            <blockquote>
-              “Could you walk me through an exhaustive management task at your
-              business?”
-            </blockquote>
+      <div class="research__wrapper">
+        <h2>Research</h2>
+        <div class="research__content">
+          <p>
+            I chose to focus on small businesses, mainly because they were
+            <span>impacted the most by the pandemic</span>
+            and there isn’t a lot of SaaS tools targeted for them.
+          </p>
+          <h3>Interviews</h3>
+          <p class="interview__paragraph">
+            I conducted <span>10</span> interviews with
+            <span>managers</span> and/or <snap>owners</snap> of small to medium
+            <snap>spas</snap>, <snap>dental clinics</snap>, and
+            <snap>beauty centers</snap> in 7 different locations around the world.
+          </p>
+          <div class="research__bottom">
+            <div class="bottom__text">
+              <div class="bottom__text--paragraph">
+                <p>
+                  Each interview took approximately <span>15-20 minutes</span> and
+                  was initiated by asking them the following question:
+                </p>
+              </div>
+              <div class="bottom__text--quote">
+                <blockquote>
+                  “Could you walk me through an exhaustive management task at your
+                  business?”
+                </blockquote>
+              </div>
+            </div>
+            <div class="research__image">
+              <img
+                src="../assets/images/minventory/research_illustration.svg"
+                alt="research illustration image"
+                class="research__image"
+              />
+            </div>
           </div>
-          <img
-            src="../assets/images/minventory/research_illustration.svg"
-            alt="research illustration image"
-            class="research__image"
-          />
         </div>
       </div>
     </section>
@@ -139,7 +153,7 @@
     <!-- SECTION 6 - INSIGHTS -->
     <section class="insights">
       <div class="insights__container">
-        <h4>Inisghts</h4>
+        <h2>Inisghts</h2>
         <div class="insights__content">
           <p>
             Although the interviews were with business owners from different
@@ -182,7 +196,7 @@
             After gathering all the insights, I began to formulate the user
             personas, to be able to design the prototype with the user in mind.
           </p>
-          <h4>User Personas</h4>
+          <h3>User Personas</h3>
           <p>
             I came up with two user personas. What’s different is that they own
             different businesses, one is a beauty center and the other is a
@@ -204,9 +218,10 @@
               <h1>Brianna</h1>
               <p>Entrepeneur Beauty Center</p>
             </div>
+
             <div class="persona__content--top">
               <div class="persona__container--about">
-                <h5>ABOUT</h5>
+                <h4>ABOUT</h4>
                 <div class="persona__icon--person">
                   <div class="synthesis__icons">
                     <img
@@ -245,7 +260,7 @@
                 </div>
               </div>
               <div class="persona__container--bio">
-                <h5>BIO</h5>
+                <h4>BIO</h4>
                 <p>
                   Brianna lives alone in Central London and owns a Beauty Spa
                   with her business partner Allison. Briana is not familiar with
@@ -254,9 +269,10 @@
                 </p>
               </div>
             </div>
+
             <div class="persona__content--bottom">
               <div class="persona__container--frustrations">
-                <h5>FRUSTRATIONS</h5>
+                <h4>FRUSTRATIONS</h4>
                 <p>
                   Many materials to keep track. Does bookkeeping herself every
                   day afterhours.
@@ -268,14 +284,14 @@
                 </p>
               </div>
               <div class="persona__container--goals">
-                <h5>GOALS</h5>
+                <h4>GOALS</h4>
                 <p>
                   Not waste any material.Easily know when materials and supplies
                   will finish/expire so she can order more. Organize how and
                   when she should go inventory shopping.
                 </p>
                 <div class="persona__container--icons">
-                  <h5>SasS Brands</h5>
+                  <h4>SasS Brands</h4>
                   <div class="icons__images">
                     <img
                       src="../assets/images/minventory/phorest_icon.png"
@@ -312,7 +328,7 @@
             </div>
             <div class="persona__content--top">
               <div class="persona__container--about">
-                <h5>ABOUT</h5>
+                <h4>ABOUT</h4>
                 <div class="persona__icon--person">
                   <div class="synthesis__icons">
                     <img
@@ -351,7 +367,7 @@
                 </div>
               </div>
               <div class="persona__container--bio">
-                <h5>BIO</h5>
+                <h4>BIO</h4>
                 <p>
                   Clara is a dentist that opened her own Dental Clinic on 2018
                   that was tragically affected by the pandemic. Clara spent her
@@ -362,7 +378,7 @@
             </div>
             <div class="persona__content--bottom">
               <div class="persona__container--frustrations">
-                <h5>FRUSTRATIONS</h5>
+                <h4>FRUSTRATIONS</h4>
                 <p>
                   Low cost suppliers require at least 1 week notice for orders.
                 </p>
@@ -377,14 +393,14 @@
                 </p>
               </div>
               <div class="persona__container--goals">
-                <h5>GOALS</h5>
+                <h4>GOALS</h4>
                 <p>
                   Easily know when materials and supplies will finish/expire so
                   she can order more.
                 </p>
                 <p>Keep clients happy and keep businesss running smoothly.</p>
                 <div class="persona__container--icons">
-                  <h5>SasS Brands</h5>
+                  <h4>SasS Brands</h4>
                   <div class="icons__images">
                     <img
                       src="../assets/images/minventory/zendesk_icon.png"
@@ -410,58 +426,62 @@
 
     <!-- SECTION 9 - SCENARIO -->
     <section class="scenario">
-      <h2>Scenario</h2>
-      <div class="scenario__content">
-        <p>
-          Brianna purchased materials for a new service she is implementing in
-          her beauty center and will manually input the details to the tacking
-          system.
-        </p>
+      <div class="scenario__wrapper">
+        <h2>Scenario</h2>
+        <div class="scenario__content">
+          <p>
+            Brianna purchased materials for a new service she is implementing in
+            her beauty center and will manually input the details to the tacking
+            system.
+          </p>
+        </div>
       </div>
     </section>
 
     <!-- SECTION 10 - PROTOTYPING -->
     <section class="prototyping">
-      <h2>Prototyping</h2>
-      <div class="prototyping__container">
-        <div class="prototyping__content prototyping__content--lofi">
-          <h3>Lo-Fi</h3>
-          <div class="lofi__content">
-            <div class="lofi__content--left">
-              <img
-                src="../assets/images/minventory/dashboard.jpg"
-                alt="dashboard photo"
-              />
-              <p>Dashboard</p>
-            </div>
-            <div class="lofi__content--right">
-              <img
-                src="../assets/images/minventory/inventory.jpg"
-                alt="inventory photo"
-              />
-              <p>Inventory</p>
+      <div class="prototyping__wrapper">
+        <h2>Prototyping</h2>
+        <div class="prototyping__container">
+          <div class="prototyping__content prototyping__content--lofi">
+            <h3>Lo-Fi</h3>
+            <div class="lofi__content">
+              <div class="lofi__content--left">
+                <img
+                  src="../assets/images/minventory/dashboard.jpg"
+                  alt="dashboard photo"
+                />
+                <p>Dashboard</p>
+              </div>
+              <div class="lofi__content--right">
+                <img
+                  src="../assets/images/minventory/inventory.jpg"
+                  alt="inventory photo"
+                />
+                <p>Inventory</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="prototyping__content prototyping__content--mifi">
-          <h3>Mid-Fi</h3>
-          <div class="midfi__content">
-            <img
-              src="../assets/images/minventory/dashboard-midfi.jpg"
-              alt="dashboard photo midfi"
-            />
-            <img
-              src="../assets/images/minventory/inventory-midfi.jpg"
-              alt="inventory photo midfi"
-            />
-            <img
-              src="../assets/images/minventory/addmenu-midfi.jpg"
-              alt="add menu item photo midfi"
-            />
-            <img
-              src="../assets/images/minventory/menu-midfi.jpg"
-              alt="menu photo midfi"
-            />
+          <div class="prototyping__content prototyping__content--mifi">
+            <h3>Mid-Fi</h3>
+            <div class="midfi__content">
+              <img
+                src="../assets/images/minventory/dashboard-midfi.jpg"
+                alt="dashboard photo midfi"
+              />
+              <img
+                src="../assets/images/minventory/inventory-midfi.jpg"
+                alt="inventory photo midfi"
+              />
+              <img
+                src="../assets/images/minventory/addmenu-midfi.jpg"
+                alt="add menu item photo midfi"
+              />
+              <img
+                src="../assets/images/minventory/menu-midfi.jpg"
+                alt="menu photo midfi"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -469,88 +489,87 @@
 
     <!-- SECTION 11 - USABILITY -->
     <section class="usability">
-      <h2>Usability Tests and Iterations</h2>
-      <div class="usability__content">
-        <h3>Adding New Service</h3>
-        <div class="usability__content--service">
-          <div class="usability__service--top">
-            <div class="usability__--service-top-left">
-              <img
-                src="../assets/images/minventory/new-service.svg"
-                alt="new service capture"
-              />
-              <div class="usability__quote">
-                <quote>
-                  “I am concerned about why this needs to be
-                  <span>two seperate screens</span>.”
-                </quote>
+      <div class="usability__wrapper">
+        <h2>Usability Tests and Iterations</h2>
+        <div class="usability__content">
+          <h3>Adding New Service</h3>
+          <div class="usability__content--service">
+            <div class="usability__service--top">
+              <div class="usability__--service-top-left">
+                <img
+                  src="../assets/images/minventory/new-service.svg"
+                  alt="new service capture"
+                />
+                <div class="usability__quote">
+                  <quote>
+                    “I am concerned about why this needs to be
+                    <span>two seperate screens</span>.”
+                  </quote>
+                </div>
               </div>
-            </div>
-            <div class="usability__service--top-right">
-              <p>
-                Initially I had two different screens for adding a new item to
-                the menu of services. However users were annoyed of the amount
-                of steps taken to complete a simple task.
-              </p>
-            </div>
-          </div>
-
-          <div class="usability__service--bottom">
-            <div class="usability__--service-bottom-left">
-              <div class="service-bottom-left__paragraph">
+              <div class="usability__service--top-right">
                 <p>
-                  So I redesigned it all to fit into a screen. <span>One simple screen</span> with components and variants.
+                  Initially I had two different screens for adding a new item to
+                  the menu of services. However users were annoyed of the amount
+                  of steps taken to complete a simple task.
                 </p>
               </div>
-              <div class="usability__quote"></div>
             </div>
-            <div class="usability__service--bottom-right">
-              <img
-                src="../assets/images/minventory/new-service-redesigned.svg"
-                alt="new service redesigned capture"
-              />
-            </div>
-          </div>
-        </div>
-
-        <h3>Inventory List</h3>
-        <div class="usability__content--inventory">
-          <p>Initially the inventory page looked like this, however users wanted to be able to search.</p>
-          <div class="usability__inventory--top">
-            <div class="usability__--inventory-top-left">
-              <img
-                src="../assets/images/minventory/inventory-stock.svg"
-                alt="new service capture"
-              />
-            </div>
-            <div class="usability__service--top-right">
-              <div class="usability__quote">
-                <quote>
-                  “Why am I still seeing this
-                  <span>banner</span> on the top?”
-                </quote>
-                <quote>
-                  “We have a lot of materials, I want to be able to <span>search</span> and or <span>filter</span> by category.”
-                </quote>
+            <div class="usability__service--bottom">
+              <div class="usability__--service-bottom-left">
+                <div class="service-bottom-left__paragraph">
+                  <p>
+                    So I redesigned it all to fit into a screen. <span>One simple screen</span> with components and variants.
+                  </p>
+                </div>
+                <div class="usability__quote"></div>
+              </div>
+              <div class="usability__service--bottom-right">
+                <img
+                  src="../assets/images/minventory/new-service-redesigned.svg"
+                  alt="new service redesigned capture"
+                />
               </div>
             </div>
           </div>
-          <div class="usability__inventory--line"></div>
-          <div class="usability__inventory--bottom">
-            <img src="../assets/images/minventory/categories.svg" alt="categories capture">
-            <div class="usability__inventory--bottom-right">
-              <p>Filter and Sort by different preferences.</p>
-              <quote><span>Easy</span>, <span>familiar</span>, and <span>intuitive</span> way to sort things based on necessity.</quote>
+          <h3>Inventory List</h3>
+          <div class="usability__content--inventory">
+            <p>Initially the inventory page looked like this, however users wanted to be able to search.</p>
+            <div class="usability__inventory--top">
+              <div class="usability__--inventory-top-left">
+                <img
+                  src="../assets/images/minventory/inventory-stock.svg"
+                  alt="new service capture"
+                />
+              </div>
+              <div class="usability__service--top-right">
+                <div class="usability__quote">
+                  <quote>
+                    “Why am I still seeing this
+                    <span>banner</span> on the top?”
+                  </quote>
+                  <quote>
+                    “We have a lot of materials, I want to be able to <span>search</span> and or <span>filter</span> by category.”
+                  </quote>
+                </div>
+              </div>
             </div>
+            <div class="usability__inventory--line"></div>
+            <div class="usability__inventory--bottom">
+              <img src="../assets/images/minventory/categories.svg" alt="categories capture">
+              <div class="usability__inventory--bottom-right">
+                <p>Filter and Sort by different preferences.</p>
+                <quote><span>Easy</span>, <span>familiar</span>, and <span>intuitive</span> way to sort things based on necessity.</quote>
+              </div>
+            </div>
+            <p>Added the features that allows users to filter and search based on supplier, category, and name. Also, sort materials based on expiry dates and status.</p>
           </div>
-          <p>Added the features that allows users to filter and search based on supplier, category, and name. Also, sort materials based on expiry dates and status.</p>
-        </div>
-
-        <h3>Adding Inventory</h3>
-        <div class="wrap__inventory">
-          <div class="usability__content--add-inventory">
-            <p>During usability testing, users were super confused to how and why there are two measurements. I simply changed the organization of the inputs and changed some of the wording. </p>
-            <img src="../assets/images/minventory/adding-inventory.svg" alt="adding inventory capture">
+          <h3>Adding Inventory</h3>
+          <div class="wrap__inventory">
+            <div class="usability__content--add-inventory">
+              <p>During usability testing, users were super confused to how and why there are two measurements. I simply changed the organization of the inputs and changed some of the wording. </p>
+              <img src="../assets/images/minventory/adding-inventory.svg" alt="adding inventory capture">
+            </div>
           </div>
         </div>
       </div>
@@ -558,29 +577,31 @@
 
     <!-- SECTION 12 - NEXT PHASE -->
     <section class="next-phase">
-      <h2>V.2 Next Phase</h2>
-      <div class="hero__line"></div>
-      <div class="next-phase__content">
-        <div class="next-phase__content--left">
-          <h3>UX / UI</h3>
-          <p>Test, test, test and test.</p>
-          <p>
-            Adding a “Edit Widgets” button to allow users to change the visuals
-            of graphs/charts.
-          </p>
-          <p>
-            Change the red, yellow, and green status signals to accomodate those
-            who are color blind.
-          </p>
-          <img
-            src="../assets/images/minventory/banner.svg"
-            alt="banner image"
-          />
-        </div>
-        <div class="next-phase__content--right">
-          <h3>Business</h3>
-          <p>Scan the web and alert you if there is a cheaper supplier.</p>
-          <p>Be able to send and make orders based on approval.</p>
+      <div class="next-phase__wrapper">
+        <h2>V.2 Next Phase</h2>
+        <div class="hero__line"></div>
+        <div class="next-phase__content">
+          <div class="next-phase__content--left">
+            <h3>UX / UI</h3>
+            <p>Test, test, test and test.</p>
+            <p>
+              Adding a “Edit Widgets” button to allow users to change the visuals
+              of graphs/charts.
+            </p>
+            <p>
+              Change the red, yellow, and green status signals to accomodate those
+              who are color blind.
+            </p>
+            <img
+              src="../assets/images/minventory/banner.svg"
+              alt="banner image"
+            />
+          </div>
+          <div class="next-phase__content--right">
+            <h3>Business</h3>
+            <p>Scan the web and alert you if there is a cheaper supplier.</p>
+            <p>Be able to send and make orders based on approval.</p>
+          </div>
         </div>
       </div>
     </section>
