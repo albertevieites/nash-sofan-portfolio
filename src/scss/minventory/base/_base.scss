@@ -15,18 +15,14 @@
     font-weight: $f-w-500;
 
     @include tablet {
-      font-size: $f-s-840;
-    }
-
-    @include phone {
-      font-size: $f-s-840;
+      font-size: $f-s-800;
     }
   }
 
   p {
     margin: 0.2em 0;
 
-    font-size: $f-s-500;
+    font-size: $f-s-440;
     font-weight: $f-w-200;
   }
 
@@ -34,6 +30,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include phone {
+      flex-direction: column;
+      gap: 2em;
+    }
 
     .hero__line {
       height: 0.3em;
@@ -55,15 +56,11 @@
   }
 
   &__image {
-    width: 100%;
-    max-width: 700px;
+    width: 90%;
+    max-width: 600px;
 
     @include tablet {
       width: 100%;
-    }
-
-    @include phone {
-      width: 90%;
     }
 
     img {
@@ -73,7 +70,7 @@
 }
 
 .specs {
-  padding: 2em;
+  padding: 2em 0;
 
   background-color: $clr-primary-light-blue;
 
@@ -109,13 +106,16 @@
     width: 70%;
     margin: 0 auto;
     max-width: 1201px;
+    @include medium-phone {
+      
+    }
   }
 }
 
 .overview {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
-  padding: 5em;
+  padding: 2em 0;
 
   h3 {
     font-size: $f-s-540;
@@ -206,6 +206,12 @@
   &__bottom {
     display: flex;
     align-items: center;
+
+    @include phone {
+      flex-direction: column;
+
+      padding-top: 2em;
+    }
 
     .bottom__text {
       display: flex;
@@ -303,8 +309,15 @@
 
     padding: 1em 0;
 
+    @include tablet {
+      flex-direction: column;
+    }
+
     img {
       width: 22vw;
+      @include tablet {
+        width: 100%;
+      }
     }
 
     .persona__title {
@@ -320,8 +333,15 @@
       &--top {
         display: flex;
         gap: 1em;
+
+        @include phone {
+          flex-direction: column;
+        }
         .persona__container--about {
           width: 50%;
+          @include phone {
+            width: 100%;
+          }
           .persona__icon--person {
             display: flex;
             align-items: center;
@@ -362,6 +382,9 @@
 
         .persona__container--bio {
           width: 50%;
+          @include phone {
+            width: 100%;
+          }
         }
       }
 
@@ -369,12 +392,22 @@
         display: flex;
         gap: 1em;
 
+        @include phone {
+          flex-direction: column;
+        }
+
         .persona__container--frustrations {
           width: 50%;
+          @include phone {
+            width: 100%;
+          }
         }
 
         .persona__container--goals {
           width: 50%;
+          @include phone {
+            width: 100%;
+          }
         }
 
         .persona__container--icons {
@@ -385,10 +418,27 @@
             display: flex;
             align-items: center;
             gap: 2em;
+
+            @include phone {
+              justify-content: space-evenly;
+            }
           }
           img {
             width: 4vw;
             margin-top: 1em;
+          }
+        }
+      }
+    }
+  }
+
+  &__persona--brianna {
+    .persona__container--icons {
+      .icons__images {
+        img {
+          width: 5vw;
+          @include phone {
+            width: 10vw;
           }
         }
       }
@@ -400,6 +450,9 @@
       .icons__images {
         img {
           width: 5vw;
+          @include phone {
+            width: 15vw;
+          }
         }
       }
     }
@@ -469,6 +522,9 @@
 
     img {
       width: 48%;
+      @include phone {
+        width: 100%;
+      }
     }
   }
 }
@@ -507,8 +563,15 @@
 
       margin: 0 5% 2em 5%;
 
+      @include phone {
+        flex-direction: column;
+      }
+
       img {
         width: 35vw;
+        @include phone {
+          width: 100%;
+        }
       }
 
       .usability__quote {
@@ -518,6 +581,10 @@
 
         font-weight: $f-w-200;
         font-style: italic;
+        @include phone {
+          width: 100%;
+          margin-left: 0;
+        }
       }
     }
 
@@ -529,12 +596,23 @@
 
       margin: 0 auto;
 
+      @include phone {
+        flex-direction: column;
+      }
       img {
         width: 35vw;
+        @include phone {
+          width: 100%;
+        }
       }
 
       .service-bottom-left__paragraph {
         width: 20vw;
+        @include phone {
+          width: 100%;
+
+          text-align: center;
+        }
       }
     }
 
@@ -545,6 +623,9 @@
 
       img {
         width: 35vw;
+        @include phone {
+          width: 100%;
+        }
       }
 
       quote {
@@ -561,6 +642,10 @@
         display: flex;
         gap: 1em;
         align-items: center;
+
+        @include phone {
+          flex-direction: column;
+        }
       }
 
       .usability__inventory--line {
@@ -574,6 +659,10 @@
 
         width: 60vw;
         padding-top: 2em;
+
+        @include phone {
+          flex-direction: column;
+        }
         p {
           font-size: $f-s-400;
           font-weight: $f-w-400;
@@ -587,8 +676,15 @@
 
       width: 90%;
 
+      @include phone {
+        flex-direction: column;
+      }
+
       img {
         width: 35vw;
+        @include phone {
+          width: 100%;
+        }
       }
     }
 
@@ -642,21 +738,35 @@
     margin: 0 auto;
     padding-bottom: 2em;
 
+    @include phone {
+      flex-direction: column;
+    }
+
     img {
       width: 70%;
+      @include tablet {
+        width: 100%;
+      }
     }
   }
 
   &__content--left {
     width: 50%;
+    @include phone {
+      width: 100%;
+    }
   }
 
   &__content--right {
     width: 50%;
+    @include phone {
+      width: 100%;
+    }
   }
 }
 
 .final-product {
   width: 70%;
   margin: 0 auto;
+  padding-bottom: 2em;
 }
