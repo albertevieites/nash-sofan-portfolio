@@ -671,7 +671,6 @@
 .midfi {
   display: flex;
   flex-direction: column;
-  width: 100%;
   padding: 2rem 0;
   background-color: hsl(0deg, 0%, 74%);
 }
@@ -724,13 +723,12 @@
   width: 100%;
 }
 .test__div--headline {
-  width: 87%;
+  width: 90%;
   margin: 0 auto;
 }
 .test__div--content {
   width: 90%;
   margin: 0 auto;
-  padding: 1em;
 }
 .test__div--content > p {
   padding-bottom: 1em;
@@ -942,7 +940,7 @@
 }
 
 .next {
-  width: 85%;
+  width: 80%;
   margin: 0 auto 5em auto;
 }
 .next h2 {
@@ -953,7 +951,7 @@
   justify-content: center;
 }
 .next__div--container {
-  width: 85%;
+  width: 90%;
 }
 .next__div--container .next__section {
   display: flex;
@@ -978,8 +976,9 @@
 }
 
 .prototype {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
+  padding-bottom: 2em;
   color: hsl(331deg, 100%, 50%);
 }
 

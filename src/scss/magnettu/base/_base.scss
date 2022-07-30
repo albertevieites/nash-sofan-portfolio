@@ -738,7 +738,6 @@
   display: flex;
   flex-direction: column;
 
-  width: 100%;
   padding: 2rem 0;
   background-color: $clr-background-grey-dark;
 
@@ -804,7 +803,7 @@
   }
 
   &__div--headline {
-    width: 87%;
+    width: 90%;
     margin: 0 auto;
   }
 
@@ -812,7 +811,6 @@
     width: 90%;
 
     margin: 0 auto;
-    padding: 1em;
 
     & > p {
       padding-bottom: 1em;
@@ -1066,7 +1064,7 @@
 }
 
 .next {
-  width: 85%;
+  width: 80%;
 
   margin: 0 auto 5em auto;
 
@@ -1080,7 +1078,7 @@
   }
 
   &__div--container {
-    width: 85%;
+    width: 90%;
 
     .next__section {
       display: flex;
@@ -1111,9 +1109,10 @@
 }
 
 .prototype {
-  width: 90%;
+  width: 80%;
 
   margin: 0 auto;
+  padding-bottom: 2em;
 
   color: $clr-primary-light;
 }
