@@ -1,75 +1,94 @@
 @import "../abstracts/colors";
 @import "../abstracts/variables";
+@import "../../base-layer/local/abstracts/breakpoints";
 
 .hero {
   display: flex;
   justify-content: center;
 
-  width: 100%;
+  width: 80%;
+  max-width: 1201px;
+  margin: 0 auto;
+  padding: 2em 0;
 
-  padding: 5em 0 5em 5em;
-
+  @include phone {
+    flex-direction: column;
+  }
   h1 {
-    font-size: $f-s-600;
-    font-weight: $f-w-500;
+    font-size: $f-s-800;
+    font-weight: $f-w-600;
 
     margin: 0;
   }
 
   p {
-    font-size: $f-s-500;
-    font-weight: $f-w-300;
-
     margin: 0.6em 0;
-  }
-
-  .hero__div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    width: 35%;
 
     letter-spacing: 0.04em;
   }
 
-  img {
-    width: 40%;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 50%;
+    @include phone { 
+      width: 100%;
+    }
   }
 
-  width: 100%;
+  &__image {
+    display: flex;
+
+    width: 50%;
+
+    @include phone {
+      width: 70%;
+      margin: 0 auto;
+    }
+    img {
+      width: 100%;
+    }
+  }
 }
 
 .specs {
-  width: 100%;
   padding: 5em;
 
   background-color: $clr-background-grey;
 
-  h4 {
+  @include phone { 
+    padding: 2em;
+  }
+
+  h3 {
     margin-bottom: 0;
   }
 
   p {
-    font-size: $f-s-380;
-    font-weight: $f-w-400;
-
     margin-top: 0;
   }
 
   ul {
     margin-top: 0;
     padding: 0;
+
     list-style-type: none;
-    li {
-      font-size: $f-s-380;
-      font-weight: $f-w-400;
-    }
   }
 
-  .specs__container {
+  &__container {
     display: flex;
     justify-content: space-evenly;
+
+    max-width: 1201px;
+    margin: 0 auto;
+
+    @include phone {
+      flex-direction: column;
+
+      width: 80%;
+    }
   }
 }
 
@@ -77,34 +96,42 @@
   text-align: center;
 
   width: 80%;
+  max-width: 1201px;
   margin: 0 auto;
-  padding: 5em;
+  padding: 2em 0;
 
   p {
-    font-weight: $f-w-300;
+    font-size: $f-s-480;
+    line-height: 2em;
   }
 }
 
 .background {
-  width: 85%;
+  width: 80%;
+  max-width: 1201px;
   margin: 0 auto;
-  padding: 5em;
+  padding: 2em 0;
 
   h1 {
     padding-bottom: 1em;
   }
 
   h3 {
-    font-size: $f-s-380;
+    margin-bottom: 0.7em;
   }
 
   p {
-    font-size: $f-s-380;
-    font-weight: $f-w-300;
+    margin-top: 0;
+
+    line-height: 1.5em;
   }
 
-  .background__content {
-    width: 90%;
+  span {
+    font-weight: $f-w-600;
+  }
+
+  &__content {
+    width: 93%;
     margin: 0 auto;
   }
 
@@ -114,45 +141,47 @@
 }
 
 .research {
-  width: 85%;
+  width: 80%;
+  max-width: 1201px;
   margin: 0 auto;
-  padding: 5em;
+  padding: 2em 0 0 0;
 
   h1 {
     padding-bottom: 1em;
   }
 
-  h3 {
-    font-size: $f-s-380;
-  }
-
   p {
-    font-size: $f-s-380;
-    font-weight: $f-w-300;
+    line-height: 1.5em;
   }
 
   span {
     font-weight: $f-w-600;
+    text-align: center;
   }
 
   blockquote {
-    font-size: $f-s-500;
+    font-size: $f-s-700;
+    font-weight: $f-w-500;
 
     text-align: center;
   }
 
-  .research__content {
-    width: 90%;
+  &__content {
+    width: 93%;
     margin: 0 auto;
   }
 
-  .research__content--interviews {
+  &__content--interviews {
     padding-bottom: 3em;
   }
 
   .insights__icons {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
+
+    padding-top: 2em;
 
     img {
       width: 60%;
@@ -208,32 +237,31 @@
 
   .insights__quotes {
     width: 55vw;
-    margin: 4em auto;
+    margin: 0 auto;
 
     p {
       text-align: center;
+    }
+
+    span {
+      display: inline-block;
+
+      width: 100%;
     }
   }
 }
 
 .synthesis {
-  width: 85%;
+  width: 80%;
+  max-width: 1201px;
   margin: 0 auto;
-  padding: 5em;
+  padding: 2em 0;
 
   h2 {
     padding-bottom: 1em;
   }
 
-  h3 {
-    font-size: $f-s-400;
-    font-weight: $f-w-600;
-  }
-
   p {
-    font-size: $f-s-380;
-    font-weight: $f-w-300;
-
     line-height: 1.7em;
   }
 
@@ -241,12 +269,12 @@
     font-weight: $f-w-600;
   }
 
-  .synthesis__content {
+  &__content {
     width: 90%;
     margin: 0 auto;
   }
 
-  .synthesis__div--affinity {
+  &__div--affinity {
     padding-bottom: 2em;
 
     .affinity__list {
@@ -273,18 +301,18 @@
       width: 75%;
       margin: 1em auto 3em auto;
 
-      border-top: 0.1em solid black;
+      border-top: 0.2em solid black;
     }
   }
 
-  .synthesis__div--persona {
+  &__div--persona {
     padding-bottom: 2em;
     img {
       width: 100%;
     }
   }
 
-  .synthesis__div--scenario {
+  &__div--scenario {
     padding-bottom: 2em;
 
     & > p {
@@ -292,7 +320,7 @@
     }
   }
 
-  .synthesis__div--brainstorming {
+  &__div--brainstorming {
     padding-bottom: 2em;
 
     img {
@@ -303,48 +331,45 @@
 }
 
 .prototyping {
-  width: 85%;
+  width: 80%;
+  max-width: 1201px;
   margin: 0 auto;
 
+  h2 {
+    padding-bottom: 1em;
+  }
   .prototyping__content {
-    width: 90%;
+    width: 93%;
     margin: 0 auto;
   }
 
   .prototyping__images {
     display: flex;
     justify-content: center;
-    gap: 1em;
+    gap: 2em;
 
+    width: 100%;
     padding-bottom: 3em;
 
+    @include phone {
+      gap: 0.2em;
+    }
     img {
-      width: 16vw;
+      width: 23%;
     }
   }
 }
 
 .testing {
-  width: 85%;
+  width: 80%;
+  max-width: 1201px;
   margin: 0 auto;
-
-  .testing__content {
-    width: 85%;
-    margin: 0 auto;
-  }
 
   h2 {
     padding-bottom: 1em;
   }
 
-  h3 {
-    font-size: $f-s-380;
-  }
-
   p {
-    font-size: $f-s-380;
-    font-weight: $f-w-300;
-
     line-height: 1.7em;
   }
 
@@ -352,7 +377,21 @@
     font-weight: $f-w-600;
   }
 
-  .testing__content--connections {
+  &__content {
+    width: 93%;
+    margin: 0 auto;
+  }
+
+  &__content--cecklist {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 20vw;
+    }
+  }
+
+  &__content--connections {
     padding-bottom: 3em;
   }
 
@@ -362,37 +401,23 @@
 
     img {
       width: 100%;
+      transform: translateZ(0);
     }
-
     p {
       margin: 0;
 
       text-align: center;
     }
-
-    .navigation__images--middle {
-      img {
-        width: 4em;
-      }
-    }
   }
 
   .connections__images {
     display: flex;
+    justify-content: center;
 
     padding-bottom: 3em;
 
     img {
-      width: 33%;
-    }
-  }
-
-  .testing__content--cecklist {
-    display: flex;
-    flex-direction: column;
-
-    img {
-      width: 20vw;
+      width: 60%;
     }
   }
 
@@ -428,32 +453,31 @@
 }
 
 .final {
-  width: 85%;
+  width: 80%;
+  max-width: 1201px;
   margin: 0 auto;
 
   padding-bottom: 3em;
 
   .final__images {
     img {
-      width: 85%;
+      width: 93%;
       margin: 0 auto;
     }
   }
 }
 
 .next {
-  width: 85%;
+  width: 80%;
+  max-width: 1201px;
   margin: 0 auto;
 
   padding-bottom: 3em;
 
   ul {
-    width: 85%;
+    width: 93%;
     margin: 0 auto;
 
-    font-size: $f-s-380;
-    font-weight: $f-w-300;
-
     line-height: 1.7em;
-    }
+  }
 }
